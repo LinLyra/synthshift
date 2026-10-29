@@ -8,7 +8,7 @@ __pycache__/
 *.py[cod]
 
 # Research data and generated artifacts
-data/
+/data/
 checkpoints/
 runs/
 wandb/

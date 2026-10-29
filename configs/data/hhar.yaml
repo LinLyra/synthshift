@@ -1,0 +1,27 @@
+name: hhar
+source: https://archive.ics.uci.edu/dataset/344/heterogeneity+human+activity+recognition
+license: CC-BY-4.0
+
+primary_files:
+  accelerometer: Phones_accelerometer.csv
+  gyroscope: Phones_gyroscope.csv
+
+columns:
+  arrival_time: Arrival_Time
+  creation_time: Creation_Time
+  axes: [x, y, z]
+  user: User
+  model: Model
+  device: Device
+  label: gt
+
+primary_scope:
+  form_factor: phone
+  nominal_placement: tight waist pouch
+  activities: [bike, sit, stand, walk, stairsup, stairsdown]
+
+excluded_from_primary_claims:
+  - phone-to-watch comparisons
+  - null activity labels
+  - target evaluation data used for calibration
+
