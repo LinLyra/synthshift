@@ -1,0 +1,27 @@
+.DS_Store
+.idea/
+.vscode/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+
+# Research data and generated artifacts
+data/
+checkpoints/
+runs/
+wandb/
+mlruns/
+artifacts/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.parquet
+
+# Results are opt-in: keep only reviewed, compact tables/figures.
+results/**
+!results/.gitkeep
+
