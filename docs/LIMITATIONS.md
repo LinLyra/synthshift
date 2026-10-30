@@ -25,4 +25,8 @@ Initial known limitations:
   improvement whose 10-device-pair cluster-bootstrap interval includes zero.
   Calibration-user disagreement reaches 0.0347 rad/s on one `s3_2` axis, and
   the same-model improvement is concentrated in Galaxy S3 rather than Nexus 4.
+- Raw interval jitter and >100 ms gap rate strongly identify the directional
+  `s3mini_1` residual in all folds, but their association disappears when that
+  device is removed. They support a severe-device case study, not a general
+  timing explanation across the remaining phones.
 
