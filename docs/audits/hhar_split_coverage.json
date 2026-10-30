@@ -1,0 +1,120 @@
+{
+  "split_config_sha256": "e93db1104e1c6d6e4979ccd762d3e8f9ed828584420148800944ec1fbd3a231e",
+  "window_definition": "5 seconds at 50 Hz, 50% overlap within legal segments",
+  "folds": [
+    {
+      "name": "fold_0",
+      "partitions": {
+        "train_users": {
+          "windows": 11870,
+          "windows_by_label": {
+            "bike": 1630,
+            "sit": 2290,
+            "stairsdown": 1313,
+            "stairsup": 1791,
+            "stand": 1952,
+            "walk": 2894
+          }
+        },
+        "validation_users": {
+          "windows": 2229,
+          "windows_by_label": {
+            "bike": 333,
+            "sit": 589,
+            "stairsdown": 262,
+            "stairsup": 337,
+            "stand": 267,
+            "walk": 441
+          }
+        },
+        "test_users": {
+          "windows": 7059,
+          "windows_by_label": {
+            "bike": 777,
+            "sit": 1606,
+            "stairsdown": 757,
+            "stairsup": 1102,
+            "stand": 1259,
+            "walk": 1558
+          }
+        }
+      }
+    },
+    {
+      "name": "fold_1",
+      "partitions": {
+        "train_users": {
+          "windows": 12078,
+          "windows_by_label": {
+            "bike": 1477,
+            "sit": 2723,
+            "stairsdown": 1304,
+            "stairsup": 1767,
+            "stand": 2136,
+            "walk": 2671
+          }
+        },
+        "validation_users": {
+          "windows": 2100,
+          "windows_by_label": {
+            "bike": 135,
+            "sit": 494,
+            "stairsdown": 239,
+            "stairsup": 418,
+            "stand": 287,
+            "walk": 527
+          }
+        },
+        "test_users": {
+          "windows": 6980,
+          "windows_by_label": {
+            "bike": 1128,
+            "sit": 1268,
+            "stairsdown": 789,
+            "stairsup": 1045,
+            "stand": 1055,
+            "walk": 1695
+          }
+        }
+      }
+    },
+    {
+      "name": "fold_2",
+      "partitions": {
+        "train_users": {
+          "windows": 12097,
+          "windows_by_label": {
+            "bike": 1662,
+            "sit": 2520,
+            "stairsdown": 1331,
+            "stairsup": 1815,
+            "stand": 1980,
+            "walk": 2789
+          }
+        },
+        "validation_users": {
+          "windows": 1942,
+          "windows_by_label": {
+            "bike": 243,
+            "sit": 354,
+            "stairsdown": 215,
+            "stairsup": 332,
+            "stand": 334,
+            "walk": 464
+          }
+        },
+        "test_users": {
+          "windows": 7119,
+          "windows_by_label": {
+            "bike": 835,
+            "sit": 1611,
+            "stairsdown": 786,
+            "stairsup": 1083,
+            "stand": 1164,
+            "walk": 1640
+          }
+        }
+      }
+    }
+  ]
+}

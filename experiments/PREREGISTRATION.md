@@ -58,6 +58,13 @@ matched encoder, and sensor-subset controls.
 3. No parameter may be estimated from the final target evaluation partition.
 4. All split manifests and hashes will be versioned.
 
+The fixed subject folds are defined in
+`configs/splits/hhar_subject_folds.json`. Every subject is tested exactly once
+across three outer folds. Each fold contains five training subjects, one
+validation subject, and three test subjects. S1 target calibration users are a
+strict subset of training subjects and their activity labels remain unavailable
+to the calibration method.
+
 ## Preprocessing decisions supported by the raw-data audit
 
 - Primary six-axis candidate devices: `nexus4_1`, `nexus4_2`, `s3_1`, `s3_2`,
@@ -110,7 +117,6 @@ performed at equivalent scope.
 
 ## Items to finalize before confirmation
 
-- Exact subject/session/device split construction.
 - Device-pair inclusion rules and minimum sample counts.
 - Primary score and confidence-interval procedure.
 - Calibration-budget sizes.

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "all_users": ["a", "b", "c", "d", "e", "f", "g", "h", "i"],
+  "primary_devices": ["nexus4_1", "nexus4_2", "s3_1", "s3_2", "s3mini_1"],
+  "exploratory_devices": ["s3mini_2"],
+  "folds": [
+    {
+      "name": "fold_0",
+      "train_users": ["b", "d", "f", "g", "i"],
+      "validation_users": ["h"],
+      "test_users": ["a", "c", "e"],
+      "target_calibration_users": ["b", "g"]
+    },
+    {
+      "name": "fold_1",
+      "train_users": ["a", "d", "e", "g", "h"],
+      "validation_users": ["c"],
+      "test_users": ["b", "f", "i"],
+      "target_calibration_users": ["a", "h"]
+    },
+    {
+      "name": "fold_2",
+      "train_users": ["a", "b", "c", "e", "i"],
+      "validation_users": ["f"],
+      "test_users": ["d", "g", "h"],
+      "target_calibration_users": ["c", "i"]
+    }
+  ]
+}
