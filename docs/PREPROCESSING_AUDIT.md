@@ -10,7 +10,8 @@ For each user-device stream, the pipeline:
 3. stably sorts local timestamp reorder within each remaining segment;
 4. collapses duplicate timestamps deterministically;
 5. intersects same-activity accelerometer and gyroscope segments;
-6. interpolates each sensor independently onto a shared 50 Hz integer grid;
+6. applies a fourth-order zero-phase 20 Hz Butterworth anti-alias filter when
+   downsampling, then interpolates each sensor onto a shared 50 Hz integer grid;
 7. stores channels as `ax, ay, az, gx, gy, gz` in `float32`.
 
 The first attempt treated every negative timestamp delta as a reset. Inspection
@@ -48,7 +49,8 @@ low-coverage timing-shift case study.
 
 ## Artifacts
 
-- Local arrays: `data/processed/hhar/resampled_50hz/` (ignored by Git).
+- Canonical local arrays:
+  `data/processed/hhar/resampled_50hz_antialias/` (ignored by Git).
 - Machine-readable segment manifest:
-  `docs/audits/hhar_resampled_manifest.json`.
+  `docs/audits/hhar_resampled_antialias_manifest.json`.
 - Local array footprint: approximately 134 MiB.

@@ -5,7 +5,7 @@ SynthShift hypotheses.
 
 ## Protocol
 
-- Input: five-second, 50 Hz, six-axis windows with 50% overlap.
+- Input: five-second, anti-aliased 50 Hz, six-axis windows with 50% overlap.
 - Features: 78 deterministic distribution, magnitude, temporal-difference, and
   within-sensor correlation features.
 - Classifier: standardized class-balanced multinomial logistic regression.
@@ -21,15 +21,15 @@ Rows are training devices and columns are evaluation devices.
 
 | Source \ Target | nexus4_1 | nexus4_2 | s3_1 | s3_2 | s3mini_1 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `nexus4_1` | 0.778 | 0.736 | 0.716 | 0.599 | 0.595 |
-| `nexus4_2` | 0.776 | 0.793 | 0.766 | 0.714 | 0.685 |
-| `s3_1` | 0.726 | 0.742 | 0.759 | 0.700 | 0.665 |
-| `s3_2` | 0.612 | 0.768 | 0.739 | 0.771 | 0.685 |
-| `s3mini_1` | 0.486 | 0.653 | 0.647 | 0.717 | 0.615 |
+| `nexus4_1` | 0.777 | 0.731 | 0.708 | 0.592 | 0.593 |
+| `nexus4_2` | 0.773 | 0.793 | 0.772 | 0.713 | 0.686 |
+| `s3_1` | 0.712 | 0.726 | 0.746 | 0.677 | 0.647 |
+| `s3_2` | 0.615 | 0.768 | 0.744 | 0.776 | 0.684 |
+| `s3mini_1` | 0.532 | 0.666 | 0.653 | 0.724 | 0.618 |
 
-Mean same-device macro-F1 is 0.744; mean off-diagonal cross-device macro-F1 is
-0.686, an absolute reduction of 0.057. The effect is strongly asymmetric. For
-example, `nexus4_1` loses 0.179 when evaluated on `s3_2`, while a model trained
+Mean same-device macro-F1 is 0.742; mean off-diagonal cross-device macro-F1 is
+0.686, an absolute reduction of 0.056. The effect is strongly asymmetric. For
+example, `nexus4_1` loses 0.185 when evaluated on `s3_2`, while a model trained
 on `s3mini_1` performs better on several other devices than on its own device.
 
 This is exactly why the project must predict both degradation magnitude and
@@ -50,4 +50,5 @@ and that a single average domain-gap number would hide important structure.
 
 Machine-readable predictions, metrics, class order, confusion matrices, and
 selected hyperparameters are stored in
-`results/reviewed/statistical_baseline.json`.
+`results/reviewed/statistical_baseline_antialias.json`. The original
+pre-filter result is retained as a preprocessing sensitivity artifact.

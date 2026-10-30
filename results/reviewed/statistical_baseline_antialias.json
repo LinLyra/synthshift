@@ -1,0 +1,5179 @@
+{
+  "results": [
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.568314,
+      "test_windows": 1333,
+      "macro_f1": 0.755712,
+      "balanced_accuracy": 0.782315,
+      "confusion_matrix": [
+        [
+          109,
+          0,
+          0,
+          3,
+          4,
+          3
+        ],
+        [
+          2,
+          117,
+          0,
+          0,
+          192,
+          0
+        ],
+        [
+          0,
+          0,
+          139,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          23,
+          146,
+          0,
+          46
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          218,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          34,
+          0,
+          257
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.568314,
+      "test_windows": 1460,
+      "macro_f1": 0.690663,
+      "balanced_accuracy": 0.717299,
+      "confusion_matrix": [
+        [
+          125,
+          0,
+          0,
+          1,
+          45,
+          0
+        ],
+        [
+          0,
+          96,
+          0,
+          0,
+          213,
+          0
+        ],
+        [
+          0,
+          0,
+          144,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          14,
+          168,
+          0,
+          43
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          290,
+          0
+        ],
+        [
+          0,
+          0,
+          76,
+          61,
+          0,
+          176
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.568314,
+      "test_windows": 1493,
+      "macro_f1": 0.681611,
+      "balanced_accuracy": 0.700144,
+      "confusion_matrix": [
+        [
+          98,
+          0,
+          0,
+          12,
+          64,
+          0
+        ],
+        [
+          0,
+          102,
+          0,
+          0,
+          224,
+          0
+        ],
+        [
+          0,
+          0,
+          155,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          194,
+          0,
+          23
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          263,
+          0
+        ],
+        [
+          0,
+          0,
+          33,
+          94,
+          0,
+          196
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.568314,
+      "test_windows": 1457,
+      "macro_f1": 0.50416,
+      "balanced_accuracy": 0.582523,
+      "confusion_matrix": [
+        [
+          79,
+          0,
+          0,
+          4,
+          91,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          334,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          29,
+          147,
+          0,
+          45
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          263,
+          0
+        ],
+        [
+          0,
+          0,
+          123,
+          63,
+          0,
+          125
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.568314,
+      "test_windows": 1316,
+      "macro_f1": 0.560419,
+      "balanced_accuracy": 0.589149,
+      "confusion_matrix": [
+        [
+          120,
+          16,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          326,
+          0
+        ],
+        [
+          0,
+          0,
+          35,
+          17,
+          0,
+          71
+        ],
+        [
+          2,
+          0,
+          1,
+          198,
+          0,
+          11
+        ],
+        [
+          2,
+          88,
+          0,
+          0,
+          133,
+          0
+        ],
+        [
+          15,
+          0,
+          1,
+          26,
+          0,
+          251
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.475547,
+      "test_windows": 1333,
+      "macro_f1": 0.797036,
+      "balanced_accuracy": 0.790906,
+      "confusion_matrix": [
+        [
+          97,
+          0,
+          0,
+          4,
+          1,
+          17
+        ],
+        [
+          2,
+          216,
+          0,
+          0,
+          93,
+          0
+        ],
+        [
+          0,
+          0,
+          101,
+          24,
+          0,
+          27
+        ],
+        [
+          0,
+          0,
+          20,
+          135,
+          0,
+          60
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          218,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          15,
+          0,
+          300
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.475547,
+      "test_windows": 1460,
+      "macro_f1": 0.760867,
+      "balanced_accuracy": 0.776619,
+      "confusion_matrix": [
+        [
+          154,
+          0,
+          1,
+          4,
+          10,
+          2
+        ],
+        [
+          1,
+          117,
+          0,
+          0,
+          191,
+          0
+        ],
+        [
+          0,
+          0,
+          134,
+          15,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          19,
+          153,
+          0,
+          53
+        ],
+        [
+          3,
+          0,
+          0,
+          2,
+          287,
+          0
+        ],
+        [
+          0,
+          0,
+          35,
+          20,
+          0,
+          258
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.475547,
+      "test_windows": 1493,
+      "macro_f1": 0.74569,
+      "balanced_accuracy": 0.757947,
+      "confusion_matrix": [
+        [
+          156,
+          0,
+          0,
+          11,
+          7,
+          0
+        ],
+        [
+          0,
+          111,
+          0,
+          0,
+          215,
+          0
+        ],
+        [
+          0,
+          0,
+          124,
+          42,
+          0,
+          12
+        ],
+        [
+          1,
+          0,
+          13,
+          170,
+          0,
+          45
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          261,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          32,
+          0,
+          284
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.475547,
+      "test_windows": 1457,
+      "macro_f1": 0.694118,
+      "balanced_accuracy": 0.725315,
+      "confusion_matrix": [
+        [
+          147,
+          0,
+          1,
+          9,
+          17,
+          0
+        ],
+        [
+          1,
+          108,
+          0,
+          0,
+          225,
+          0
+        ],
+        [
+          0,
+          0,
+          143,
+          8,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          27,
+          131,
+          0,
+          63
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          263,
+          0
+        ],
+        [
+          0,
+          0,
+          77,
+          28,
+          0,
+          206
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.475547,
+      "test_windows": 1316,
+      "macro_f1": 0.577665,
+      "balanced_accuracy": 0.570855,
+      "confusion_matrix": [
+        [
+          103,
+          35,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          16,
+          111,
+          0,
+          0,
+          199,
+          0
+        ],
+        [
+          0,
+          0,
+          37,
+          11,
+          0,
+          75
+        ],
+        [
+          10,
+          0,
+          9,
+          146,
+          0,
+          47
+        ],
+        [
+          1,
+          124,
+          0,
+          0,
+          98,
+          0
+        ],
+        [
+          15,
+          1,
+          6,
+          3,
+          0,
+          268
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.47963,
+      "test_windows": 1333,
+      "macro_f1": 0.691652,
+      "balanced_accuracy": 0.703013,
+      "confusion_matrix": [
+        [
+          72,
+          0,
+          0,
+          3,
+          24,
+          20
+        ],
+        [
+          7,
+          103,
+          0,
+          0,
+          201,
+          0
+        ],
+        [
+          0,
+          0,
+          125,
+          8,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          23,
+          116,
+          0,
+          76
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          217,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          19,
+          0,
+          294
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.47963,
+      "test_windows": 1460,
+      "macro_f1": 0.705392,
+      "balanced_accuracy": 0.73159,
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0,
+          2,
+          33,
+          1
+        ],
+        [
+          33,
+          134,
+          0,
+          0,
+          142,
+          0
+        ],
+        [
+          0,
+          0,
+          144,
+          4,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          26,
+          121,
+          0,
+          78
+        ],
+        [
+          9,
+          0,
+          0,
+          1,
+          282,
+          0
+        ],
+        [
+          0,
+          0,
+          71,
+          22,
+          0,
+          220
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.47963,
+      "test_windows": 1493,
+      "macro_f1": 0.71939,
+      "balanced_accuracy": 0.736618,
+      "confusion_matrix": [
+        [
+          105,
+          0,
+          0,
+          10,
+          57,
+          2
+        ],
+        [
+          42,
+          130,
+          0,
+          0,
+          154,
+          0
+        ],
+        [
+          0,
+          0,
+          164,
+          11,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          20,
+          152,
+          0,
+          56
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          258,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          26,
+          0,
+          275
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.47963,
+      "test_windows": 1457,
+      "macro_f1": 0.64166,
+      "balanced_accuracy": 0.679136,
+      "confusion_matrix": [
+        [
+          110,
+          0,
+          5,
+          7,
+          51,
+          1
+        ],
+        [
+          84,
+          211,
+          0,
+          0,
+          39,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          54,
+          98,
+          0,
+          68
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          254,
+          0
+        ],
+        [
+          2,
+          0,
+          161,
+          15,
+          0,
+          133
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.47963,
+      "test_windows": 1316,
+      "macro_f1": 0.511752,
+      "balanced_accuracy": 0.511866,
+      "confusion_matrix": [
+        [
+          81,
+          58,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          191,
+          0,
+          0,
+          135,
+          0
+        ],
+        [
+          2,
+          0,
+          34,
+          1,
+          0,
+          86
+        ],
+        [
+          77,
+          10,
+          1,
+          55,
+          0,
+          69
+        ],
+        [
+          0,
+          126,
+          0,
+          0,
+          97,
+          0
+        ],
+        [
+          18,
+          1,
+          0,
+          1,
+          0,
+          273
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.408858,
+      "test_windows": 1333,
+      "macro_f1": 0.618821,
+      "balanced_accuracy": 0.618951,
+      "confusion_matrix": [
+        [
+          64,
+          0,
+          0,
+          3,
+          4,
+          48
+        ],
+        [
+          2,
+          102,
+          0,
+          0,
+          207,
+          0
+        ],
+        [
+          0,
+          0,
+          55,
+          28,
+          0,
+          69
+        ],
+        [
+          0,
+          0,
+          7,
+          116,
+          0,
+          92
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          218,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          301
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.408858,
+      "test_windows": 1460,
+      "macro_f1": 0.74001,
+      "balanced_accuracy": 0.736847,
+      "confusion_matrix": [
+        [
+          132,
+          0,
+          0,
+          2,
+          22,
+          15
+        ],
+        [
+          1,
+          105,
+          0,
+          0,
+          203,
+          0
+        ],
+        [
+          0,
+          0,
+          107,
+          17,
+          0,
+          26
+        ],
+        [
+          0,
+          0,
+          7,
+          153,
+          0,
+          65
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          288,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          20,
+          0,
+          291
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.408858,
+      "test_windows": 1493,
+      "macro_f1": 0.697771,
+      "balanced_accuracy": 0.700033,
+      "confusion_matrix": [
+        [
+          109,
+          0,
+          0,
+          13,
+          39,
+          13
+        ],
+        [
+          1,
+          105,
+          0,
+          0,
+          220,
+          0
+        ],
+        [
+          0,
+          0,
+          110,
+          39,
+          0,
+          29
+        ],
+        [
+          1,
+          0,
+          7,
+          166,
+          0,
+          55
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          261,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          26,
+          0,
+          296
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.408858,
+      "test_windows": 1457,
+      "macro_f1": 0.747204,
+      "balanced_accuracy": 0.76408,
+      "confusion_matrix": [
+        [
+          138,
+          0,
+          0,
+          6,
+          25,
+          5
+        ],
+        [
+          9,
+          123,
+          0,
+          0,
+          202,
+          0
+        ],
+        [
+          0,
+          0,
+          136,
+          15,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          16,
+          155,
+          0,
+          50
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          262,
+          0
+        ],
+        [
+          0,
+          0,
+          23,
+          26,
+          0,
+          262
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.408858,
+      "test_windows": 1316,
+      "macro_f1": 0.518755,
+      "balanced_accuracy": 0.505126,
+      "confusion_matrix": [
+        [
+          78,
+          51,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          175,
+          0,
+          0,
+          151,
+          0
+        ],
+        [
+          1,
+          0,
+          33,
+          0,
+          0,
+          89
+        ],
+        [
+          10,
+          1,
+          0,
+          53,
+          0,
+          148
+        ],
+        [
+          0,
+          126,
+          0,
+          0,
+          97,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          1,
+          0,
+          287
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.863342,
+      "test_windows": 1333,
+      "macro_f1": 0.761176,
+      "balanced_accuracy": 0.772014,
+      "confusion_matrix": [
+        [
+          84,
+          0,
+          0,
+          1,
+          32,
+          2
+        ],
+        [
+          21,
+          148,
+          0,
+          0,
+          142,
+          0
+        ],
+        [
+          0,
+          0,
+          115,
+          8,
+          0,
+          29
+        ],
+        [
+          0,
+          0,
+          30,
+          166,
+          0,
+          19
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          216,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          13,
+          0,
+          296
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.863342,
+      "test_windows": 1460,
+      "macro_f1": 0.80973,
+      "balanced_accuracy": 0.827461,
+      "confusion_matrix": [
+        [
+          146,
+          0,
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          62,
+          197,
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          141,
+          4,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          30,
+          161,
+          0,
+          34
+        ],
+        [
+          14,
+          0,
+          0,
+          0,
+          278,
+          0
+        ],
+        [
+          0,
+          0,
+          29,
+          13,
+          0,
+          271
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.863342,
+      "test_windows": 1493,
+      "macro_f1": 0.789759,
+      "balanced_accuracy": 0.802758,
+      "confusion_matrix": [
+        [
+          141,
+          0,
+          0,
+          0,
+          32,
+          1
+        ],
+        [
+          47,
+          164,
+          0,
+          0,
+          115,
+          0
+        ],
+        [
+          0,
+          0,
+          136,
+          12,
+          0,
+          30
+        ],
+        [
+          2,
+          0,
+          16,
+          200,
+          0,
+          11
+        ],
+        [
+          6,
+          0,
+          0,
+          0,
+          257,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          25,
+          0,
+          287
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.863342,
+      "test_windows": 1457,
+      "macro_f1": 0.710132,
+      "balanced_accuracy": 0.741435,
+      "confusion_matrix": [
+        [
+          120,
+          0,
+          0,
+          1,
+          53,
+          0
+        ],
+        [
+          82,
+          159,
+          0,
+          0,
+          93,
+          0
+        ],
+        [
+          0,
+          0,
+          148,
+          4,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          32,
+          140,
+          0,
+          48
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          258,
+          0
+        ],
+        [
+          0,
+          0,
+          74,
+          17,
+          0,
+          220
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.863342,
+      "test_windows": 1316,
+      "macro_f1": 0.484542,
+      "balanced_accuracy": 0.448272,
+      "confusion_matrix": [
+        [
+          62,
+          77,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          149,
+          0,
+          0,
+          149,
+          0
+        ],
+        [
+          2,
+          26,
+          33,
+          0,
+          0,
+          62
+        ],
+        [
+          5,
+          145,
+          0,
+          56,
+          0,
+          6
+        ],
+        [
+          0,
+          126,
+          0,
+          0,
+          97,
+          0
+        ],
+        [
+          1,
+          52,
+          0,
+          0,
+          0,
+          240
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.669956,
+      "test_windows": 1512,
+      "macro_f1": 0.745809,
+      "balanced_accuracy": 0.763959,
+      "confusion_matrix": [
+        [
+          181,
+          5,
+          2,
+          14,
+          14,
+          2
+        ],
+        [
+          0,
+          292,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          180,
+          0,
+          0,
+          2
+        ],
+        [
+          63,
+          0,
+          23,
+          69,
+          0,
+          70
+        ],
+        [
+          2,
+          101,
+          0,
+          0,
+          128,
+          0
+        ],
+        [
+          0,
+          0,
+          33,
+          0,
+          0,
+          330
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.669956,
+      "test_windows": 1536,
+      "macro_f1": 0.791353,
+      "balanced_accuracy": 0.80739,
+      "confusion_matrix": [
+        [
+          259,
+          0,
+          9,
+          5,
+          12,
+          0
+        ],
+        [
+          0,
+          236,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          177,
+          1,
+          0,
+          0
+        ],
+        [
+          101,
+          0,
+          12,
+          94,
+          0,
+          11
+        ],
+        [
+          1,
+          74,
+          0,
+          0,
+          169,
+          0
+        ],
+        [
+          8,
+          0,
+          54,
+          2,
+          0,
+          309
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.669956,
+      "test_windows": 1006,
+      "macro_f1": 0.848875,
+      "balanced_accuracy": 0.851737,
+      "confusion_matrix": [
+        [
+          137,
+          1,
+          5,
+          15,
+          8,
+          0
+        ],
+        [
+          0,
+          180,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          112,
+          0,
+          0,
+          1
+        ],
+        [
+          62,
+          0,
+          1,
+          95,
+          0,
+          4
+        ],
+        [
+          2,
+          33,
+          0,
+          0,
+          104,
+          0
+        ],
+        [
+          3,
+          0,
+          6,
+          1,
+          0,
+          236
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.669956,
+      "test_windows": 1523,
+      "macro_f1": 0.759409,
+      "balanced_accuracy": 0.783926,
+      "confusion_matrix": [
+        [
+          227,
+          0,
+          4,
+          33,
+          10,
+          0
+        ],
+        [
+          0,
+          288,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          159,
+          1,
+          0,
+          0
+        ],
+        [
+          105,
+          0,
+          24,
+          93,
+          0,
+          3
+        ],
+        [
+          1,
+          24,
+          0,
+          0,
+          192,
+          0
+        ],
+        [
+          56,
+          0,
+          72,
+          19,
+          0,
+          211
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.669956,
+      "test_windows": 1403,
+      "macro_f1": 0.743755,
+      "balanced_accuracy": 0.780669,
+      "confusion_matrix": [
+        [
+          128,
+          0,
+          7,
+          35,
+          15,
+          0
+        ],
+        [
+          0,
+          272,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          152,
+          0,
+          0,
+          0
+        ],
+        [
+          54,
+          0,
+          51,
+          105,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          222,
+          0
+        ],
+        [
+          40,
+          0,
+          81,
+          52,
+          0,
+          182
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.689119,
+      "test_windows": 1512,
+      "macro_f1": 0.653602,
+      "balanced_accuracy": 0.681962,
+      "confusion_matrix": [
+        [
+          158,
+          16,
+          8,
+          16,
+          10,
+          10
+        ],
+        [
+          0,
+          292,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          180,
+          0,
+          0,
+          3
+        ],
+        [
+          13,
+          0,
+          20,
+          45,
+          0,
+          147
+        ],
+        [
+          0,
+          174,
+          0,
+          0,
+          57,
+          0
+        ],
+        [
+          0,
+          0,
+          23,
+          0,
+          0,
+          340
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.689119,
+      "test_windows": 1536,
+      "macro_f1": 0.77226,
+      "balanced_accuracy": 0.789978,
+      "confusion_matrix": [
+        [
+          254,
+          0,
+          13,
+          5,
+          11,
+          2
+        ],
+        [
+          5,
+          231,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          176,
+          1,
+          0,
+          1
+        ],
+        [
+          71,
+          0,
+          14,
+          74,
+          0,
+          59
+        ],
+        [
+          1,
+          82,
+          0,
+          0,
+          161,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          0,
+          0,
+          333
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.689119,
+      "test_windows": 1006,
+      "macro_f1": 0.78909,
+      "balanced_accuracy": 0.796438,
+      "confusion_matrix": [
+        [
+          131,
+          3,
+          11,
+          14,
+          7,
+          0
+        ],
+        [
+          5,
+          174,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          112,
+          0,
+          0,
+          1
+        ],
+        [
+          43,
+          0,
+          9,
+          86,
+          0,
+          24
+        ],
+        [
+          0,
+          66,
+          0,
+          0,
+          73,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0,
+          240
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.689119,
+      "test_windows": 1523,
+      "macro_f1": 0.728133,
+      "balanced_accuracy": 0.751616,
+      "confusion_matrix": [
+        [
+          225,
+          0,
+          14,
+          27,
+          8,
+          0
+        ],
+        [
+          20,
+          266,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          159,
+          1,
+          0,
+          0
+        ],
+        [
+          89,
+          0,
+          31,
+          76,
+          0,
+          29
+        ],
+        [
+          2,
+          59,
+          0,
+          0,
+          156,
+          0
+        ],
+        [
+          8,
+          0,
+          92,
+          0,
+          0,
+          258
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.689119,
+      "test_windows": 1403,
+      "macro_f1": 0.767263,
+      "balanced_accuracy": 0.795799,
+      "confusion_matrix": [
+        [
+          131,
+          0,
+          14,
+          29,
+          11,
+          0
+        ],
+        [
+          13,
+          259,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          152,
+          0,
+          0,
+          0
+        ],
+        [
+          55,
+          0,
+          58,
+          82,
+          0,
+          20
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          221,
+          0
+        ],
+        [
+          5,
+          0,
+          85,
+          0,
+          0,
+          265
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 1.0,
+      "validation_macro_f1": 0.82248,
+      "test_windows": 1512,
+      "macro_f1": 0.682447,
+      "balanced_accuracy": 0.691286,
+      "confusion_matrix": [
+        [
+          136,
+          18,
+          6,
+          31,
+          23,
+          4
+        ],
+        [
+          66,
+          226,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          180,
+          0,
+          0,
+          3
+        ],
+        [
+          15,
+          0,
+          2,
+          72,
+          0,
+          136
+        ],
+        [
+          0,
+          98,
+          0,
+          0,
+          133,
+          0
+        ],
+        [
+          0,
+          0,
+          47,
+          0,
+          0,
+          316
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 1.0,
+      "validation_macro_f1": 0.82248,
+      "test_windows": 1536,
+      "macro_f1": 0.701668,
+      "balanced_accuracy": 0.709655,
+      "confusion_matrix": [
+        [
+          245,
+          13,
+          7,
+          6,
+          12,
+          2
+        ],
+        [
+          87,
+          149,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          177,
+          0,
+          0,
+          1
+        ],
+        [
+          73,
+          0,
+          0,
+          85,
+          0,
+          60
+        ],
+        [
+          0,
+          110,
+          0,
+          0,
+          134,
+          0
+        ],
+        [
+          0,
+          0,
+          57,
+          1,
+          0,
+          315
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 1.0,
+      "validation_macro_f1": 0.82248,
+      "test_windows": 1006,
+      "macro_f1": 0.722696,
+      "balanced_accuracy": 0.725594,
+      "confusion_matrix": [
+        [
+          125,
+          12,
+          8,
+          15,
+          5,
+          1
+        ],
+        [
+          58,
+          122,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          112,
+          0,
+          0,
+          1
+        ],
+        [
+          52,
+          0,
+          1,
+          93,
+          0,
+          16
+        ],
+        [
+          0,
+          78,
+          0,
+          0,
+          61,
+          0
+        ],
+        [
+          1,
+          0,
+          19,
+          0,
+          0,
+          226
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 1.0,
+      "validation_macro_f1": 0.82248,
+      "test_windows": 1523,
+      "macro_f1": 0.625849,
+      "balanced_accuracy": 0.645087,
+      "confusion_matrix": [
+        [
+          239,
+          2,
+          6,
+          21,
+          6,
+          0
+        ],
+        [
+          149,
+          139,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          160,
+          0,
+          0,
+          0
+        ],
+        [
+          116,
+          0,
+          8,
+          74,
+          0,
+          27
+        ],
+        [
+          4,
+          99,
+          0,
+          0,
+          114,
+          0
+        ],
+        [
+          10,
+          0,
+          109,
+          0,
+          0,
+          239
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 1.0,
+      "validation_macro_f1": 0.82248,
+      "test_windows": 1403,
+      "macro_f1": 0.664062,
+      "balanced_accuracy": 0.688998,
+      "confusion_matrix": [
+        [
+          142,
+          3,
+          8,
+          20,
+          12,
+          0
+        ],
+        [
+          114,
+          158,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          152,
+          0,
+          0,
+          0
+        ],
+        [
+          87,
+          0,
+          22,
+          93,
+          0,
+          13
+        ],
+        [
+          0,
+          73,
+          0,
+          0,
+          151,
+          0
+        ],
+        [
+          9,
+          0,
+          102,
+          3,
+          0,
+          241
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.822121,
+      "test_windows": 1512,
+      "macro_f1": 0.646362,
+      "balanced_accuracy": 0.666479,
+      "confusion_matrix": [
+        [
+          60,
+          1,
+          1,
+          47,
+          16,
+          93
+        ],
+        [
+          0,
+          292,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          172,
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          0,
+          6,
+          12,
+          0,
+          207
+        ],
+        [
+          0,
+          61,
+          0,
+          0,
+          170,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          361
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.822121,
+      "test_windows": 1536,
+      "macro_f1": 0.761406,
+      "balanced_accuracy": 0.768993,
+      "confusion_matrix": [
+        [
+          204,
+          8,
+          11,
+          17,
+          16,
+          29
+        ],
+        [
+          8,
+          228,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          175,
+          0,
+          0,
+          3
+        ],
+        [
+          24,
+          0,
+          6,
+          73,
+          0,
+          115
+        ],
+        [
+          0,
+          82,
+          0,
+          0,
+          161,
+          1
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          0,
+          360
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.822121,
+      "test_windows": 1006,
+      "macro_f1": 0.778086,
+      "balanced_accuracy": 0.77904,
+      "confusion_matrix": [
+        [
+          108,
+          10,
+          9,
+          18,
+          7,
+          14
+        ],
+        [
+          11,
+          169,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          111,
+          0,
+          0,
+          2
+        ],
+        [
+          14,
+          0,
+          9,
+          81,
+          0,
+          58
+        ],
+        [
+          0,
+          53,
+          0,
+          0,
+          86,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          242
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.822121,
+      "test_windows": 1523,
+      "macro_f1": 0.739893,
+      "balanced_accuracy": 0.753878,
+      "confusion_matrix": [
+        [
+          225,
+          3,
+          8,
+          28,
+          8,
+          2
+        ],
+        [
+          42,
+          246,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          159,
+          0,
+          0,
+          1
+        ],
+        [
+          75,
+          0,
+          20,
+          80,
+          0,
+          50
+        ],
+        [
+          0,
+          82,
+          0,
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          42,
+          0,
+          0,
+          316
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.822121,
+      "test_windows": 1403,
+      "macro_f1": 0.757651,
+      "balanced_accuracy": 0.780685,
+      "confusion_matrix": [
+        [
+          133,
+          2,
+          10,
+          26,
+          13,
+          1
+        ],
+        [
+          18,
+          254,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          152,
+          0,
+          0,
+          0
+        ],
+        [
+          61,
+          0,
+          49,
+          78,
+          0,
+          27
+        ],
+        [
+          0,
+          49,
+          0,
+          0,
+          175,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          0,
+          0,
+          315
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.569011,
+      "test_windows": 1512,
+      "macro_f1": 0.402632,
+      "balanced_accuracy": 0.460829,
+      "confusion_matrix": [
+        [
+          21,
+          0,
+          0,
+          49,
+          142,
+          6
+        ],
+        [
+          0,
+          9,
+          0,
+          0,
+          283,
+          0
+        ],
+        [
+          0,
+          0,
+          171,
+          0,
+          6,
+          6
+        ],
+        [
+          0,
+          0,
+          2,
+          25,
+          159,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          231,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          0,
+          141,
+          215
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.569011,
+      "test_windows": 1536,
+      "macro_f1": 0.6633,
+      "balanced_accuracy": 0.689254,
+      "confusion_matrix": [
+        [
+          194,
+          1,
+          9,
+          13,
+          62,
+          6
+        ],
+        [
+          0,
+          43,
+          0,
+          0,
+          193,
+          0
+        ],
+        [
+          2,
+          0,
+          177,
+          0,
+          0,
+          1
+        ],
+        [
+          12,
+          0,
+          7,
+          73,
+          66,
+          60
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          244,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          356
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.569011,
+      "test_windows": 1006,
+      "macro_f1": 0.727994,
+      "balanced_accuracy": 0.745415,
+      "confusion_matrix": [
+        [
+          105,
+          0,
+          7,
+          19,
+          33,
+          2
+        ],
+        [
+          0,
+          62,
+          0,
+          0,
+          118,
+          0
+        ],
+        [
+          0,
+          0,
+          112,
+          0,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          7,
+          85,
+          55,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          139,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          241
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.569011,
+      "test_windows": 1523,
+      "macro_f1": 0.753604,
+      "balanced_accuracy": 0.766901,
+      "confusion_matrix": [
+        [
+          184,
+          34,
+          4,
+          44,
+          4,
+          4
+        ],
+        [
+          0,
+          288,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          12,
+          148,
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          0,
+          19,
+          80,
+          16,
+          44
+        ],
+        [
+          0,
+          49,
+          0,
+          0,
+          167,
+          1
+        ],
+        [
+          9,
+          0,
+          32,
+          0,
+          0,
+          317
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.569011,
+      "test_windows": 1403,
+      "macro_f1": 0.688208,
+      "balanced_accuracy": 0.708635,
+      "confusion_matrix": [
+        [
+          119,
+          21,
+          9,
+          30,
+          3,
+          3
+        ],
+        [
+          0,
+          272,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          139,
+          0,
+          0,
+          0
+        ],
+        [
+          46,
+          0,
+          57,
+          78,
+          4,
+          30
+        ],
+        [
+          1,
+          92,
+          0,
+          0,
+          131,
+          0
+        ],
+        [
+          2,
+          0,
+          88,
+          0,
+          0,
+          265
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.848898,
+      "test_windows": 1386,
+      "macro_f1": 0.828336,
+      "balanced_accuracy": 0.820971,
+      "confusion_matrix": [
+        [
+          114,
+          0,
+          0,
+          37,
+          0,
+          0
+        ],
+        [
+          1,
+          310,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          105,
+          50,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          218,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          1,
+          0,
+          6,
+          133,
+          0,
+          172
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.848898,
+      "test_windows": 1419,
+      "macro_f1": 0.709586,
+      "balanced_accuracy": 0.725677,
+      "confusion_matrix": [
+        [
+          153,
+          0,
+          0,
+          40,
+          2,
+          0
+        ],
+        [
+          0,
+          182,
+          0,
+          0,
+          123,
+          0
+        ],
+        [
+          0,
+          0,
+          88,
+          44,
+          0,
+          4
+        ],
+        [
+          3,
+          0,
+          1,
+          199,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          1,
+          0,
+          6,
+          212,
+          0,
+          123
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.848898,
+      "test_windows": 1495,
+      "macro_f1": 0.594544,
+      "balanced_accuracy": 0.615165,
+      "confusion_matrix": [
+        [
+          76,
+          0,
+          0,
+          93,
+          0,
+          0
+        ],
+        [
+          0,
+          103,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          0,
+          0,
+          105,
+          77,
+          0,
+          4
+        ],
+        [
+          2,
+          0,
+          0,
+          240,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          203,
+          0,
+          128
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.848898,
+      "test_windows": 1451,
+      "macro_f1": 0.512446,
+      "balanced_accuracy": 0.583006,
+      "confusion_matrix": [
+        [
+          97,
+          0,
+          0,
+          91,
+          5,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          313,
+          0
+        ],
+        [
+          0,
+          0,
+          114,
+          57,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          209,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          220,
+          0,
+          111
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.848898,
+      "test_windows": 1368,
+      "macro_f1": 0.474589,
+      "balanced_accuracy": 0.541518,
+      "confusion_matrix": [
+        [
+          48,
+          0,
+          0,
+          74,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          341,
+          0
+        ],
+        [
+          0,
+          0,
+          78,
+          57,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          198,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          250,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          222,
+          0,
+          93
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.865271,
+      "test_windows": 1386,
+      "macro_f1": 0.867078,
+      "balanced_accuracy": 0.860542,
+      "confusion_matrix": [
+        [
+          118,
+          4,
+          0,
+          29,
+          0,
+          0
+        ],
+        [
+          0,
+          313,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          112,
+          24,
+          0,
+          17
+        ],
+        [
+          1,
+          0,
+          0,
+          221,
+          0,
+          4
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          223,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          86,
+          0,
+          221
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.865271,
+      "test_windows": 1419,
+      "macro_f1": 0.844453,
+      "balanced_accuracy": 0.853049,
+      "confusion_matrix": [
+        [
+          179,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          305,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          98,
+          26,
+          0,
+          3
+        ],
+        [
+          9,
+          0,
+          0,
+          194,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          3,
+          0,
+          8,
+          147,
+          0,
+          184
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.865271,
+      "test_windows": 1495,
+      "macro_f1": 0.779942,
+      "balanced_accuracy": 0.78106,
+      "confusion_matrix": [
+        [
+          117,
+          0,
+          0,
+          52,
+          0,
+          0
+        ],
+        [
+          0,
+          315,
+          0,
+          0,
+          23,
+          0
+        ],
+        [
+          10,
+          0,
+          125,
+          49,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          240,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          4,
+          0,
+          1,
+          194,
+          0,
+          134
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.865271,
+      "test_windows": 1451,
+      "macro_f1": 0.717807,
+      "balanced_accuracy": 0.751424,
+      "confusion_matrix": [
+        [
+          173,
+          0,
+          0,
+          18,
+          2,
+          0
+        ],
+        [
+          34,
+          172,
+          0,
+          0,
+          108,
+          0
+        ],
+        [
+          12,
+          0,
+          130,
+          29,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          2,
+          197,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          208,
+          0,
+          123
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.865271,
+      "test_windows": 1368,
+      "macro_f1": 0.713477,
+      "balanced_accuracy": 0.738356,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0,
+          26,
+          1,
+          0
+        ],
+        [
+          10,
+          190,
+          0,
+          0,
+          141,
+          0
+        ],
+        [
+          5,
+          0,
+          98,
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          198,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          250,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          198,
+          0,
+          114
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.887023,
+      "test_windows": 1386,
+      "macro_f1": 0.760735,
+      "balanced_accuracy": 0.749596,
+      "confusion_matrix": [
+        [
+          74,
+          0,
+          0,
+          63,
+          4,
+          10
+        ],
+        [
+          0,
+          254,
+          0,
+          0,
+          59,
+          0
+        ],
+        [
+          0,
+          0,
+          90,
+          50,
+          0,
+          18
+        ],
+        [
+          0,
+          0,
+          0,
+          214,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          100,
+          0,
+          212
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.887023,
+      "test_windows": 1419,
+      "macro_f1": 0.770664,
+      "balanced_accuracy": 0.768786,
+      "confusion_matrix": [
+        [
+          143,
+          0,
+          1,
+          49,
+          0,
+          2
+        ],
+        [
+          0,
+          305,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          80,
+          45,
+          0,
+          7
+        ],
+        [
+          14,
+          0,
+          12,
+          169,
+          0,
+          11
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          2,
+          0,
+          5,
+          174,
+          0,
+          161
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.887023,
+      "test_windows": 1495,
+      "macro_f1": 0.794912,
+      "balanced_accuracy": 0.78385,
+      "confusion_matrix": [
+        [
+          102,
+          0,
+          0,
+          67,
+          0,
+          0
+        ],
+        [
+          1,
+          336,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          104,
+          70,
+          0,
+          5
+        ],
+        [
+          4,
+          0,
+          4,
+          232,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          132,
+          0,
+          197
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.887023,
+      "test_windows": 1451,
+      "macro_f1": 0.762108,
+      "balanced_accuracy": 0.781051,
+      "confusion_matrix": [
+        [
+          181,
+          0,
+          2,
+          10,
+          0,
+          0
+        ],
+        [
+          13,
+          301,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          27,
+          0,
+          114,
+          30,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          21,
+          154,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          4,
+          0,
+          12,
+          189,
+          0,
+          131
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.887023,
+      "test_windows": 1368,
+      "macro_f1": 0.764189,
+      "balanced_accuracy": 0.779305,
+      "confusion_matrix": [
+        [
+          106,
+          0,
+          1,
+          20,
+          0,
+          0
+        ],
+        [
+          3,
+          338,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          76,
+          48,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          8,
+          183,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          250,
+          0
+        ],
+        [
+          4,
+          0,
+          10,
+          188,
+          0,
+          115
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.958861,
+      "test_windows": 1386,
+      "macro_f1": 0.579635,
+      "balanced_accuracy": 0.605594,
+      "confusion_matrix": [
+        [
+          60,
+          0,
+          0,
+          65,
+          6,
+          20
+        ],
+        [
+          0,
+          56,
+          0,
+          0,
+          257,
+          0
+        ],
+        [
+          0,
+          0,
+          51,
+          19,
+          0,
+          88
+        ],
+        [
+          0,
+          0,
+          0,
+          166,
+          0,
+          60
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          312
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.958861,
+      "test_windows": 1419,
+      "macro_f1": 0.80168,
+      "balanced_accuracy": 0.789515,
+      "confusion_matrix": [
+        [
+          123,
+          0,
+          0,
+          66,
+          1,
+          5
+        ],
+        [
+          0,
+          255,
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          69,
+          23,
+          0,
+          44
+        ],
+        [
+          4,
+          0,
+          0,
+          168,
+          0,
+          34
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          16,
+          0,
+          324
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.958861,
+      "test_windows": 1495,
+      "macro_f1": 0.756057,
+      "balanced_accuracy": 0.748894,
+      "confusion_matrix": [
+        [
+          80,
+          0,
+          0,
+          89,
+          0,
+          0
+        ],
+        [
+          0,
+          269,
+          0,
+          0,
+          69,
+          0
+        ],
+        [
+          0,
+          0,
+          98,
+          66,
+          0,
+          22
+        ],
+        [
+          3,
+          0,
+          1,
+          230,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          82,
+          0,
+          250
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.958861,
+      "test_windows": 1451,
+      "macro_f1": 0.839557,
+      "balanced_accuracy": 0.839051,
+      "confusion_matrix": [
+        [
+          158,
+          0,
+          0,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          314,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          118,
+          41,
+          0,
+          3
+        ],
+        [
+          19,
+          0,
+          2,
+          186,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          117,
+          0,
+          215
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.958861,
+      "test_windows": 1368,
+      "macro_f1": 0.77498,
+      "balanced_accuracy": 0.772014,
+      "confusion_matrix": [
+        [
+          81,
+          0,
+          0,
+          46,
+          0,
+          0
+        ],
+        [
+          0,
+          339,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          80,
+          45,
+          0,
+          4
+        ],
+        [
+          3,
+          0,
+          0,
+          195,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          250,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          180,
+          0,
+          134
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.859604,
+      "test_windows": 1386,
+      "macro_f1": 0.433385,
+      "balanced_accuracy": 0.488668,
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          1,
+          15,
+          115,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          313,
+          0
+        ],
+        [
+          0,
+          0,
+          52,
+          45,
+          51,
+          10
+        ],
+        [
+          12,
+          0,
+          2,
+          186,
+          26,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          93,
+          17,
+          202
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.859604,
+      "test_windows": 1419,
+      "macro_f1": 0.524483,
+      "balanced_accuracy": 0.58375,
+      "confusion_matrix": [
+        [
+          137,
+          0,
+          0,
+          34,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          305,
+          0
+        ],
+        [
+          0,
+          0,
+          44,
+          67,
+          0,
+          25
+        ],
+        [
+          41,
+          0,
+          0,
+          165,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          235,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          109,
+          0,
+          231
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.859604,
+      "test_windows": 1495,
+      "macro_f1": 0.439962,
+      "balanced_accuracy": 0.506097,
+      "confusion_matrix": [
+        [
+          81,
+          0,
+          0,
+          79,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          338,
+          0
+        ],
+        [
+          1,
+          0,
+          49,
+          113,
+          0,
+          23
+        ],
+        [
+          46,
+          0,
+          3,
+          194,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          164,
+          1,
+          165
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.859604,
+      "test_windows": 1451,
+      "macro_f1": 0.708811,
+      "balanced_accuracy": 0.710638,
+      "confusion_matrix": [
+        [
+          147,
+          0,
+          0,
+          45,
+          1,
+          0
+        ],
+        [
+          0,
+          291,
+          0,
+          0,
+          23,
+          0
+        ],
+        [
+          1,
+          0,
+          53,
+          102,
+          0,
+          15
+        ],
+        [
+          50,
+          0,
+          3,
+          157,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          158,
+          0,
+          174
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3mini_1",
+      "model": "standardized_logistic_regression",
+      "selected_c": 10.0,
+      "validation_macro_f1": 0.859604,
+      "test_windows": 1368,
+      "macro_f1": 0.681956,
+      "balanced_accuracy": 0.699715,
+      "confusion_matrix": [
+        [
+          110,
+          0,
+          1,
+          15,
+          1,
+          0
+        ],
+        [
+          0,
+          297,
+          0,
+          0,
+          44,
+          0
+        ],
+        [
+          0,
+          0,
+          38,
+          93,
+          0,
+          4
+        ],
+        [
+          35,
+          0,
+          0,
+          163,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          250,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          200,
+          0,
+          113
+        ]
+      ],
+      "label_order": [
+        "bike",
+        "sit",
+        "stairsdown",
+        "stairsup",
+        "stand",
+        "walk"
+      ]
+    }
+  ]
+}
