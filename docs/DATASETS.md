@@ -22,6 +22,13 @@ python scripts/record_data_manifest.py \
 The committed manifest records the archive SHA-256, byte size, retrieval time, ZIP member
 sizes, CRCs, and an integrity-test result. The archive itself remains ignored.
 
+Extract the verified outer bundle and both official nested experiment archives:
+
+```bash
+PYTHONPATH=src python scripts/extract_hhar.py \
+  data/raw/hhar/hhar-uci-344.zip data/extracted/hhar
+```
+
 Expected activity files include:
 
 - `Phones_accelerometer.csv`
