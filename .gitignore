@@ -25,4 +25,6 @@ artifacts/
 # Results are opt-in: keep only reviewed, compact tables/figures.
 results/**
 !results/.gitkeep
+!results/reviewed/
+!results/reviewed/**
 
