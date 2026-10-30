@@ -38,4 +38,8 @@ Initial known limitations:
 - Applying the fixed `s3mini_1` ±2g rail after gain changes only 0.0186% of
   scalar values and improves none of 12 valid target-direction cells for the
   linear model. The rail is a domain marker, not a supported causal factor.
+- Seven CPU configurations support gain generality for handcrafted features,
+  but robustness-ranking Kendall tau-b is only 0.323 under subject-equal
+  scoring and varies from 0.100 to 0.595 across folds. Raw-sequence neural
+  models are still required for the final model-ranking claim.
 
