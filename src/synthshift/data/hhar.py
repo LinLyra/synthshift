@@ -12,8 +12,8 @@ import argparse
 import json
 import math
 from collections import Counter, defaultdict
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 import numpy as np
 import pandas as pd
@@ -113,9 +113,9 @@ def audit_csv(
         model_device_counts = metadata.groupby(["Model", "Device"], dropna=False).size()
         for (model, device), count in model_device_counts.items():
             model_by_device[f"{model}|{device}"] += int(count)
-        for (user, device, label), count in metadata.groupby(
-            ["User", "Device", "gt"], dropna=False
-        ).size().items():
+        for (user, device, label), count in (
+            metadata.groupby(["User", "Device", "gt"], dropna=False).size().items()
+        ):
             rows_by_user_device_label[f"{user}|{device}|{label}"] += int(count)
 
         timing = frame[["User", "Device", "Creation_Time"]].dropna()
@@ -164,12 +164,8 @@ def audit_csv(
             "median_effective_rate_hz_guess": round(float(np.median(rates)), 3)
             if rates.size
             else None,
-            "min_effective_rate_hz_guess": round(float(np.min(rates)), 3)
-            if rates.size
-            else None,
-            "max_effective_rate_hz_guess": round(float(np.max(rates)), 3)
-            if rates.size
-            else None,
+            "min_effective_rate_hz_guess": round(float(np.min(rates)), 3) if rates.size else None,
+            "max_effective_rate_hz_guess": round(float(np.max(rates)), 3) if rates.size else None,
         }
 
     return {
@@ -208,4 +204,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

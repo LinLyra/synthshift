@@ -7,6 +7,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
+
 def load_and_validate_split(path: Path) -> dict[str, object]:
     raw = path.read_bytes()
     config = json.loads(raw)

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from zipfile import ZipFile
 
-from scripts.record_data_manifest import build_manifest
+from synthshift.data.manifest import build_manifest
 
 
 class DataManifestTest(unittest.TestCase):
@@ -29,4 +29,3 @@ class DataManifestTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

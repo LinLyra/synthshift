@@ -17,9 +17,7 @@ class AlignmentTest(unittest.TestCase):
         np.testing.assert_array_equal(distances, [2, 1, 2])
 
     def test_load_sorts_and_deduplicates(self) -> None:
-        frame = pd.DataFrame(
-            {"Creation_Time": [20, 10, 10], "gt": ["walk", "sit", "sit"]}
-        )
+        frame = pd.DataFrame({"Creation_Time": [20, 10, 10], "gt": ["walk", "sit", "sit"]})
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "sensor.csv"
             frame.to_csv(path, index=False)
@@ -40,9 +38,7 @@ class AlignmentTest(unittest.TestCase):
 
     def test_direction_stats_handles_disjoint_ranges(self) -> None:
         labels = np.array(["walk", "walk"])
-        report = direction_stats(
-            np.array([0, 1]), labels, np.array([10, 11]), labels, (5.0,)
-        )
+        report = direction_stats(np.array([0, 1]), labels, np.array([10, 11]), labels, (5.0,))
         self.assertEqual(report["overlap_queries"], 0)
         self.assertIsNone(report["nearest_distance_ms_quantiles"])
 

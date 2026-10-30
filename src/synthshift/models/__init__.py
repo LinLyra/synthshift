@@ -1,2 +1,1 @@
 """Unified model adapters."""
-

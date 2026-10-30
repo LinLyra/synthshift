@@ -8,7 +8,6 @@ from pathlib import Path
 
 from synthshift.data.archive import safe_extract_zip
 
-
 EXPECTED_NESTED_ARCHIVES = {
     "Activity recognition exp.zip",
     "Still exp.zip",
