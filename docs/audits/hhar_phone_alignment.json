@@ -1,0 +1,4774 @@
+{
+  "streams": [
+    {
+      "accelerometer_file": "a__nexus4_1.csv",
+      "gyroscope_file": "a__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 323817,
+      "gyroscope_unique_timestamps": 323823,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9880,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9439,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 323816,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.068115,
+          "0.99": 1.556396,
+          "1.0": 491.823622
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999858,
+            "labelled_pairs": 290858,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999944,
+            "labelled_pairs": 290882,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999991,
+            "labelled_pairs": 290896,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 290897,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 290897,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 323822,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.068115,
+          "0.99": 1.556396,
+          "1.0": 491.823622
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999836,
+            "labelled_pairs": 290856,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.99992,
+            "labelled_pairs": 290881,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999963,
+            "labelled_pairs": 290893,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999981,
+            "labelled_pairs": 290899,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999988,
+            "labelled_pairs": 290901,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "a__nexus4_2.csv",
+      "gyroscope_file": "a__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 323008,
+      "gyroscope_unique_timestamps": 323007,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9978,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9741,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 323007,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.037598,
+          "0.99": 1.525879,
+          "1.0": 101.531982
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999824,
+            "labelled_pairs": 290471,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999947,
+            "labelled_pairs": 290506,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999985,
+            "labelled_pairs": 290517,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 290521,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 290521,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 323005,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.037598,
+          "0.99": 1.525879,
+          "1.0": 18.840081
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999836,
+            "labelled_pairs": 290473,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.99996,
+            "labelled_pairs": 290511,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999988,
+            "labelled_pairs": 290520,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 290524,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 290524,
+            "label_agreement": 0.999993
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "a__s3_1.csv",
+      "gyroscope_file": "a__s3_1.csv",
+      "accelerometer_unique_timestamps": 165911,
+      "gyroscope_unique_timestamps": 339584,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 49,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1513,
+        "duplicate_timestamps": 41
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 165910,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.302,
+          "0.9": 2.265,
+          "0.95": 2.386,
+          "0.99": 2.489,
+          "1.0": 120.091
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.994895,
+            "labelled_pairs": 147286,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999741,
+            "labelled_pairs": 147987,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999777,
+            "labelled_pairs": 147993,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999831,
+            "labelled_pairs": 148002,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 0.99991,
+            "labelled_pairs": 148015,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 339568,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.556,
+          "0.9": 4.515,
+          "0.95": 4.734,
+          "0.99": 5.35066,
+          "1.0": 142.152
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.488026,
+            "labelled_pairs": 147860,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.976073,
+            "labelled_pairs": 295723,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.997037,
+            "labelled_pairs": 302080,
+            "label_agreement": 0.999983
+          },
+          "20.0": {
+            "coverage": 0.997529,
+            "labelled_pairs": 302226,
+            "label_agreement": 0.999983
+          },
+          "40.0": {
+            "coverage": 0.997933,
+            "labelled_pairs": 302333,
+            "label_agreement": 0.999983
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "a__s3_2.csv",
+      "gyroscope_file": "a__s3_2.csv",
+      "accelerometer_unique_timestamps": 162006,
+      "gyroscope_unique_timestamps": 330633,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 104,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1406,
+        "duplicate_timestamps": 36
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 162006,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.377,
+          "0.9": 2.274,
+          "0.95": 2.39,
+          "0.99": 2.484,
+          "1.0": 4.293
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995642,
+            "labelled_pairs": 144026,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 144640,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 144640,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 144640,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 144640,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 330629,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.545,
+          "0.9": 4.335,
+          "0.95": 4.745,
+          "0.99": 5.143,
+          "1.0": 127.097
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.490178,
+            "labelled_pairs": 144706,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.978813,
+            "labelled_pairs": 288933,
+            "label_agreement": 0.999986
+          },
+          "10.0": {
+            "coverage": 0.996803,
+            "labelled_pairs": 294237,
+            "label_agreement": 0.999986
+          },
+          "20.0": {
+            "coverage": 0.997196,
+            "labelled_pairs": 294335,
+            "label_agreement": 0.999986
+          },
+          "40.0": {
+            "coverage": 0.997719,
+            "labelled_pairs": 294480,
+            "label_agreement": 0.999986
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "a__s3mini_1.csv",
+      "gyroscope_file": "a__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 159318,
+      "gyroscope_unique_timestamps": 159307,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 591,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 653,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 159318,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.594,
+          "0.9": 3.174,
+          "0.95": 3.54,
+          "0.99": 4.699,
+          "1.0": 22.689
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.447131,
+            "labelled_pairs": 64171,
+            "label_agreement": 0.999984
+          },
+          "5.0": {
+            "coverage": 0.991928,
+            "labelled_pairs": 142033,
+            "label_agreement": 0.999972
+          },
+          "10.0": {
+            "coverage": 0.99951,
+            "labelled_pairs": 143083,
+            "label_agreement": 0.999972
+          },
+          "20.0": {
+            "coverage": 0.999987,
+            "labelled_pairs": 143148,
+            "label_agreement": 0.999972
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143150,
+            "label_agreement": 0.999972
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 159305,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.594,
+          "0.9": 3.174,
+          "0.95": 3.54,
+          "0.99": 4.669,
+          "1.0": 25.782
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.447117,
+            "labelled_pairs": 64163,
+            "label_agreement": 0.999984
+          },
+          "5.0": {
+            "coverage": 0.99216,
+            "labelled_pairs": 142042,
+            "label_agreement": 0.999972
+          },
+          "10.0": {
+            "coverage": 0.999341,
+            "labelled_pairs": 143053,
+            "label_agreement": 0.999972
+          },
+          "20.0": {
+            "coverage": 0.999987,
+            "labelled_pairs": 143140,
+            "label_agreement": 0.999972
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143142,
+            "label_agreement": 0.999972
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "a__s3mini_2.csv",
+      "gyroscope_file": "a__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 8568,
+      "gyroscope_unique_timestamps": 8568,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 61,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 71,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 8567,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.797,
+          "0.9": 6.01,
+          "0.95": 6.3777,
+          "0.99": 9.3445,
+          "1.0": 122.612
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.093148,
+            "labelled_pairs": 745,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.120929,
+            "labelled_pairs": 964,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.992763,
+            "labelled_pairs": 6298,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.99965,
+            "labelled_pairs": 6351,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999883,
+            "labelled_pairs": 6353,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 8567,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.796,
+          "0.9": 6.01,
+          "0.95": 6.4347,
+          "0.99": 10.00568,
+          "1.0": 116.616
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.093382,
+            "labelled_pairs": 747,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.120229,
+            "labelled_pairs": 960,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.989845,
+            "labelled_pairs": 6276,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.998366,
+            "labelled_pairs": 6343,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.998716,
+            "labelled_pairs": 6346,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__nexus4_1.csv",
+      "gyroscope_file": "b__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 363270,
+      "gyroscope_unique_timestamps": 363264,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8314,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 7977,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 363269,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 0.976563,
+          "0.99": 1.495361,
+          "1.0": 14.404296
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999813,
+            "labelled_pairs": 307138,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999937,
+            "labelled_pairs": 307178,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999983,
+            "labelled_pairs": 307190,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 307196,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 307196,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 363263,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 0.976563,
+          "0.99": 1.495361,
+          "1.0": 464.106236
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999827,
+            "labelled_pairs": 307137,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999948,
+            "labelled_pairs": 307176,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999983,
+            "labelled_pairs": 307186,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 307191,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 307191,
+            "label_agreement": 0.999993
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__nexus4_2.csv",
+      "gyroscope_file": "b__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 366648,
+      "gyroscope_unique_timestamps": 366645,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8058,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8011,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 366647,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 0.976563,
+          "0.99": 1.525879,
+          "1.0": 397.033692
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999749,
+            "labelled_pairs": 312286,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999899,
+            "labelled_pairs": 312336,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 312362,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 312364,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 312364,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 366644,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 0.976563,
+          "0.99": 1.525879,
+          "1.0": 15.808106
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999757,
+            "labelled_pairs": 312286,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.99991,
+            "labelled_pairs": 312333,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 312357,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 312363,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 312363,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__s3_1.csv",
+      "gyroscope_file": "b__s3_1.csv",
+      "accelerometer_unique_timestamps": 183819,
+      "gyroscope_unique_timestamps": 376277,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 38,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1490,
+        "duplicate_timestamps": 80
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 183819,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.282,
+          "0.9": 2.263,
+          "0.95": 2.385,
+          "0.99": 2.487,
+          "1.0": 30.69
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995262,
+            "labelled_pairs": 156756,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.999951,
+            "labelled_pairs": 157486,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999967,
+            "labelled_pairs": 157489,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 157492,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 157495,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 376260,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.553,
+          "0.9": 4.518,
+          "0.95": 4.734,
+          "0.99": 5.442,
+          "1.0": 137.158
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.48854,
+            "labelled_pairs": 157484,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.97607,
+            "labelled_pairs": 314662,
+            "label_agreement": 0.999984
+          },
+          "10.0": {
+            "coverage": 0.994855,
+            "labelled_pairs": 320697,
+            "label_agreement": 0.999984
+          },
+          "20.0": {
+            "coverage": 0.99533,
+            "labelled_pairs": 320841,
+            "label_agreement": 0.999984
+          },
+          "40.0": {
+            "coverage": 0.996191,
+            "labelled_pairs": 321109,
+            "label_agreement": 0.999984
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__s3_2.csv",
+      "gyroscope_file": "b__s3_2.csv",
+      "accelerometer_unique_timestamps": 183297,
+      "gyroscope_unique_timestamps": 374873,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 98,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1594,
+        "duplicate_timestamps": 63
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 183296,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.372,
+          "0.9": 2.273,
+          "0.95": 2.388,
+          "0.99": 2.484,
+          "1.0": 5.314
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99551,
+            "labelled_pairs": 156862,
+            "label_agreement": 0.999994
+          },
+          "5.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 157545,
+            "label_agreement": 0.999994
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 157547,
+            "label_agreement": 0.999994
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 157547,
+            "label_agreement": 0.999994
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 157547,
+            "label_agreement": 0.999994
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 374864,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.549,
+          "0.9": 4.344,
+          "0.95": 4.77,
+          "0.99": 5.204,
+          "1.0": 133.746
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489407,
+            "labelled_pairs": 157708,
+            "label_agreement": 0.999994
+          },
+          "5.0": {
+            "coverage": 0.976466,
+            "labelled_pairs": 314639,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.994883,
+            "labelled_pairs": 320508,
+            "label_agreement": 0.999988
+          },
+          "20.0": {
+            "coverage": 0.995609,
+            "labelled_pairs": 320718,
+            "label_agreement": 0.999988
+          },
+          "40.0": {
+            "coverage": 0.996479,
+            "labelled_pairs": 320980,
+            "label_agreement": 0.999988
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__s3mini_1.csv",
+      "gyroscope_file": "b__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 180471,
+      "gyroscope_unique_timestamps": 180502,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 838,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 868,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 180471,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.327,
+          "0.95": 3.692,
+          "0.99": 4.943,
+          "1.0": 37.175
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.382748,
+            "labelled_pairs": 59422,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990314,
+            "labelled_pairs": 154830,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999213,
+            "labelled_pairs": 156208,
+            "label_agreement": 0.999994
+          },
+          "20.0": {
+            "coverage": 0.999967,
+            "labelled_pairs": 156311,
+            "label_agreement": 0.999994
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 156315,
+            "label_agreement": 0.999994
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 180500,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.356,
+          "0.95": 3.692,
+          "0.99": 4.913,
+          "1.0": 40.009
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.382643,
+            "labelled_pairs": 59423,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990526,
+            "labelled_pairs": 154920,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999191,
+            "labelled_pairs": 156225,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999983,
+            "labelled_pairs": 156333,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 156335,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "b__s3mini_2.csv",
+      "gyroscope_file": "b__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 487,
+      "gyroscope_unique_timestamps": 486,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 11,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 485,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.674,
+          "0.9": 6.5906,
+          "0.95": 8.6056,
+          "0.99": 14.08444,
+          "1.0": 42.449
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.193814,
+            "labelled_pairs": 77,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.272165,
+            "labelled_pairs": 106,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.975258,
+            "labelled_pairs": 331,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.997938,
+            "labelled_pairs": 338,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.997938,
+            "labelled_pairs": 338,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 486,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.674,
+          "0.9": 6.8045,
+          "0.95": 9.07625,
+          "0.99": 14.79655,
+          "1.0": 116.993
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.191358,
+            "labelled_pairs": 76,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.263374,
+            "labelled_pairs": 102,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.965021,
+            "labelled_pairs": 328,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.99177,
+            "labelled_pairs": 339,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.995885,
+            "labelled_pairs": 340,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__nexus4_1.csv",
+      "gyroscope_file": "c__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 299438,
+      "gyroscope_unique_timestamps": 299438,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 7927,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 7484,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 299436,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.556396,
+          "1.0": 369.348204
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999843,
+            "labelled_pairs": 267735,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999977,
+            "labelled_pairs": 267771,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.99999,
+            "labelled_pairs": 267774,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999993,
+            "labelled_pairs": 267775,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 267776,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 299438,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.556396,
+          "1.0": 408.538818
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999836,
+            "labelled_pairs": 267734,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999947,
+            "labelled_pairs": 267765,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.99997,
+            "labelled_pairs": 267772,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999993,
+            "labelled_pairs": 267779,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999993,
+            "labelled_pairs": 267779,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__nexus4_2.csv",
+      "gyroscope_file": "c__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 317803,
+      "gyroscope_unique_timestamps": 317800,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9331,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9142,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 317801,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.007081,
+          "0.99": 1.556396,
+          "1.0": 653.869629
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999805,
+            "labelled_pairs": 287105,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999906,
+            "labelled_pairs": 287132,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999956,
+            "labelled_pairs": 287146,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999972,
+            "labelled_pairs": 287150,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 287154,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 317799,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.007081,
+          "0.99": 1.556396,
+          "1.0": 89.904785
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999811,
+            "labelled_pairs": 287105,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.99995,
+            "labelled_pairs": 287143,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 287153,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 287157,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 287157,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__s3_1.csv",
+      "gyroscope_file": "c__s3_1.csv",
+      "accelerometer_unique_timestamps": 159531,
+      "gyroscope_unique_timestamps": 327303,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 50,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1750,
+        "duplicate_timestamps": 64
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 159530,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.298,
+          "0.9": 2.265,
+          "0.95": 2.386,
+          "0.99": 2.488,
+          "1.0": 80.539
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995368,
+            "labelled_pairs": 142169,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999818,
+            "labelled_pairs": 142797,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.99985,
+            "labelled_pairs": 142802,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999912,
+            "labelled_pairs": 142812,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 0.999962,
+            "labelled_pairs": 142820,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 327301,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.559,
+          "0.9": 4.517,
+          "0.95": 4.768,
+          "0.99": 5.805,
+          "1.0": 170.781
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.487566,
+            "labelled_pairs": 142897,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.97334,
+            "labelled_pairs": 285197,
+            "label_agreement": 0.999986
+          },
+          "10.0": {
+            "coverage": 0.994681,
+            "labelled_pairs": 291543,
+            "label_agreement": 0.999986
+          },
+          "20.0": {
+            "coverage": 0.995341,
+            "labelled_pairs": 291738,
+            "label_agreement": 0.999986
+          },
+          "40.0": {
+            "coverage": 0.996065,
+            "labelled_pairs": 291932,
+            "label_agreement": 0.999986
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__s3_2.csv",
+      "gyroscope_file": "c__s3_2.csv",
+      "accelerometer_unique_timestamps": 156063,
+      "gyroscope_unique_timestamps": 319508,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 88,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1798,
+        "duplicate_timestamps": 48
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 156063,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.376,
+          "0.9": 2.272,
+          "0.95": 2.388,
+          "0.99": 2.482,
+          "1.0": 4.302
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995624,
+            "labelled_pairs": 139716,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 140326,
+            "label_agreement": 0.999979
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 140326,
+            "label_agreement": 0.999979
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 140326,
+            "label_agreement": 0.999979
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 140326,
+            "label_agreement": 0.999979
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 319505,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.551,
+          "0.9": 4.342,
+          "0.95": 4.78,
+          "0.99": 5.279,
+          "1.0": 149.915
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489166,
+            "labelled_pairs": 140525,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 0.975456,
+            "labelled_pairs": 280237,
+            "label_agreement": 0.999982
+          },
+          "10.0": {
+            "coverage": 0.994272,
+            "labelled_pairs": 285638,
+            "label_agreement": 0.999975
+          },
+          "20.0": {
+            "coverage": 0.994901,
+            "labelled_pairs": 285820,
+            "label_agreement": 0.999976
+          },
+          "40.0": {
+            "coverage": 0.995891,
+            "labelled_pairs": 286092,
+            "label_agreement": 0.999976
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__s3mini_1.csv",
+      "gyroscope_file": "c__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 150605,
+      "gyroscope_unique_timestamps": 150640,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 775,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 782,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 150605,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.563,
+          "0.9": 3.204,
+          "0.95": 3.599,
+          "0.99": 4.974,
+          "1.0": 29.259
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.462833,
+            "labelled_pairs": 61552,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990067,
+            "labelled_pairs": 133788,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999336,
+            "labelled_pairs": 134994,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999993,
+            "labelled_pairs": 135081,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 135082,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 150638,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.563,
+          "0.9": 3.204,
+          "0.95": 3.6,
+          "0.99": 5.004,
+          "1.0": 39.854
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.462639,
+            "labelled_pairs": 61539,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.989949,
+            "labelled_pairs": 133811,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999051,
+            "labelled_pairs": 134987,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999967,
+            "labelled_pairs": 135105,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 135109,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "c__s3mini_2.csv",
+      "gyroscope_file": "c__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 13169,
+      "gyroscope_unique_timestamps": 13148,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 167,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 205,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 13167,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.828,
+          "0.9": 6.1924,
+          "0.95": 6.927,
+          "0.99": 10.98168,
+          "1.0": 123.599
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.195489,
+            "labelled_pairs": 2364,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.264069,
+            "labelled_pairs": 3196,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.987241,
+            "labelled_pairs": 11937,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.998937,
+            "labelled_pairs": 12073,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999468,
+            "labelled_pairs": 12075,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 13147,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.828,
+          "0.9": 6.193,
+          "0.95": 7.109,
+          "0.99": 11.71,
+          "1.0": 117.287
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.195558,
+            "labelled_pairs": 2363,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.263558,
+            "labelled_pairs": 3184,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.980604,
+            "labelled_pairs": 11830,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.995969,
+            "labelled_pairs": 12012,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.995969,
+            "labelled_pairs": 12012,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__nexus4_1.csv",
+      "gyroscope_file": "d__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 322433,
+      "gyroscope_unique_timestamps": 322433,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9081,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8897,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 322432,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 307.922364
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999826,
+            "labelled_pairs": 294116,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999922,
+            "labelled_pairs": 294142,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999972,
+            "labelled_pairs": 294155,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999991,
+            "labelled_pairs": 294161,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999991,
+            "labelled_pairs": 294161,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 322432,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 41.003385
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99982,
+            "labelled_pairs": 294114,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999938,
+            "labelled_pairs": 294144,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 294154,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 294156,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 294156,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__nexus4_2.csv",
+      "gyroscope_file": "d__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 327526,
+      "gyroscope_unique_timestamps": 327529,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8565,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8414,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 327525,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 176.14432
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999792,
+            "labelled_pairs": 300527,
+            "label_agreement": 0.99999
+          },
+          "5.0": {
+            "coverage": 0.999915,
+            "labelled_pairs": 300565,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.99996,
+            "labelled_pairs": 300578,
+            "label_agreement": 0.99999
+          },
+          "20.0": {
+            "coverage": 0.999985,
+            "labelled_pairs": 300586,
+            "label_agreement": 0.99999
+          },
+          "40.0": {
+            "coverage": 0.999991,
+            "labelled_pairs": 300588,
+            "label_agreement": 0.99999
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 327528,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 519.40918
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999786,
+            "labelled_pairs": 300529,
+            "label_agreement": 0.99999
+          },
+          "5.0": {
+            "coverage": 0.999911,
+            "labelled_pairs": 300565,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.999954,
+            "labelled_pairs": 300577,
+            "label_agreement": 0.99999
+          },
+          "20.0": {
+            "coverage": 0.999985,
+            "labelled_pairs": 300587,
+            "label_agreement": 0.99999
+          },
+          "40.0": {
+            "coverage": 0.999988,
+            "labelled_pairs": 300588,
+            "label_agreement": 0.99999
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__s3_1.csv",
+      "gyroscope_file": "d__s3_1.csv",
+      "accelerometer_unique_timestamps": 159394,
+      "gyroscope_unique_timestamps": 325674,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 23,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1227,
+        "duplicate_timestamps": 53
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 159394,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.288,
+          "0.9": 2.261,
+          "0.95": 2.383,
+          "0.99": 2.486,
+          "1.0": 75.368
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995583,
+            "labelled_pairs": 146238,
+            "label_agreement": 0.999966
+          },
+          "5.0": {
+            "coverage": 0.999862,
+            "labelled_pairs": 146866,
+            "label_agreement": 0.999966
+          },
+          "10.0": {
+            "coverage": 0.999868,
+            "labelled_pairs": 146867,
+            "label_agreement": 0.999966
+          },
+          "20.0": {
+            "coverage": 0.9999,
+            "labelled_pairs": 146872,
+            "label_agreement": 0.999966
+          },
+          "40.0": {
+            "coverage": 0.99995,
+            "labelled_pairs": 146880,
+            "label_agreement": 0.999966
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 325672,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.552,
+          "0.9": 4.516,
+          "0.95": 4.722,
+          "0.99": 5.201,
+          "1.0": 159.916
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.48941,
+            "labelled_pairs": 146880,
+            "label_agreement": 0.999966
+          },
+          "5.0": {
+            "coverage": 0.97783,
+            "labelled_pairs": 293476,
+            "label_agreement": 0.999973
+          },
+          "10.0": {
+            "coverage": 0.996721,
+            "labelled_pairs": 299178,
+            "label_agreement": 0.999963
+          },
+          "20.0": {
+            "coverage": 0.997058,
+            "labelled_pairs": 299279,
+            "label_agreement": 0.999963
+          },
+          "40.0": {
+            "coverage": 0.997645,
+            "labelled_pairs": 299443,
+            "label_agreement": 0.999963
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__s3_2.csv",
+      "gyroscope_file": "d__s3_2.csv",
+      "accelerometer_unique_timestamps": 155720,
+      "gyroscope_unique_timestamps": 318068,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 95,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1382,
+        "duplicate_timestamps": 33
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 155719,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.371,
+          "0.9": 2.273,
+          "0.95": 2.389,
+          "0.99": 2.482,
+          "1.0": 4.096
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995807,
+            "labelled_pairs": 142517,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143126,
+            "label_agreement": 0.999979
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143126,
+            "label_agreement": 0.999979
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143126,
+            "label_agreement": 0.999979
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143126,
+            "label_agreement": 0.999979
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 318067,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.548,
+          "0.9": 4.339,
+          "0.95": 4.761,
+          "0.99": 5.153,
+          "1.0": 500.599
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489919,
+            "labelled_pairs": 143186,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 0.977794,
+            "labelled_pairs": 285867,
+            "label_agreement": 0.999979
+          },
+          "10.0": {
+            "coverage": 0.996193,
+            "labelled_pairs": 291184,
+            "label_agreement": 0.999979
+          },
+          "20.0": {
+            "coverage": 0.996689,
+            "labelled_pairs": 291313,
+            "label_agreement": 0.999979
+          },
+          "40.0": {
+            "coverage": 0.997277,
+            "labelled_pairs": 291471,
+            "label_agreement": 0.999979
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__s3mini_1.csv",
+      "gyroscope_file": "d__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 155769,
+      "gyroscope_unique_timestamps": 155759,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 485,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 497,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 155768,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.265,
+          "0.95": 3.662,
+          "0.99": 4.852,
+          "1.0": 24.711
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.390716,
+            "labelled_pairs": 55599,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990916,
+            "labelled_pairs": 142709,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999493,
+            "labelled_pairs": 143918,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999968,
+            "labelled_pairs": 143986,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143990,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 155758,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.265,
+          "0.95": 3.662,
+          "0.99": 4.791,
+          "1.0": 20.08
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.390734,
+            "labelled_pairs": 55601,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.991288,
+            "labelled_pairs": 142759,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999371,
+            "labelled_pairs": 143900,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 143984,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 143985,
+            "label_agreement": 0.999993
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "d__s3mini_2.csv",
+      "gyroscope_file": "d__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 246,
+      "gyroscope_unique_timestamps": 246,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 3,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 3,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 245,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.766,
+          "0.9": 6.2972,
+          "0.95": 9.0274,
+          "0.99": 12.53992,
+          "1.0": 18.022
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.195918,
+            "labelled_pairs": 48,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.253061,
+            "labelled_pairs": 62,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.971429,
+            "labelled_pairs": 238,
+            "label_agreement": 0.995798
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 245,
+            "label_agreement": 0.995918
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 245,
+            "label_agreement": 0.995918
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 245,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.826,
+          "0.9": 6.4802,
+          "0.95": 8.7034,
+          "0.99": 12.567,
+          "1.0": 29.211
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.195918,
+            "labelled_pairs": 48,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.257143,
+            "labelled_pairs": 63,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.967347,
+            "labelled_pairs": 237,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.995918,
+            "labelled_pairs": 244,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 245,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__nexus4_1.csv",
+      "gyroscope_file": "e__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 371847,
+      "gyroscope_unique_timestamps": 371841,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9254,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8881,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 371846,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.342774,
+          "1.0": 14.282226
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999774,
+            "labelled_pairs": 301404,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999914,
+            "labelled_pairs": 301444,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 301464,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 301468,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 301468,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 371840,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.342774,
+          "1.0": 1622.10083
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99979,
+            "labelled_pairs": 301404,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999925,
+            "labelled_pairs": 301443,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 301458,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 301461,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 301461,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__nexus4_2.csv",
+      "gyroscope_file": "e__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 396338,
+      "gyroscope_unique_timestamps": 396343,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8547,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8446,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 396337,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 953.302807
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999836,
+            "labelled_pairs": 327079,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999932,
+            "labelled_pairs": 327104,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999987,
+            "labelled_pairs": 327119,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 327121,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 327122,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 396342,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 36.502184
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999823,
+            "labelled_pairs": 327079,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999927,
+            "labelled_pairs": 327112,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.99998,
+            "labelled_pairs": 327130,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 327134,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 327135,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__s3_1.csv",
+      "gyroscope_file": "e__s3_1.csv",
+      "accelerometer_unique_timestamps": 193792,
+      "gyroscope_unique_timestamps": 396216,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 21,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1385,
+        "duplicate_timestamps": 59
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 193792,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.287,
+          "0.9": 2.263,
+          "0.95": 2.385,
+          "0.99": 2.488,
+          "1.0": 55.13
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995263,
+            "labelled_pairs": 156766,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999954,
+            "labelled_pairs": 157506,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999959,
+            "labelled_pairs": 157507,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999969,
+            "labelled_pairs": 157509,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.99999,
+            "labelled_pairs": 157513,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 396199,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.549,
+          "0.9": 4.516,
+          "0.95": 4.723,
+          "0.99": 5.3,
+          "1.0": 142.661
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489077,
+            "labelled_pairs": 157475,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.977372,
+            "labelled_pairs": 314760,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.996181,
+            "labelled_pairs": 320796,
+            "label_agreement": 0.999991
+          },
+          "20.0": {
+            "coverage": 0.996552,
+            "labelled_pairs": 320888,
+            "label_agreement": 0.999991
+          },
+          "40.0": {
+            "coverage": 0.997138,
+            "labelled_pairs": 321027,
+            "label_agreement": 0.999991
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__s3_2.csv",
+      "gyroscope_file": "e__s3_2.csv",
+      "accelerometer_unique_timestamps": 190731,
+      "gyroscope_unique_timestamps": 389960,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 106,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1688,
+        "duplicate_timestamps": 46
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 190730,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.377,
+          "0.9": 2.272,
+          "0.95": 2.39,
+          "0.99": 2.484,
+          "1.0": 5.044
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99558,
+            "labelled_pairs": 153781,
+            "label_agreement": 0.99998
+          },
+          "5.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 154429,
+            "label_agreement": 0.999981
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 154429,
+            "label_agreement": 0.999981
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 154429,
+            "label_agreement": 0.999981
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 154429,
+            "label_agreement": 0.999981
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 389959,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.55,
+          "0.9": 4.335,
+          "0.95": 4.772,
+          "0.99": 5.171,
+          "1.0": 465.737
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489249,
+            "labelled_pairs": 154488,
+            "label_agreement": 0.999974
+          },
+          "5.0": {
+            "coverage": 0.976792,
+            "labelled_pairs": 308428,
+            "label_agreement": 0.999981
+          },
+          "10.0": {
+            "coverage": 0.995292,
+            "labelled_pairs": 314209,
+            "label_agreement": 0.999981
+          },
+          "20.0": {
+            "coverage": 0.995838,
+            "labelled_pairs": 314362,
+            "label_agreement": 0.999981
+          },
+          "40.0": {
+            "coverage": 0.9966,
+            "labelled_pairs": 314587,
+            "label_agreement": 0.999981
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__s3mini_1.csv",
+      "gyroscope_file": "e__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 187498,
+      "gyroscope_unique_timestamps": 187509,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 769,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 781,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 187497,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.296,
+          "0.95": 3.66,
+          "0.99": 4.822,
+          "1.0": 35.227
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.367334,
+            "labelled_pairs": 56776,
+            "label_agreement": 0.99993
+          },
+          "5.0": {
+            "coverage": 0.990981,
+            "labelled_pairs": 151163,
+            "label_agreement": 0.999967
+          },
+          "10.0": {
+            "coverage": 0.99952,
+            "labelled_pairs": 152423,
+            "label_agreement": 0.999967
+          },
+          "20.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 152486,
+            "label_agreement": 0.999967
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 152489,
+            "label_agreement": 0.999967
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 187508,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.296,
+          "0.95": 3.66,
+          "0.99": 4.761,
+          "1.0": 36.652
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.367328,
+            "labelled_pairs": 56779,
+            "label_agreement": 0.99993
+          },
+          "5.0": {
+            "coverage": 0.991504,
+            "labelled_pairs": 151244,
+            "label_agreement": 0.999967
+          },
+          "10.0": {
+            "coverage": 0.999424,
+            "labelled_pairs": 152412,
+            "label_agreement": 0.999967
+          },
+          "20.0": {
+            "coverage": 0.999968,
+            "labelled_pairs": 152491,
+            "label_agreement": 0.999967
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 152496,
+            "label_agreement": 0.999967
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "e__s3mini_2.csv",
+      "gyroscope_file": "e__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 5116,
+      "gyroscope_unique_timestamps": 5114,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 39,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 34,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 5116,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.8575,
+          "0.9": 6.133,
+          "0.95": 6.469,
+          "0.99": 10.13055,
+          "1.0": 123.08
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.078577,
+            "labelled_pairs": 265,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.101446,
+            "labelled_pairs": 343,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.988272,
+            "labelled_pairs": 3679,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999218,
+            "labelled_pairs": 3720,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999805,
+            "labelled_pairs": 3723,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 5111,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.859,
+          "0.9": 6.103,
+          "0.95": 6.484,
+          "0.99": 10.0332,
+          "1.0": 115.632
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.078263,
+            "labelled_pairs": 262,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.100959,
+            "labelled_pairs": 338,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.989239,
+            "labelled_pairs": 3678,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999022,
+            "labelled_pairs": 3715,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999609,
+            "labelled_pairs": 3718,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "f__nexus4_1.csv",
+      "gyroscope_file": "f__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 374309,
+      "gyroscope_unique_timestamps": 374309,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8841,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8589,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 374308,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 363.879833
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999842,
+            "labelled_pairs": 318301,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999952,
+            "labelled_pairs": 318331,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999987,
+            "labelled_pairs": 318338,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 318339,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 318339,
+            "label_agreement": 0.999997
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 374308,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 623.255409
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999832,
+            "labelled_pairs": 318298,
+            "label_agreement": 0.999997
+          },
+          "5.0": {
+            "coverage": 0.999952,
+            "labelled_pairs": 318327,
+            "label_agreement": 0.999997
+          },
+          "10.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 318337,
+            "label_agreement": 0.999997
+          },
+          "20.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 318337,
+            "label_agreement": 0.999997
+          },
+          "40.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 318337,
+            "label_agreement": 0.999997
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "f__nexus4_2.csv",
+      "gyroscope_file": "f__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 362131,
+      "gyroscope_unique_timestamps": 362135,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8441,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8447,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 362130,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 451.68311
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99984,
+            "labelled_pairs": 308116,
+            "label_agreement": 0.99999
+          },
+          "5.0": {
+            "coverage": 0.999959,
+            "labelled_pairs": 308151,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 308158,
+            "label_agreement": 0.99999
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 308158,
+            "label_agreement": 0.99999
+          },
+          "40.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 308158,
+            "label_agreement": 0.99999
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 362134,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 307.891846
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999826,
+            "labelled_pairs": 308115,
+            "label_agreement": 0.99999
+          },
+          "5.0": {
+            "coverage": 0.999945,
+            "labelled_pairs": 308156,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.999983,
+            "labelled_pairs": 308168,
+            "label_agreement": 0.99999
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 308170,
+            "label_agreement": 0.99999
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 308170,
+            "label_agreement": 0.99999
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "f__s3_2.csv",
+      "gyroscope_file": "f__s3_2.csv",
+      "accelerometer_unique_timestamps": 180068,
+      "gyroscope_unique_timestamps": 368270,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 101,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1633,
+        "duplicate_timestamps": 44
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 180067,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.373,
+          "0.9": 2.273,
+          "0.95": 2.389,
+          "0.99": 2.483,
+          "1.0": 15.673
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995468,
+            "labelled_pairs": 152415,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 153091,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 153091,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 153092,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 153092,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 368268,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.55,
+          "0.9": 4.345,
+          "0.95": 4.774,
+          "0.99": 5.20033,
+          "1.0": 136.425
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.48948,
+            "labelled_pairs": 153250,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.976351,
+            "labelled_pairs": 305717,
+            "label_agreement": 0.999984
+          },
+          "10.0": {
+            "coverage": 0.994862,
+            "labelled_pairs": 311453,
+            "label_agreement": 0.999984
+          },
+          "20.0": {
+            "coverage": 0.995411,
+            "labelled_pairs": 311621,
+            "label_agreement": 0.999984
+          },
+          "40.0": {
+            "coverage": 0.99619,
+            "labelled_pairs": 311856,
+            "label_agreement": 0.999984
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "f__s3mini_1.csv",
+      "gyroscope_file": "f__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 179425,
+      "gyroscope_unique_timestamps": 179424,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 792,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 809,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 179425,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.296,
+          "0.95": 3.662,
+          "0.99": 4.94176,
+          "1.0": 33.396
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.376441,
+            "labelled_pairs": 57360,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990375,
+            "labelled_pairs": 151855,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999393,
+            "labelled_pairs": 153190,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 153282,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 153284,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 179422,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.296,
+          "0.95": 3.662,
+          "0.99": 4.883,
+          "1.0": 40.438
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.376492,
+            "labelled_pairs": 57366,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990648,
+            "labelled_pairs": 151881,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999348,
+            "labelled_pairs": 153176,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999978,
+            "labelled_pairs": 153269,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 153272,
+            "label_agreement": 0.999987
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "f__s3mini_2.csv",
+      "gyroscope_file": "f__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 25335,
+      "gyroscope_unique_timestamps": 25335,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 108,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 109,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 25335,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 3.906,
+          "0.9": 5.92,
+          "0.95": 6.225,
+          "0.99": 9.18466,
+          "1.0": 121.52
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.143714,
+            "labelled_pairs": 3574,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.520071,
+            "labelled_pairs": 13082,
+            "label_agreement": 0.999924
+          },
+          "10.0": {
+            "coverage": 0.993645,
+            "labelled_pairs": 19851,
+            "label_agreement": 0.99995
+          },
+          "20.0": {
+            "coverage": 0.999487,
+            "labelled_pairs": 19964,
+            "label_agreement": 0.99995
+          },
+          "40.0": {
+            "coverage": 0.999882,
+            "labelled_pairs": 19970,
+            "label_agreement": 0.99995
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 25333,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 3.906,
+          "0.9": 5.92,
+          "0.95": 6.226,
+          "0.99": 9.35568,
+          "1.0": 117.363
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.143528,
+            "labelled_pairs": 3571,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.519678,
+            "labelled_pairs": 13072,
+            "label_agreement": 0.999847
+          },
+          "10.0": {
+            "coverage": 0.993171,
+            "labelled_pairs": 19838,
+            "label_agreement": 0.999899
+          },
+          "20.0": {
+            "coverage": 0.999053,
+            "labelled_pairs": 19948,
+            "label_agreement": 0.9999
+          },
+          "40.0": {
+            "coverage": 0.999329,
+            "labelled_pairs": 19953,
+            "label_agreement": 0.9999
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__nexus4_1.csv",
+      "gyroscope_file": "g__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 361234,
+      "gyroscope_unique_timestamps": 361226,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9750,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9245,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 361233,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.037598,
+          "0.99": 1.556396,
+          "1.0": 412.109375
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999815,
+            "labelled_pairs": 294190,
+            "label_agreement": 0.99998
+          },
+          "5.0": {
+            "coverage": 0.999942,
+            "labelled_pairs": 294222,
+            "label_agreement": 0.99998
+          },
+          "10.0": {
+            "coverage": 0.999981,
+            "labelled_pairs": 294233,
+            "label_agreement": 0.99998
+          },
+          "20.0": {
+            "coverage": 0.999983,
+            "labelled_pairs": 294233,
+            "label_agreement": 0.99998
+          },
+          "40.0": {
+            "coverage": 0.999986,
+            "labelled_pairs": 294233,
+            "label_agreement": 0.99998
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 361225,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854492,
+          "0.95": 1.037598,
+          "0.99": 1.556396,
+          "1.0": 568.939209
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999834,
+            "labelled_pairs": 294188,
+            "label_agreement": 0.99998
+          },
+          "5.0": {
+            "coverage": 0.999939,
+            "labelled_pairs": 294221,
+            "label_agreement": 0.99998
+          },
+          "10.0": {
+            "coverage": 0.999964,
+            "labelled_pairs": 294229,
+            "label_agreement": 0.99998
+          },
+          "20.0": {
+            "coverage": 0.999978,
+            "labelled_pairs": 294233,
+            "label_agreement": 0.99998
+          },
+          "40.0": {
+            "coverage": 0.999978,
+            "labelled_pairs": 294233,
+            "label_agreement": 0.99998
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__nexus4_2.csv",
+      "gyroscope_file": "g__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 372149,
+      "gyroscope_unique_timestamps": 372163,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9514,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9333,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 372148,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854493,
+          "0.95": 1.068115,
+          "0.99": 1.556396,
+          "1.0": 472.564697
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999852,
+            "labelled_pairs": 298997,
+            "label_agreement": 0.999846
+          },
+          "5.0": {
+            "coverage": 0.99996,
+            "labelled_pairs": 299030,
+            "label_agreement": 0.999846
+          },
+          "10.0": {
+            "coverage": 0.999989,
+            "labelled_pairs": 299040,
+            "label_agreement": 0.999846
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 299041,
+            "label_agreement": 0.999846
+          },
+          "40.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 299041,
+            "label_agreement": 0.999846
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 372162,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.854493,
+          "0.95": 1.068115,
+          "0.99": 1.556396,
+          "1.0": 15.930176
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99982,
+            "labelled_pairs": 298998,
+            "label_agreement": 0.999846
+          },
+          "5.0": {
+            "coverage": 0.999938,
+            "labelled_pairs": 299037,
+            "label_agreement": 0.999846
+          },
+          "10.0": {
+            "coverage": 0.999984,
+            "labelled_pairs": 299054,
+            "label_agreement": 0.999846
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 299060,
+            "label_agreement": 0.999846
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 299060,
+            "label_agreement": 0.999846
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__s3_1.csv",
+      "gyroscope_file": "g__s3_1.csv",
+      "accelerometer_unique_timestamps": 194851,
+      "gyroscope_unique_timestamps": 400047,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 39,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1885,
+        "duplicate_timestamps": 67
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 194851,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.291,
+          "0.9": 2.263,
+          "0.95": 2.385,
+          "0.99": 2.4875,
+          "1.0": 59.548
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995417,
+            "labelled_pairs": 155296,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999867,
+            "labelled_pairs": 155991,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999897,
+            "labelled_pairs": 155997,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999933,
+            "labelled_pairs": 156004,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999969,
+            "labelled_pairs": 156011,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 400043,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.562,
+          "0.9": 4.517,
+          "0.95": 4.773,
+          "0.99": 5.77358,
+          "1.0": 159.031
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.4873,
+            "labelled_pairs": 156038,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.972813,
+            "labelled_pairs": 311618,
+            "label_agreement": 0.99999
+          },
+          "10.0": {
+            "coverage": 0.995825,
+            "labelled_pairs": 319027,
+            "label_agreement": 0.999991
+          },
+          "20.0": {
+            "coverage": 0.996695,
+            "labelled_pairs": 319319,
+            "label_agreement": 0.999991
+          },
+          "40.0": {
+            "coverage": 0.997195,
+            "labelled_pairs": 319442,
+            "label_agreement": 0.999991
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__s3_2.csv",
+      "gyroscope_file": "g__s3_2.csv",
+      "accelerometer_unique_timestamps": 188462,
+      "gyroscope_unique_timestamps": 385663,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 90,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1835,
+        "duplicate_timestamps": 57
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 188462,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.372,
+          "0.9": 2.274,
+          "0.95": 2.389,
+          "0.99": 2.483,
+          "1.0": 4.727
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995553,
+            "labelled_pairs": 150812,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151483,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151483,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151483,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151483,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 385645,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.551,
+          "0.9": 4.343,
+          "0.95": 4.776,
+          "0.99": 5.232,
+          "1.0": 147.875
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489116,
+            "labelled_pairs": 151574,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.975838,
+            "labelled_pairs": 302489,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.994783,
+            "labelled_pairs": 308362,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.995415,
+            "labelled_pairs": 308547,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 0.996315,
+            "labelled_pairs": 308787,
+            "label_agreement": 0.999987
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__s3mini_1.csv",
+      "gyroscope_file": "g__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 186599,
+      "gyroscope_unique_timestamps": 186615,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 923,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 955,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 186598,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.533,
+          "0.9": 3.234,
+          "0.95": 3.631,
+          "0.99": 4.944,
+          "1.0": 27.92
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.469399,
+            "labelled_pairs": 70952,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990273,
+            "labelled_pairs": 150114,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999405,
+            "labelled_pairs": 151401,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999979,
+            "labelled_pairs": 151479,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151481,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 186614,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.533,
+          "0.9": 3.234,
+          "0.95": 3.631,
+          "0.99": 4.913,
+          "1.0": 30.42
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.469327,
+            "labelled_pairs": 70952,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.990456,
+            "labelled_pairs": 150164,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999277,
+            "labelled_pairs": 151393,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999962,
+            "labelled_pairs": 151486,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 151491,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "g__s3mini_2.csv",
+      "gyroscope_file": "g__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 13049,
+      "gyroscope_unique_timestamps": 13046,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 136,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 122,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 13049,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.798,
+          "0.9": 6.285,
+          "0.95": 7.0476,
+          "0.99": 10.55756,
+          "1.0": 122.162
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.127749,
+            "labelled_pairs": 1572,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.170664,
+            "labelled_pairs": 2083,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.987892,
+            "labelled_pairs": 12391,
+            "label_agreement": 0.999919
+          },
+          "20.0": {
+            "coverage": 0.999004,
+            "labelled_pairs": 12530,
+            "label_agreement": 0.99992
+          },
+          "40.0": {
+            "coverage": 0.999693,
+            "labelled_pairs": 12539,
+            "label_agreement": 0.99992
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 13044,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.798,
+          "0.9": 6.256,
+          "0.95": 7.04785,
+          "0.99": 11.68328,
+          "1.0": 130.676
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.127492,
+            "labelled_pairs": 1569,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.1705,
+            "labelled_pairs": 2078,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.982214,
+            "labelled_pairs": 12318,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.99655,
+            "labelled_pairs": 12493,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.99747,
+            "labelled_pairs": 12504,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__nexus4_1.csv",
+      "gyroscope_file": "h__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 309724,
+      "gyroscope_unique_timestamps": 309743,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9582,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9046,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 309723,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.037597,
+          "0.99": 1.525879,
+          "1.0": 24.652368
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999871,
+            "labelled_pairs": 282562,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999961,
+            "labelled_pairs": 282588,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 282596,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 282596,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 282597,
+            "label_agreement": 0.999993
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 309742,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.037597,
+          "0.99": 1.525879,
+          "1.0": 10.742187
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999826,
+            "labelled_pairs": 282566,
+            "label_agreement": 0.999993
+          },
+          "5.0": {
+            "coverage": 0.999955,
+            "labelled_pairs": 282602,
+            "label_agreement": 0.999993
+          },
+          "10.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 282613,
+            "label_agreement": 0.999993
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 282613,
+            "label_agreement": 0.999993
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 282613,
+            "label_agreement": 0.999993
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__nexus4_2.csv",
+      "gyroscope_file": "h__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 308884,
+      "gyroscope_unique_timestamps": 308875,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 9207,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8983,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 308884,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.342774,
+          "1.0": 664.717794
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999767,
+            "labelled_pairs": 283803,
+            "label_agreement": 0.999806
+          },
+          "5.0": {
+            "coverage": 0.999916,
+            "labelled_pairs": 283844,
+            "label_agreement": 0.999806
+          },
+          "10.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 283867,
+            "label_agreement": 0.999806
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 283868,
+            "label_agreement": 0.999806
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 283868,
+            "label_agreement": 0.999806
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 308873,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.342774,
+          "1.0": 100.006104
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999783,
+            "labelled_pairs": 283798,
+            "label_agreement": 0.999803
+          },
+          "5.0": {
+            "coverage": 0.99988,
+            "labelled_pairs": 283827,
+            "label_agreement": 0.999803
+          },
+          "10.0": {
+            "coverage": 0.999948,
+            "labelled_pairs": 283847,
+            "label_agreement": 0.999803
+          },
+          "20.0": {
+            "coverage": 0.999977,
+            "labelled_pairs": 283856,
+            "label_agreement": 0.999803
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 283862,
+            "label_agreement": 0.999803
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__s3_1.csv",
+      "gyroscope_file": "h__s3_1.csv",
+      "accelerometer_unique_timestamps": 160695,
+      "gyroscope_unique_timestamps": 329212,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 46,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1593,
+        "duplicate_timestamps": 50
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 160695,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.303,
+          "0.9": 2.264,
+          "0.95": 2.386,
+          "0.99": 2.488,
+          "1.0": 60.081
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.994959,
+            "labelled_pairs": 144995,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 0.999876,
+            "labelled_pairs": 145722,
+            "label_agreement": 0.999979
+          },
+          "10.0": {
+            "coverage": 0.999907,
+            "labelled_pairs": 145727,
+            "label_agreement": 0.999979
+          },
+          "20.0": {
+            "coverage": 0.999938,
+            "labelled_pairs": 145732,
+            "label_agreement": 0.999979
+          },
+          "40.0": {
+            "coverage": 0.999975,
+            "labelled_pairs": 145738,
+            "label_agreement": 0.999979
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 329210,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.556,
+          "0.9": 4.516,
+          "0.95": 4.744,
+          "0.99": 5.449,
+          "1.0": 803.447
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.487737,
+            "labelled_pairs": 145604,
+            "label_agreement": 0.999979
+          },
+          "5.0": {
+            "coverage": 0.975159,
+            "labelled_pairs": 291154,
+            "label_agreement": 0.999983
+          },
+          "10.0": {
+            "coverage": 0.995842,
+            "labelled_pairs": 297261,
+            "label_agreement": 0.999983
+          },
+          "20.0": {
+            "coverage": 0.996385,
+            "labelled_pairs": 297427,
+            "label_agreement": 0.999983
+          },
+          "40.0": {
+            "coverage": 0.996923,
+            "labelled_pairs": 297594,
+            "label_agreement": 0.999983
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__s3_2.csv",
+      "gyroscope_file": "h__s3_2.csv",
+      "accelerometer_unique_timestamps": 159187,
+      "gyroscope_unique_timestamps": 325338,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 113,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1528,
+        "duplicate_timestamps": 50
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 159186,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.373,
+          "0.9": 2.273,
+          "0.95": 2.39,
+          "0.99": 2.483,
+          "1.0": 14.803
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.99559,
+            "labelled_pairs": 144740,
+            "label_agreement": 0.999972
+          },
+          "5.0": {
+            "coverage": 0.999987,
+            "labelled_pairs": 145379,
+            "label_agreement": 0.999972
+          },
+          "10.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 145380,
+            "label_agreement": 0.999972
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 145380,
+            "label_agreement": 0.999972
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 145380,
+            "label_agreement": 0.999972
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 325336,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.549,
+          "0.9": 4.345,
+          "0.95": 4.759,
+          "0.99": 5.169,
+          "1.0": 135.631
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489322,
+            "labelled_pairs": 145370,
+            "label_agreement": 0.999972
+          },
+          "5.0": {
+            "coverage": 0.977291,
+            "labelled_pairs": 290376,
+            "label_agreement": 0.999972
+          },
+          "10.0": {
+            "coverage": 0.995417,
+            "labelled_pairs": 295756,
+            "label_agreement": 0.999973
+          },
+          "20.0": {
+            "coverage": 0.99589,
+            "labelled_pairs": 295885,
+            "label_agreement": 0.999973
+          },
+          "40.0": {
+            "coverage": 0.99661,
+            "labelled_pairs": 296077,
+            "label_agreement": 0.999973
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__s3mini_1.csv",
+      "gyroscope_file": "h__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 159279,
+      "gyroscope_unique_timestamps": 159287,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 687,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 755,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 159279,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.564,
+          "0.9": 3.204,
+          "0.95": 3.54,
+          "0.99": 4.913,
+          "1.0": 24.034
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.457863,
+            "labelled_pairs": 65852,
+            "label_agreement": 0.99997
+          },
+          "5.0": {
+            "coverage": 0.990514,
+            "labelled_pairs": 143129,
+            "label_agreement": 0.999986
+          },
+          "10.0": {
+            "coverage": 0.99924,
+            "labelled_pairs": 144385,
+            "label_agreement": 0.999986
+          },
+          "20.0": {
+            "coverage": 0.999981,
+            "labelled_pairs": 144478,
+            "label_agreement": 0.999986
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 144480,
+            "label_agreement": 0.999986
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 159285,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.564,
+          "0.9": 3.204,
+          "0.95": 3.54,
+          "0.99": 4.883,
+          "1.0": 41.837
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.457852,
+            "labelled_pairs": 65855,
+            "label_agreement": 0.99997
+          },
+          "5.0": {
+            "coverage": 0.990639,
+            "labelled_pairs": 143149,
+            "label_agreement": 0.999986
+          },
+          "10.0": {
+            "coverage": 0.999046,
+            "labelled_pairs": 144351,
+            "label_agreement": 0.999986
+          },
+          "20.0": {
+            "coverage": 0.999969,
+            "labelled_pairs": 144475,
+            "label_agreement": 0.999986
+          },
+          "40.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 144478,
+            "label_agreement": 0.999986
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "h__s3mini_2.csv",
+      "gyroscope_file": "h__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 18410,
+      "gyroscope_unique_timestamps": 18396,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 208,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 194,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 18409,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.707,
+          "0.9": 6.133,
+          "0.95": 6.8056,
+          "0.99": 10.18884,
+          "1.0": 123.509
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.124559,
+            "labelled_pairs": 2092,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.161497,
+            "labelled_pairs": 2718,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.988918,
+            "labelled_pairs": 16243,
+            "label_agreement": 0.999938
+          },
+          "20.0": {
+            "coverage": 0.999077,
+            "labelled_pairs": 16400,
+            "label_agreement": 0.999939
+          },
+          "40.0": {
+            "coverage": 0.999674,
+            "labelled_pairs": 16409,
+            "label_agreement": 0.999939
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 18395,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.707,
+          "0.9": 6.104,
+          "0.95": 6.836,
+          "0.99": 11.4146,
+          "1.0": 117.259
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.12449,
+            "labelled_pairs": 2089,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.162164,
+            "labelled_pairs": 2728,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.985431,
+            "labelled_pairs": 16171,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.997282,
+            "labelled_pairs": 16357,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.997825,
+            "labelled_pairs": 16364,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__nexus4_1.csv",
+      "gyroscope_file": "i__nexus4_1.csv",
+      "accelerometer_unique_timestamps": 365725,
+      "gyroscope_unique_timestamps": 365740,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8614,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8327,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 365724,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 670.246533
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999751,
+            "labelled_pairs": 314034,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.999891,
+            "labelled_pairs": 314079,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999962,
+            "labelled_pairs": 314103,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 314115,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 314115,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 365739,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 110.076904
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999713,
+            "labelled_pairs": 314036,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.99988,
+            "labelled_pairs": 314088,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.999956,
+            "labelled_pairs": 314111,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 314122,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 314124,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__nexus4_2.csv",
+      "gyroscope_file": "i__nexus4_2.csv",
+      "accelerometer_unique_timestamps": 374699,
+      "gyroscope_unique_timestamps": 374691,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8571,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 8589,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 374698,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 540.428434
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999845,
+            "labelled_pairs": 325529,
+            "label_agreement": 0.999994
+          },
+          "5.0": {
+            "coverage": 0.999941,
+            "labelled_pairs": 325557,
+            "label_agreement": 0.999994
+          },
+          "10.0": {
+            "coverage": 0.999981,
+            "labelled_pairs": 325564,
+            "label_agreement": 0.999994
+          },
+          "20.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 325567,
+            "label_agreement": 0.999994
+          },
+          "40.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 325567,
+            "label_agreement": 0.999994
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 374690,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 0.76294,
+          "0.9": 0.823975,
+          "0.95": 1.00708,
+          "0.99": 1.525879,
+          "1.0": 100.036621
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.999867,
+            "labelled_pairs": 325529,
+            "label_agreement": 0.999994
+          },
+          "5.0": {
+            "coverage": 0.999947,
+            "labelled_pairs": 325554,
+            "label_agreement": 0.999994
+          },
+          "10.0": {
+            "coverage": 0.999992,
+            "labelled_pairs": 325566,
+            "label_agreement": 0.999994
+          },
+          "20.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 325567,
+            "label_agreement": 0.999994
+          },
+          "40.0": {
+            "coverage": 0.999997,
+            "labelled_pairs": 325567,
+            "label_agreement": 0.999994
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__s3_1.csv",
+      "gyroscope_file": "i__s3_1.csv",
+      "accelerometer_unique_timestamps": 184073,
+      "gyroscope_unique_timestamps": 376312,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 28,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1231,
+        "duplicate_timestamps": 76
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 184072,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.286,
+          "0.9": 2.261,
+          "0.95": 2.382,
+          "0.99": 2.482,
+          "1.0": 45.327
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.996295,
+            "labelled_pairs": 157715,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.999935,
+            "labelled_pairs": 158289,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999951,
+            "labelled_pairs": 158292,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999962,
+            "labelled_pairs": 158294,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 158300,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 376311,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.559,
+          "0.9": 4.515,
+          "0.95": 4.726,
+          "0.99": 5.291,
+          "1.0": 136.64
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489335,
+            "labelled_pairs": 158350,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.977295,
+            "labelled_pairs": 316299,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.996136,
+            "labelled_pairs": 322391,
+            "label_agreement": 0.999984
+          },
+          "20.0": {
+            "coverage": 0.996537,
+            "labelled_pairs": 322500,
+            "label_agreement": 0.999984
+          },
+          "40.0": {
+            "coverage": 0.997119,
+            "labelled_pairs": 322656,
+            "label_agreement": 0.999985
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__s3_2.csv",
+      "gyroscope_file": "i__s3_2.csv",
+      "accelerometer_unique_timestamps": 182149,
+      "gyroscope_unique_timestamps": 372581,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 97,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 1772,
+        "duplicate_timestamps": 52
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 182148,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 1.375,
+          "0.9": 2.272,
+          "0.95": 2.388,
+          "0.99": 2.483,
+          "1.0": 5.105
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.995652,
+            "labelled_pairs": 158096,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.999995,
+            "labelled_pairs": 158774,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 158775,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 158775,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 158775,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 372579,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.55,
+          "0.9": 4.34,
+          "0.95": 4.774,
+          "0.99": 5.199,
+          "1.0": 508.441
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.489448,
+            "labelled_pairs": 158924,
+            "label_agreement": 0.999987
+          },
+          "5.0": {
+            "coverage": 0.976169,
+            "labelled_pairs": 317078,
+            "label_agreement": 0.999984
+          },
+          "10.0": {
+            "coverage": 0.995204,
+            "labelled_pairs": 323196,
+            "label_agreement": 0.999985
+          },
+          "20.0": {
+            "coverage": 0.995762,
+            "labelled_pairs": 323344,
+            "label_agreement": 0.999985
+          },
+          "40.0": {
+            "coverage": 0.996567,
+            "labelled_pairs": 323564,
+            "label_agreement": 0.999985
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__s3mini_1.csv",
+      "gyroscope_file": "i__s3mini_1.csv",
+      "accelerometer_unique_timestamps": 180512,
+      "gyroscope_unique_timestamps": 180495,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 690,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 681,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 180510,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.388,
+          "0.95": 3.723,
+          "0.99": 5.097,
+          "1.0": 32.953
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.373453,
+            "labelled_pairs": 57706,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.989363,
+            "labelled_pairs": 154331,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.99928,
+            "labelled_pairs": 155861,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999972,
+            "labelled_pairs": 155965,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 1.0,
+            "labelled_pairs": 155968,
+            "label_agreement": 0.999987
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 180495,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 2.655,
+          "0.9": 3.388,
+          "0.95": 3.723,
+          "0.99": 5.06506,
+          "1.0": 40.281
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.373528,
+            "labelled_pairs": 57715,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.989573,
+            "labelled_pairs": 154352,
+            "label_agreement": 0.999987
+          },
+          "10.0": {
+            "coverage": 0.999269,
+            "labelled_pairs": 155832,
+            "label_agreement": 0.999987
+          },
+          "20.0": {
+            "coverage": 0.999961,
+            "labelled_pairs": 155939,
+            "label_agreement": 0.999987
+          },
+          "40.0": {
+            "coverage": 0.999994,
+            "labelled_pairs": 155943,
+            "label_agreement": 0.999987
+          }
+        }
+      }
+    },
+    {
+      "accelerometer_file": "i__s3mini_2.csv",
+      "gyroscope_file": "i__s3mini_2.csv",
+      "accelerometer_unique_timestamps": 11323,
+      "gyroscope_unique_timestamps": 11311,
+      "accelerometer_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 121,
+        "duplicate_timestamps": 0
+      },
+      "gyroscope_cleaning": {
+        "invalid_timestamps": 0,
+        "reversals": 113,
+        "duplicate_timestamps": 0
+      },
+      "accelerometer_to_gyroscope": {
+        "overlap_queries": 11322,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.644,
+          "0.9": 5.981,
+          "0.95": 6.58795,
+          "0.99": 9.57344,
+          "1.0": 123.783
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.156774,
+            "labelled_pairs": 1618,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.264264,
+            "labelled_pairs": 2775,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.992492,
+            "labelled_pairs": 10157,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.999117,
+            "labelled_pairs": 10219,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.999382,
+            "labelled_pairs": 10222,
+            "label_agreement": 1.0
+          }
+        }
+      },
+      "gyroscope_to_accelerometer": {
+        "overlap_queries": 11310,
+        "nearest_distance_ms_quantiles": {
+          "0.5": 5.644,
+          "0.9": 5.982,
+          "0.95": 6.56,
+          "0.99": 10.09394,
+          "1.0": 117.379
+        },
+        "matches_by_tolerance_ms": {
+          "2.5": {
+            "coverage": 0.157029,
+            "labelled_pairs": 1618,
+            "label_agreement": 1.0
+          },
+          "5.0": {
+            "coverage": 0.264898,
+            "labelled_pairs": 2777,
+            "label_agreement": 1.0
+          },
+          "10.0": {
+            "coverage": 0.989478,
+            "labelled_pairs": 10114,
+            "label_agreement": 1.0
+          },
+          "20.0": {
+            "coverage": 0.99832,
+            "labelled_pairs": 10203,
+            "label_agreement": 1.0
+          },
+          "40.0": {
+            "coverage": 0.998497,
+            "labelled_pairs": 10205,
+            "label_agreement": 1.0
+          }
+        }
+      }
+    }
+  ]
+}

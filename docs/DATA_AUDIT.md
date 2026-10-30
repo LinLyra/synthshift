@@ -88,3 +88,6 @@ Machine-readable reports:
 - `docs/audits/hhar_phone_accelerometer.json`
 - `docs/audits/hhar_phone_gyroscope.json`
 - `docs/audits/hhar_phone_coverage.json`
+
+The subsequent timestamp-matching results and preprocessing decisions are in
+`docs/ALIGNMENT_AUDIT.md`.

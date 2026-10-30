@@ -58,6 +58,19 @@ matched encoder, and sensor-subset controls.
 3. No parameter may be estimated from the final target evaluation partition.
 4. All split manifests and hashes will be versioned.
 
+## Preprocessing decisions supported by the raw-data audit
+
+- Primary six-axis candidate devices: `nexus4_1`, `nexus4_2`, `s3_1`, `s3_2`,
+  and `s3mini_1`.
+- `s3mini_2` is exploratory because of limited duration and atypical timing;
+  Galaxy S+ is accelerometer-only because gyroscope data are unavailable.
+- Each sensor is segmented before interpolation, then resampled independently
+  to a common 50 Hz grid.
+- No window may cross a long gap, acquisition-order clock reversal, activity
+  transition, or missing-label interval.
+- A 10 ms nearest-neighbour match is an alignment diagnostic only and is not
+  used as the training-time fusion method.
+
 ## Two deployment settings
 
 ### S0 — target-free
