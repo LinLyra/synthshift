@@ -20,8 +20,8 @@
     },
     {
       "name": "fold_2",
-      "train_users": ["a", "b", "c", "e", "i"],
-      "validation_users": ["f"],
+      "train_users": ["a", "c", "e", "f", "i"],
+      "validation_users": ["b"],
       "test_users": ["d", "g", "h"],
       "target_calibration_users": ["c", "i"]
     }

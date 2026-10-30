@@ -1,5 +1,5 @@
 {
-  "split_config_sha256": "e93db1104e1c6d6e4979ccd762d3e8f9ed828584420148800944ec1fbd3a231e",
+  "split_config_sha256": "afa91bbc439e03c87c1b8a0007772a4c393a56cd206ea9a7951e8d5727381d61",
   "window_definition": "5 seconds at 50 Hz, 50% overlap within legal segments",
   "folds": [
     {
@@ -82,25 +82,25 @@
       "name": "fold_2",
       "partitions": {
         "train_users": {
-          "windows": 12097,
+          "windows": 11600,
           "windows_by_label": {
-            "bike": 1662,
-            "sit": 2520,
-            "stairsdown": 1331,
-            "stairsup": 1815,
-            "stand": 1980,
-            "walk": 2789
+            "bike": 1432,
+            "sit": 2536,
+            "stairsdown": 1250,
+            "stairsup": 1737,
+            "stand": 2018,
+            "walk": 2627
           }
         },
         "validation_users": {
-          "windows": 1942,
+          "windows": 2439,
           "windows_by_label": {
-            "bike": 243,
-            "sit": 354,
-            "stairsdown": 215,
-            "stairsup": 332,
-            "stand": 334,
-            "walk": 464
+            "bike": 473,
+            "sit": 338,
+            "stairsdown": 296,
+            "stairsup": 410,
+            "stand": 296,
+            "walk": 626
           }
         },
         "test_users": {
