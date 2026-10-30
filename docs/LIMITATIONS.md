@@ -29,4 +29,7 @@ Initial known limitations:
   `s3mini_1` residual in all folds, but their association disappears when that
   device is removed. They support a severe-device case study, not a general
   timing explanation across the remaining phones.
+- Low-motion spectral shape is directionally associated with gain residuals,
+  but calibration-user device rankings are unstable in several folds. Without
+  a shared mechanical input, these spectra cannot identify hardware filters.
 
