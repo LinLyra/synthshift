@@ -8,6 +8,20 @@ The primary study uses phone accelerometer and gyroscope recordings. Raw data ar
 not redistributed by this repository. Download them from UCI and retain the
 original archive and checksum outside Git.
 
+The official archive source and retrieval policy are versioned in
+`configs/data/hhar_source.yaml`. After download, validate the ZIP and create a
+reviewable manifest:
+
+```bash
+python scripts/record_data_manifest.py \
+  data/raw/hhar/hhar-uci-344.zip \
+  --source-url 'https://archive.ics.uci.edu/static/public/344/heterogeneity%2Bactivity%2Brecognition.zip' \
+  --output docs/manifests/hhar_raw_manifest.json
+```
+
+The committed manifest records the archive SHA-256, byte size, retrieval time, ZIP member
+sizes, CRCs, and an integrity-test result. The archive itself remains ignored.
+
 Expected activity files include:
 
 - `Phones_accelerometer.csv`

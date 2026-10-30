@@ -1,0 +1,13 @@
+dataset: HHAR
+uci_id: 344
+doi: 10.24432/C5689X
+landing_page: https://archive.ics.uci.edu/dataset/344/heterogeneity+human+activity+recognition
+download_url: https://archive.ics.uci.edu/static/public/344/heterogeneity%2Bactivity%2Brecognition.zip
+license: CC-BY-4.0
+retrieval_policy:
+  source: official UCI archive only
+  raw_archive_immutable: true
+  checksum_algorithm: sha256
+  commit_raw_data: false
+  commit_manifest: true
+
