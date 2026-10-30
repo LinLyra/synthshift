@@ -7,11 +7,13 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from scipy.signal import butter, sosfiltfilt
 
 SENSOR_COLUMNS = ["Creation_Time", "x", "y", "z", "gt"]
 VALID_LABELS = {"bike", "sit", "stairsdown", "stairsup", "stand", "walk"}
 DEFAULT_MAX_GAP_NS = 100_000_000
 DEFAULT_MAX_REORDER_NS = 1_000_000_000
+DEFAULT_ANTI_ALIAS_CUTOFF_HZ = 20.0
 
 
 def split_segments(
@@ -93,8 +95,9 @@ def resample_overlap(
     end_ns: int,
     *,
     rate_hz: int = 50,
+    anti_alias_cutoff_hz: float = DEFAULT_ANTI_ALIAS_CUTOFF_HZ,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Interpolate both sensors on a deterministic shared integer clock grid."""
+    """Anti-alias and interpolate both sensors onto a shared integer clock grid."""
 
     step_ns = int(1_000_000_000 / rate_hz)
     grid_start = ((start_ns + step_ns - 1) // step_ns) * step_ns
@@ -102,8 +105,18 @@ def resample_overlap(
     channels = []
     for sensor in (acc, gyro):
         source_time = sensor["Creation_Time"].to_numpy(dtype=np.int64)
-        axes = [np.interp(timestamps, source_time, sensor[axis]) for axis in ("x", "y", "z")]
-        channels.extend(axes)
+        source_axes = sensor[["x", "y", "z"]].to_numpy(dtype=np.float64)
+        positive_delta = np.diff(source_time)
+        positive_delta = positive_delta[positive_delta > 0]
+        source_rate_hz = 1e9 / float(np.median(positive_delta))
+        if source_rate_hz > rate_hz * 1.1 and len(source_axes) > 18:
+            filter_sections = butter(
+                4, anti_alias_cutoff_hz, btype="lowpass", fs=source_rate_hz, output="sos"
+            )
+            source_axes = sosfiltfilt(filter_sections, source_axes, axis=0)
+        channels.extend(
+            np.interp(timestamps, source_time, source_axes[:, axis]) for axis in range(3)
+        )
     return timestamps, np.stack(channels, axis=1).astype(np.float32)
 
 
@@ -176,6 +189,8 @@ def preprocess_directories(shard_root: Path, output_root: Path, manifest_path: P
         json.dumps(
             {
                 "rate_hz": 50,
+                "anti_alias_filter": "4th-order zero-phase Butterworth",
+                "anti_alias_cutoff_hz": DEFAULT_ANTI_ALIAS_CUTOFF_HZ,
                 "max_gap_ns": DEFAULT_MAX_GAP_NS,
                 "max_local_reorder_ns": DEFAULT_MAX_REORDER_NS,
                 "channels": ["ax", "ay", "az", "gx", "gy", "gz"],

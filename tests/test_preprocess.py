@@ -51,6 +51,22 @@ class PreprocessTest(unittest.TestCase):
         np.testing.assert_array_equal(timestamps, [0, 20_000_000, 40_000_000])
         self.assertEqual(values.shape, (3, 6))
 
+    def test_downsampling_suppresses_above_nyquist_signal(self) -> None:
+        source_rate = 200
+        timestamps = np.arange(0, 2 * source_rate, dtype=np.int64) * 5_000_000
+        signal = np.sin(2 * np.pi * 40 * np.arange(len(timestamps)) / source_rate)
+        frame = pd.DataFrame(
+            {
+                "Creation_Time": timestamps,
+                "x": signal,
+                "y": signal,
+                "z": signal,
+                "gt": ["walk"] * len(timestamps),
+            }
+        )
+        _, values = resample_overlap(frame, frame, int(timestamps[0]), int(timestamps[-1]))
+        self.assertLess(float(np.sqrt(np.mean(values[:, 0] ** 2))), 0.1)
+
     def test_window_count(self) -> None:
         self.assertEqual(window_count(127, 128, 64), 0)
         self.assertEqual(window_count(128, 128, 64), 1)
