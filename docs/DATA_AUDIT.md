@@ -32,6 +32,12 @@ full-coverage peer without a duration and overlap analysis.
 The accelerometer stream for user `f` on `s3_1` is absent while the gyroscope
 stream is present. That user-device stream cannot contribute six-axis windows.
 
+There are 53 user-device streams with both sensors: nine for each six-axis
+device except `s3_1`, which has eight. Before exact timestamp matching, the
+conservative labelled-duration upper bounds are approximately 3.5–4.2 hours per
+well-covered device, versus only 20.7 minutes total for `s3mini_2`. This confirms
+that `s3mini_2` should not drive the confirmatory device-ranking result.
+
 ## Raw timing diagnostics
 
 Creation timestamps are consistent with nanoseconds. Median effective rates
@@ -81,3 +87,4 @@ Machine-readable reports:
 
 - `docs/audits/hhar_phone_accelerometer.json`
 - `docs/audits/hhar_phone_gyroscope.json`
+- `docs/audits/hhar_phone_coverage.json`

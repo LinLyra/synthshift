@@ -1,0 +1,2579 @@
+{
+  "accelerometer": {
+    "path": "data/extracted/hhar/activity_recognition_exp/Activity recognition exp/Phones_accelerometer.csv",
+    "streams": {
+      "a|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 174.796,
+          "bike": 199.649,
+          "sit": 315.299,
+          "stairsdown": 236.466,
+          "stairsup": 226.914,
+          "stand": 289.999,
+          "walk": 266.563
+        },
+        "end_creation_time": 1424698515410853376,
+        "large_gaps": 67,
+        "nonpositive_intervals": 9880,
+        "rows": 323817,
+        "start_creation_time": 1424565699953704192
+      },
+      "a|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 170.784,
+          "bike": 235.319,
+          "sit": 313.05,
+          "stairsdown": 204.493,
+          "stairsup": 227.271,
+          "stand": 300.74,
+          "walk": 258.637
+        },
+        "end_creation_time": 1424700362955426304,
+        "large_gaps": 72,
+        "nonpositive_intervals": 9978,
+        "rows": 323008,
+        "start_creation_time": 1424698479964626432
+      },
+      "a|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 184.414,
+          "bike": 234.729,
+          "sit": 308.154,
+          "stairsdown": 219.396,
+          "stairsup": 220.714,
+          "stand": 283.487,
+          "walk": 249.978
+        },
+        "end_creation_time": 54300337511000,
+        "large_gaps": 67,
+        "nonpositive_intervals": 49,
+        "rows": 165911,
+        "start_creation_time": 52546413802000
+      },
+      "a|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 177.906,
+          "bike": 222.853,
+          "sit": 304.524,
+          "stairsdown": 196.526,
+          "stairsup": 225.158,
+          "stand": 286.89,
+          "walk": 243.354
+        },
+        "end_creation_time": 275957389754000,
+        "large_gaps": 65,
+        "nonpositive_intervals": 104,
+        "rows": 162006,
+        "start_creation_time": 274248797337000
+      },
+      "a|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 187.279,
+          "bike": 261.914,
+          "sit": 311.988,
+          "stairsdown": 229.252,
+          "stairsup": 245.79,
+          "stand": 297.15,
+          "walk": 257.929
+        },
+        "end_creation_time": 15991285029000,
+        "large_gaps": 8,
+        "nonpositive_intervals": 591,
+        "rows": 159318,
+        "start_creation_time": 14347532400000
+      },
+      "a|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 30.953,
+          "bike": 3.08,
+          "stairsdown": 7.634,
+          "stairsup": 13.626,
+          "stand": 7.027,
+          "walk": 65.566
+        },
+        "end_creation_time": 6705557949000,
+        "large_gaps": 25,
+        "nonpositive_intervals": 61,
+        "rows": 8568,
+        "start_creation_time": 6578381685000
+      },
+      "a|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 212.73,
+          "bike": 299.75,
+          "sit": 309.16,
+          "stairsdown": 262.967,
+          "stairsup": 224.97,
+          "stand": 300.241,
+          "walk": 273.69
+        },
+        "end_creation_time": 282244562254000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 109496,
+        "start_creation_time": 280361071531000
+      },
+      "a|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 212.721,
+          "bike": 299.75,
+          "sit": 309.171,
+          "stairsdown": 262.899,
+          "stairsup": 225.041,
+          "stand": 300.25,
+          "walk": 273.689
+        },
+        "end_creation_time": 12234801815000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 110396,
+        "start_creation_time": 10351292263000
+      },
+      "b|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 291.904,
+          "bike": 319.478,
+          "sit": 249.51,
+          "stairsdown": 219.094,
+          "stairsup": 248.41,
+          "stand": 229.003,
+          "walk": 333.253
+        },
+        "end_creation_time": 1424786889806460928,
+        "large_gaps": 99,
+        "nonpositive_intervals": 8314,
+        "rows": 363270,
+        "start_creation_time": 1424784654098003712
+      },
+      "b|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 283.135,
+          "bike": 342.776,
+          "sit": 205.91,
+          "stairsdown": 238.864,
+          "stairsup": 269.058,
+          "stand": 234.622,
+          "walk": 334.82
+        },
+        "end_creation_time": 1424788728115937536,
+        "large_gaps": 89,
+        "nonpositive_intervals": 8058,
+        "rows": 366648,
+        "start_creation_time": 1424786496082027776
+      },
+      "b|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 272.35,
+          "bike": 307.762,
+          "sit": 248.497,
+          "stairsdown": 213.841,
+          "stairsup": 279.741,
+          "stand": 251.064,
+          "walk": 323.331
+        },
+        "end_creation_time": 141083407855000,
+        "large_gaps": 115,
+        "nonpositive_intervals": 38,
+        "rows": 183819,
+        "start_creation_time": 139093126536000
+      },
+      "b|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 264.7,
+          "bike": 335.034,
+          "sit": 263.872,
+          "stairsdown": 200.663,
+          "stairsup": 254.205,
+          "stand": 239.568,
+          "walk": 322.737
+        },
+        "end_creation_time": 351675051624000,
+        "large_gaps": 123,
+        "nonpositive_intervals": 98,
+        "rows": 183297,
+        "start_creation_time": 349697893956000
+      },
+      "b|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 283.084,
+          "bike": 367.625,
+          "sit": 284.533,
+          "stairsdown": 242.976,
+          "stairsup": 288.981,
+          "stand": 294.417,
+          "walk": 337.542
+        },
+        "end_creation_time": 9926345918000,
+        "large_gaps": 5,
+        "nonpositive_intervals": 838,
+        "rows": 180471,
+        "start_creation_time": 8051403452000
+      },
+      "b|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 2.43,
+          "bike": 2.8,
+          "stairsdown": 1.544,
+          "stand": 1.791
+        },
+        "end_creation_time": 79545398687000,
+        "large_gaps": 5,
+        "nonpositive_intervals": 8,
+        "rows": 487,
+        "start_creation_time": 79537022940000
+      },
+      "b|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 334.201,
+          "bike": 385.73,
+          "sit": 308.729,
+          "stairsdown": 265.948,
+          "stairsup": 297.651,
+          "stand": 315.89,
+          "walk": 329.28
+        },
+        "end_creation_time": 12556321973000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 135491,
+        "start_creation_time": 10318892285000
+      },
+      "b|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 334.182,
+          "bike": 385.76,
+          "sit": 308.73,
+          "stairsdown": 265.969,
+          "stairsup": 297.63,
+          "stand": 315.91,
+          "walk": 329.279
+        },
+        "end_creation_time": 100596791923000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 135285,
+        "start_creation_time": 98359342033000
+      },
+      "c|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 163.84,
+          "bike": 161.052,
+          "sit": 276.707,
+          "stairsdown": 208.762,
+          "stairsup": 266.406,
+          "stand": 205.596,
+          "walk": 289.061
+        },
+        "end_creation_time": 1424695506524692480,
+        "large_gaps": 109,
+        "nonpositive_intervals": 7927,
+        "rows": 299438,
+        "start_creation_time": 1424693579039503360
+      },
+      "c|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 160.531,
+          "bike": 212.701,
+          "sit": 270.236,
+          "stairsdown": 219.331,
+          "stairsup": 249.406,
+          "stand": 282.49,
+          "walk": 284.717
+        },
+        "end_creation_time": 1424697355199420160,
+        "large_gaps": 96,
+        "nonpositive_intervals": 9331,
+        "rows": 317803,
+        "start_creation_time": 1424695423410546432
+      },
+      "c|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 171.843,
+          "bike": 201.741,
+          "sit": 273.441,
+          "stairsdown": 207.7,
+          "stairsup": 256.696,
+          "stand": 237.798,
+          "walk": 296.001
+        },
+        "end_creation_time": 51461049074000,
+        "large_gaps": 105,
+        "nonpositive_intervals": 50,
+        "rows": 159531,
+        "start_creation_time": 49733527800000
+      },
+      "c|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 162.968,
+          "bike": 188.207,
+          "sit": 286.441,
+          "stairsdown": 206.541,
+          "stairsup": 234.675,
+          "stand": 239.884,
+          "walk": 287.676
+        },
+        "end_creation_time": 273180901052000,
+        "large_gaps": 90,
+        "nonpositive_intervals": 88,
+        "rows": 156063,
+        "start_creation_time": 271502681178000
+      },
+      "c|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 173.726,
+          "bike": 212.319,
+          "sit": 294.637,
+          "stairsdown": 217.222,
+          "stairsup": 282.808,
+          "stand": 259.645,
+          "walk": 314.404
+        },
+        "end_creation_time": 13298652196000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 775,
+        "rows": 150605,
+        "start_creation_time": 11729251700000
+      },
+      "c|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 18.512,
+          "bike": 28.72,
+          "sit": 2.899,
+          "stairsdown": 58.691,
+          "stairsup": 47.619,
+          "stand": 10.13,
+          "walk": 55.061
+        },
+        "end_creation_time": 6516028100000,
+        "large_gaps": 28,
+        "nonpositive_intervals": 167,
+        "rows": 13169,
+        "start_creation_time": 6298638037000
+      },
+      "c|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 219.492,
+          "bike": 279.64,
+          "sit": 294.22,
+          "stairsdown": 263.319,
+          "stairsup": 265.18,
+          "stand": 309.76,
+          "walk": 300.12
+        },
+        "end_creation_time": 279236282316000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 114790,
+        "start_creation_time": 277304552336000
+      },
+      "c|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 219.49,
+          "bike": 279.65,
+          "sit": 294.25,
+          "stairsdown": 263.321,
+          "stairsup": 265.17,
+          "stand": 309.76,
+          "walk": 300.13
+        },
+        "end_creation_time": 9226531856000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 115399,
+        "start_creation_time": 7294762264000
+      },
+      "d|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 148.19,
+          "bike": 196.059,
+          "sit": 278.217,
+          "stairsdown": 203.7,
+          "stairsup": 265.923,
+          "stand": 273.401,
+          "walk": 322.914
+        },
+        "end_creation_time": 1424783503731576320,
+        "large_gaps": 44,
+        "nonpositive_intervals": 9081,
+        "rows": 322433,
+        "start_creation_time": 1424781680336504576
+      },
+      "d|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 142.149,
+          "bike": 243.837,
+          "sit": 269.363,
+          "stairsdown": 190.568,
+          "stairsup": 256.275,
+          "stand": 289.848,
+          "walk": 321.518
+        },
+        "end_creation_time": 1424785348909357824,
+        "large_gaps": 45,
+        "nonpositive_intervals": 8565,
+        "rows": 327526,
+        "start_creation_time": 1424783522182081280
+      },
+      "d|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 127.914,
+          "bike": 188.884,
+          "sit": 289.754,
+          "stairsdown": 184.654,
+          "stairsup": 264.72,
+          "stand": 269.571,
+          "walk": 306.395
+        },
+        "end_creation_time": 138056446048000,
+        "large_gaps": 72,
+        "nonpositive_intervals": 23,
+        "rows": 159394,
+        "start_creation_time": 136366969617000
+      },
+      "d|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 130.229,
+          "bike": 201.779,
+          "sit": 273.791,
+          "stairsdown": 177.853,
+          "stairsup": 247.498,
+          "stand": 252.547,
+          "walk": 309.858
+        },
+        "end_creation_time": 348663733630000,
+        "large_gaps": 68,
+        "nonpositive_intervals": 95,
+        "rows": 155720,
+        "start_creation_time": 347016206069000
+      },
+      "d|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 140.019,
+          "bike": 214.597,
+          "sit": 308.638,
+          "stairsdown": 187.889,
+          "stairsup": 282.956,
+          "stand": 276.213,
+          "walk": 318.105
+        },
+        "end_creation_time": 7071212757000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 485,
+        "rows": 155769,
+        "start_creation_time": 5463172772000
+      },
+      "d|s3mini_2": {
+        "duration_seconds_by_label": {
+          "sit": 1.49,
+          "stairsdown": 1.12,
+          "stairsup": 1.62
+        },
+        "end_creation_time": 79535320283000,
+        "large_gaps": 3,
+        "nonpositive_intervals": 3,
+        "rows": 246,
+        "start_creation_time": 79531122572000
+      },
+      "d|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 170.67,
+          "bike": 256.23,
+          "sit": 298.719,
+          "stairsdown": 232.42,
+          "stairsup": 268.958,
+          "stand": 287.02,
+          "walk": 312.702
+        },
+        "end_creation_time": 9173601239000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 108018,
+        "start_creation_time": 7346882214000
+      },
+      "d|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 170.671,
+          "bike": 256.219,
+          "sit": 298.71,
+          "stairsdown": 232.399,
+          "stairsup": 268.981,
+          "stand": 287.03,
+          "walk": 312.7
+        },
+        "end_creation_time": 97214042381000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 108018,
+        "start_creation_time": 95387332298000
+      },
+      "e|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 369.168,
+          "bike": 265.676,
+          "sit": 291.108,
+          "stairsdown": 203.414,
+          "stairsup": 220.348,
+          "stand": 277.058,
+          "walk": 321.8
+        },
+        "end_creation_time": 1424789464107205632,
+        "large_gaps": 105,
+        "nonpositive_intervals": 9254,
+        "rows": 371847,
+        "start_creation_time": 1424787192805494528
+      },
+      "e|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 363.419,
+          "bike": 335.878,
+          "sit": 290.833,
+          "stairsdown": 221.067,
+          "stairsup": 241.651,
+          "stand": 283.134,
+          "walk": 330.717
+        },
+        "end_creation_time": 1424791305945345792,
+        "large_gaps": 81,
+        "nonpositive_intervals": 8547,
+        "rows": 396338,
+        "start_creation_time": 1424789037672958464
+      },
+      "e|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 374.941,
+          "bike": 282.578,
+          "sit": 283.874,
+          "stairsdown": 219.739,
+          "stairsup": 220.814,
+          "stand": 286.62,
+          "walk": 318.296
+        },
+        "end_creation_time": 143399875425000,
+        "large_gaps": 91,
+        "nonpositive_intervals": 21,
+        "rows": 193792,
+        "start_creation_time": 141338440427000
+      },
+      "e|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 372.737,
+          "bike": 270.412,
+          "sit": 283.721,
+          "stairsdown": 209.734,
+          "stairsup": 225.102,
+          "stand": 281.61,
+          "walk": 314.378
+        },
+        "end_creation_time": 353949545163000,
+        "large_gaps": 89,
+        "nonpositive_intervals": 106,
+        "rows": 190731,
+        "start_creation_time": 351920699886000
+      },
+      "e|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 404.992,
+          "bike": 306.164,
+          "sit": 297.688,
+          "stairsdown": 225.688,
+          "stairsup": 267.985,
+          "stand": 311.767,
+          "walk": 333.513
+        },
+        "end_creation_time": 12086003056000,
+        "large_gaps": 3,
+        "nonpositive_intervals": 769,
+        "rows": 187498,
+        "start_creation_time": 10145692623000
+      },
+      "e|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 20.144,
+          "bike": 10.493,
+          "sit": 2.296,
+          "stairsdown": 13.659,
+          "stairsup": 16.245,
+          "walk": 12.743
+        },
+        "end_creation_time": 79620416119000,
+        "large_gaps": 11,
+        "nonpositive_intervals": 39,
+        "rows": 5116,
+        "start_creation_time": 79545675910000
+      },
+      "e|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 459.609,
+          "bike": 344.9,
+          "sit": 296.501,
+          "stairsdown": 267.019,
+          "stairsup": 268.8,
+          "stand": 310.77,
+          "walk": 323.691
+        },
+        "end_creation_time": 15130641736000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 135061,
+        "start_creation_time": 12859352155000
+      },
+      "e|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 459.602,
+          "bike": 344.898,
+          "sit": 296.49,
+          "stairsdown": 267.02,
+          "stairsup": 268.79,
+          "stand": 310.83,
+          "walk": 323.68
+        },
+        "end_creation_time": 103171091362000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 134616,
+        "start_creation_time": 100899792320000
+      },
+      "f|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 297.236,
+          "bike": 279.502,
+          "sit": 288.875,
+          "stairsdown": 249.859,
+          "stairsup": 273.548,
+          "stand": 262.553,
+          "walk": 309.896
+        },
+        "end_creation_time": 1424781175852690688,
+        "large_gaps": 90,
+        "nonpositive_intervals": 8841,
+        "rows": 374309,
+        "start_creation_time": 1424778971776814336
+      },
+      "f|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 280.947,
+          "bike": 285.498,
+          "sit": 258.101,
+          "stairsdown": 210.9,
+          "stairsup": 246.306,
+          "stand": 290.78,
+          "walk": 314.7
+        },
+        "end_creation_time": 1424783017687652864,
+        "large_gaps": 97,
+        "nonpositive_intervals": 8441,
+        "rows": 362131,
+        "start_creation_time": 1424780813614038016
+      },
+      "f|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 277.422,
+          "bike": 282.289,
+          "sit": 272.036,
+          "stairsdown": 209.796,
+          "stairsup": 266.226,
+          "stand": 246.804,
+          "walk": 293.974
+        },
+        "end_creation_time": 346628224585000,
+        "large_gaps": 107,
+        "nonpositive_intervals": 101,
+        "rows": 180068,
+        "start_creation_time": 344695040259000
+      },
+      "f|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 283.496,
+          "bike": 284.474,
+          "sit": 295.457,
+          "stairsdown": 249.844,
+          "stairsup": 320.047,
+          "stand": 310.321,
+          "walk": 322.162
+        },
+        "end_creation_time": 5074102216000,
+        "large_gaps": 8,
+        "nonpositive_intervals": 792,
+        "rows": 179425,
+        "start_creation_time": 3211472486000
+      },
+      "f|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 80.42,
+          "bike": 1.092,
+          "sit": 4.09,
+          "stairsdown": 108.05,
+          "stairsup": 140.879
+        },
+        "end_creation_time": 79527966449000,
+        "large_gaps": 12,
+        "nonpositive_intervals": 108,
+        "rows": 25335,
+        "start_creation_time": 79206833767000
+      },
+      "f|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 339.356,
+          "bike": 369.79,
+          "sit": 302.5,
+          "stairsdown": 275.679,
+          "stairsup": 295.121,
+          "stand": 314.21,
+          "walk": 307.373
+        },
+        "end_creation_time": 6842382398000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 131802,
+        "start_creation_time": 4638352399000
+      },
+      "f|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 339.359,
+          "bike": 369.78,
+          "sit": 302.51,
+          "stairsdown": 275.675,
+          "stairsup": 295.115,
+          "stand": 314.25,
+          "walk": 307.37
+        },
+        "end_creation_time": 94882831932000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 131461,
+        "start_creation_time": 92678772300000
+      },
+      "g|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 353.724,
+          "bike": 235.296,
+          "sit": 305.279,
+          "stairsdown": 208.56,
+          "stairsup": 203.548,
+          "stand": 276.988,
+          "walk": 318.737
+        },
+        "end_creation_time": 1424689042747871232,
+        "large_gaps": 130,
+        "nonpositive_intervals": 9750,
+        "rows": 361234,
+        "start_creation_time": 1424686728648746240
+      },
+      "g|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 385.9,
+          "bike": 245.876,
+          "sit": 296.444,
+          "stairsdown": 207.818,
+          "stairsup": 202.887,
+          "stand": 273.744,
+          "walk": 343.728
+        },
+        "end_creation_time": 1424690890803675648,
+        "large_gaps": 113,
+        "nonpositive_intervals": 9514,
+        "rows": 372149,
+        "start_creation_time": 1424688581006905344
+      },
+      "g|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 399.647,
+          "bike": 220.341,
+          "sit": 294.326,
+          "stairsdown": 245.734,
+          "stairsup": 230.972,
+          "stand": 278.735,
+          "walk": 333.954
+        },
+        "end_creation_time": 45291831367000,
+        "large_gaps": 111,
+        "nonpositive_intervals": 39,
+        "rows": 194851,
+        "start_creation_time": 43199341050000
+      },
+      "g|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 382.487,
+          "bike": 220.173,
+          "sit": 278.068,
+          "stairsdown": 219.083,
+          "stairsup": 213.382,
+          "stand": 292.028,
+          "walk": 330.133
+        },
+        "end_creation_time": 267062462536000,
+        "large_gaps": 116,
+        "nonpositive_intervals": 90,
+        "rows": 188462,
+        "start_creation_time": 265034652846000
+      },
+      "g|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 436.136,
+          "bike": 232.809,
+          "sit": 321.903,
+          "stairsdown": 257.605,
+          "stairsup": 253.066,
+          "stand": 328.922,
+          "walk": 348.718
+        },
+        "end_creation_time": 7296664768000,
+        "large_gaps": 8,
+        "nonpositive_intervals": 923,
+        "rows": 186599,
+        "start_creation_time": 5358244937000
+      },
+      "g|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 9.071,
+          "bike": 1.027,
+          "sit": 3.509,
+          "stairsdown": 56.39,
+          "stairsup": 55.337,
+          "stand": 33.931,
+          "walk": 51.686
+        },
+        "end_creation_time": 4321587740000,
+        "large_gaps": 19,
+        "nonpositive_intervals": 136,
+        "rows": 13049,
+        "start_creation_time": 4117455286000
+      },
+      "g|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 488.671,
+          "bike": 303.61,
+          "sit": 311.48,
+          "stairsdown": 273.6,
+          "stairsup": 248.09,
+          "stand": 343.39,
+          "walk": 342.47
+        },
+        "end_creation_time": 272771892332000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 136080,
+        "start_creation_time": 270460582273000
+      },
+      "g|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 488.702,
+          "bike": 303.62,
+          "sit": 311.45,
+          "stairsdown": 273.578,
+          "stairsup": 248.111,
+          "stand": 343.46,
+          "walk": 342.459
+        },
+        "end_creation_time": 2762132289000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 135273,
+        "start_creation_time": 450772396000
+      },
+      "h|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 143.053,
+          "bike": 207.132,
+          "sit": 315.508,
+          "stairsdown": 232.966,
+          "stairsup": 247.024,
+          "stand": 229.531,
+          "walk": 257.359
+        },
+        "end_creation_time": 1424701024551152896,
+        "large_gaps": 87,
+        "nonpositive_intervals": 9582,
+        "rows": 309724,
+        "start_creation_time": 1424699112131391232
+      },
+      "h|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 132.728,
+          "bike": 237.498,
+          "sit": 316.105,
+          "stairsdown": 215.789,
+          "stairsup": 236.176,
+          "stand": 223.056,
+          "walk": 265.32
+        },
+        "end_creation_time": 1424702874856563712,
+        "large_gaps": 96,
+        "nonpositive_intervals": 9207,
+        "rows": 308884,
+        "start_creation_time": 1424700960186756608
+      },
+      "h|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 153.369,
+          "bike": 244.835,
+          "sit": 304.329,
+          "stairsdown": 235.464,
+          "stairsup": 227.839,
+          "stand": 234.038,
+          "walk": 250.035
+        },
+        "end_creation_time": 56555020294000,
+        "large_gaps": 89,
+        "nonpositive_intervals": 46,
+        "rows": 160695,
+        "start_creation_time": 54832090400000
+      },
+      "h|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 142.301,
+          "bike": 243.854,
+          "sit": 308.546,
+          "stairsdown": 235.501,
+          "stairsup": 227.04,
+          "stand": 226.693,
+          "walk": 250.308
+        },
+        "end_creation_time": 278157548489000,
+        "large_gaps": 78,
+        "nonpositive_intervals": 113,
+        "rows": 159187,
+        "start_creation_time": 276461279809000
+      },
+      "h|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 188.628,
+          "bike": 247.127,
+          "sit": 308.275,
+          "stairsdown": 250.489,
+          "stairsup": 279.35,
+          "stand": 300.1,
+          "walk": 257.064
+        },
+        "end_creation_time": 18130041632000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 687,
+        "rows": 159279,
+        "start_creation_time": 16474512185000
+      },
+      "h|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 31.23,
+          "bike": 26.774,
+          "sit": 55.812,
+          "stairsdown": 63.653,
+          "stairsup": 52.372,
+          "walk": 58.847
+        },
+        "end_creation_time": 7085852187000,
+        "large_gaps": 19,
+        "nonpositive_intervals": 208,
+        "rows": 18410,
+        "start_creation_time": 6801965921000
+      },
+      "h|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 183.29,
+          "bike": 275.69,
+          "sit": 308.22,
+          "stairsdown": 297.271,
+          "stairsup": 270.129,
+          "stand": 311.69,
+          "walk": 268.39
+        },
+        "end_creation_time": 284755942350000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 113043,
+        "start_creation_time": 282841272276000
+      },
+      "h|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 183.309,
+          "bike": 275.69,
+          "sit": 308.22,
+          "stairsdown": 297.291,
+          "stairsup": 270.13,
+          "stand": 311.67,
+          "walk": 268.35
+        },
+        "end_creation_time": 14746181850000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 113079,
+        "start_creation_time": 12831522304000
+      },
+      "i|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 271.522,
+          "bike": 241.761,
+          "sit": 305.157,
+          "stairsdown": 239.226,
+          "stairsup": 253.161,
+          "stand": 281.157,
+          "walk": 317.706
+        },
+        "end_creation_time": 1424778556886558464,
+        "large_gaps": 85,
+        "nonpositive_intervals": 8614,
+        "rows": 365725,
+        "start_creation_time": 1424776363071798784
+      },
+      "i|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 256.701,
+          "bike": 309.664,
+          "sit": 304.115,
+          "stairsdown": 246.159,
+          "stairsup": 254.031,
+          "stand": 265.797,
+          "walk": 319.715
+        },
+        "end_creation_time": 1424780398718857728,
+        "large_gaps": 79,
+        "nonpositive_intervals": 8571,
+        "rows": 374699,
+        "start_creation_time": 1424778205003269632
+      },
+      "i|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 264.52,
+          "bike": 286.109,
+          "sit": 297.034,
+          "stairsdown": 233.07,
+          "stairsup": 253.336,
+          "stand": 243.754,
+          "walk": 308.132
+        },
+        "end_creation_time": 133624112602000,
+        "large_gaps": 110,
+        "nonpositive_intervals": 28,
+        "rows": 184073,
+        "start_creation_time": 131648890433000
+      },
+      "i|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 240.813,
+          "bike": 293.027,
+          "sit": 297.105,
+          "stairsdown": 222.171,
+          "stairsup": 240.733,
+          "stand": 265.758,
+          "walk": 310.856
+        },
+        "end_creation_time": 344362038602000,
+        "large_gaps": 98,
+        "nonpositive_intervals": 97,
+        "rows": 182149,
+        "start_creation_time": 342412828101000
+      },
+      "i|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 279.935,
+          "bike": 310.622,
+          "sit": 296.977,
+          "stairsdown": 263.521,
+          "stairsup": 272.226,
+          "stand": 307.066,
+          "walk": 321.548
+        },
+        "end_creation_time": 2902706051000,
+        "large_gaps": 8,
+        "nonpositive_intervals": 690,
+        "rows": 180512,
+        "start_creation_time": 1019232751000
+      },
+      "i|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 17.72,
+          "bike": 2.546,
+          "sit": 45.574,
+          "stairsdown": 2.59,
+          "stairsup": 3.083,
+          "stand": 28.284,
+          "walk": 80.642
+        },
+        "end_creation_time": 79199685940000,
+        "large_gaps": 13,
+        "nonpositive_intervals": 121,
+        "rows": 11323,
+        "start_creation_time": 79031187184000
+      },
+      "i|samsungold_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 328.323,
+          "bike": 342.808,
+          "sit": 296.95,
+          "stairsdown": 298.614,
+          "stairsup": 313.736,
+          "stand": 301.079,
+          "walk": 312.229
+        },
+        "end_creation_time": 4223352338000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 1,
+        "rows": 130203,
+        "start_creation_time": 2029622907000
+      },
+      "i|samsungold_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 328.32,
+          "bike": 342.87,
+          "sit": 296.949,
+          "stairsdown": 298.535,
+          "stairsup": 313.806,
+          "stand": 301.09,
+          "walk": 312.23
+        },
+        "end_creation_time": 92263861839000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 129053,
+        "start_creation_time": 90070062339000
+      }
+    }
+  },
+  "gyroscope": {
+    "path": "data/extracted/hhar/activity_recognition_exp/Activity recognition exp/Phones_gyroscope.csv",
+    "streams": {
+      "a|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 174.528,
+          "bike": 199.121,
+          "sit": 314.966,
+          "stairsdown": 235.779,
+          "stairsup": 226.187,
+          "stand": 289.061,
+          "walk": 265.893
+        },
+        "end_creation_time": 1424698515411677440,
+        "large_gaps": 67,
+        "nonpositive_intervals": 9439,
+        "rows": 323823,
+        "start_creation_time": 1424565699954528000
+      },
+      "a|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 170.43,
+          "bike": 235.495,
+          "sit": 312.55,
+          "stairsdown": 204.106,
+          "stairsup": 226.953,
+          "stand": 300.408,
+          "walk": 258.25
+        },
+        "end_creation_time": 1424700362959149568,
+        "large_gaps": 72,
+        "nonpositive_intervals": 9741,
+        "rows": 323007,
+        "start_creation_time": 1424698479965389312
+      },
+      "a|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 186.679,
+          "bike": 238.178,
+          "sit": 309.39,
+          "stairsdown": 223.676,
+          "stairsup": 222.017,
+          "stand": 286.261,
+          "walk": 252.546
+        },
+        "end_creation_time": 54300337060000,
+        "large_gaps": 64,
+        "nonpositive_intervals": 1549,
+        "rows": 339625,
+        "start_creation_time": 52546291945000
+      },
+      "a|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 179.319,
+          "bike": 227.364,
+          "sit": 305.687,
+          "stairsdown": 200.393,
+          "stairsup": 225.757,
+          "stand": 288.424,
+          "walk": 245.311
+        },
+        "end_creation_time": 275957396668000,
+        "large_gaps": 77,
+        "nonpositive_intervals": 1436,
+        "rows": 330669,
+        "start_creation_time": 274248791573000
+      },
+      "a|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 186.611,
+          "bike": 261.628,
+          "sit": 311.964,
+          "stairsdown": 229.886,
+          "stairsup": 248.653,
+          "stand": 296.34,
+          "walk": 257.503
+        },
+        "end_creation_time": 15991291956000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 653,
+        "rows": 159307,
+        "start_creation_time": 14347522274000
+      },
+      "a|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 31.04,
+          "bike": 3.213,
+          "stairsdown": 7.637,
+          "stairsup": 13.629,
+          "stand": 7.089,
+          "walk": 65.676
+        },
+        "end_creation_time": 6705565758000,
+        "large_gaps": 26,
+        "nonpositive_intervals": 71,
+        "rows": 8568,
+        "start_creation_time": 6578387205000
+      },
+      "b|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 291.284,
+          "bike": 318.332,
+          "sit": 249.761,
+          "stairsdown": 218.718,
+          "stairsup": 248.053,
+          "stand": 228.878,
+          "walk": 333.066
+        },
+        "end_creation_time": 1424786889807193344,
+        "large_gaps": 100,
+        "nonpositive_intervals": 7977,
+        "rows": 363264,
+        "start_creation_time": 1424784654098766592
+      },
+      "b|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 282.873,
+          "bike": 342.532,
+          "sit": 205.211,
+          "stairsdown": 238.453,
+          "stairsup": 268.857,
+          "stand": 234.707,
+          "walk": 334.624
+        },
+        "end_creation_time": 1424788728116669952,
+        "large_gaps": 89,
+        "nonpositive_intervals": 8011,
+        "rows": 366645,
+        "start_creation_time": 1424786496083191552
+      },
+      "b|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 276.321,
+          "bike": 312.105,
+          "sit": 252.395,
+          "stairsdown": 217.088,
+          "stairsup": 281.596,
+          "stand": 255.264,
+          "walk": 324.311
+        },
+        "end_creation_time": 141083411684000,
+        "large_gaps": 115,
+        "nonpositive_intervals": 1564,
+        "rows": 376357,
+        "start_creation_time": 139093001940000
+      },
+      "b|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 269.213,
+          "bike": 338.13,
+          "sit": 267.079,
+          "stairsdown": 204.218,
+          "stairsup": 256.932,
+          "stand": 243.547,
+          "walk": 324.001
+        },
+        "end_creation_time": 351675041745000,
+        "large_gaps": 138,
+        "nonpositive_intervals": 1646,
+        "rows": 374936,
+        "start_creation_time": 349697117054000
+      },
+      "b|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 283.013,
+          "bike": 367.543,
+          "sit": 287.61,
+          "stairsdown": 241.525,
+          "stairsup": 288.011,
+          "stand": 294.221,
+          "walk": 337.596
+        },
+        "end_creation_time": 9926351868000,
+        "large_gaps": 6,
+        "nonpositive_intervals": 868,
+        "rows": 180502,
+        "start_creation_time": 8051401773000
+      },
+      "b|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 2.459,
+          "bike": 2.889,
+          "stairsdown": 1.644,
+          "stand": 1.811
+        },
+        "end_creation_time": 79545377268000,
+        "large_gaps": 6,
+        "nonpositive_intervals": 11,
+        "rows": 486,
+        "start_creation_time": 79537028491000
+      },
+      "c|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 163.443,
+          "bike": 160.944,
+          "sit": 276.2,
+          "stairsdown": 208.62,
+          "stairsup": 265.747,
+          "stand": 204.79,
+          "walk": 288.765
+        },
+        "end_creation_time": 1424695506520694784,
+        "large_gaps": 109,
+        "nonpositive_intervals": 7484,
+        "rows": 299438,
+        "start_creation_time": 1424693579040296704
+      },
+      "c|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 160.246,
+          "bike": 211.231,
+          "sit": 269.759,
+          "stairsdown": 218.954,
+          "stairsup": 249.073,
+          "stand": 282.234,
+          "walk": 283.804
+        },
+        "end_creation_time": 1424697355200152576,
+        "large_gaps": 97,
+        "nonpositive_intervals": 9142,
+        "rows": 317800,
+        "start_creation_time": 1424695423416375296
+      },
+      "c|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 174.394,
+          "bike": 209.275,
+          "sit": 275.116,
+          "stairsdown": 211.707,
+          "stairsup": 258.495,
+          "stand": 243.131,
+          "walk": 297.909
+        },
+        "end_creation_time": 51461047058000,
+        "large_gaps": 97,
+        "nonpositive_intervals": 1808,
+        "rows": 327367,
+        "start_creation_time": 49733522135000
+      },
+      "c|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 166.801,
+          "bike": 193.732,
+          "sit": 287.616,
+          "stairsdown": 210.522,
+          "stairsup": 237.068,
+          "stand": 244.671,
+          "walk": 289.329
+        },
+        "end_creation_time": 273180906287000,
+        "large_gaps": 108,
+        "nonpositive_intervals": 1839,
+        "rows": 319556,
+        "start_creation_time": 271502676719000
+      },
+      "c|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 173.91,
+          "bike": 210.974,
+          "sit": 295.67,
+          "stairsdown": 216.193,
+          "stairsup": 282.799,
+          "stand": 259.612,
+          "walk": 313.744
+        },
+        "end_creation_time": 13298654790000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 782,
+        "rows": 150640,
+        "start_creation_time": 11729242948000
+      },
+      "c|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 18.46,
+          "bike": 29.223,
+          "sit": 2.947,
+          "stairsdown": 59.427,
+          "stairsup": 48.066,
+          "stand": 10.517,
+          "walk": 55.176
+        },
+        "end_creation_time": 6516042622000,
+        "large_gaps": 27,
+        "nonpositive_intervals": 205,
+        "rows": 13148,
+        "start_creation_time": 6298761548000
+      },
+      "d|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 148.025,
+          "bike": 195.785,
+          "sit": 278.029,
+          "stairsdown": 202.675,
+          "stairsup": 265.659,
+          "stand": 272.98,
+          "walk": 322.296
+        },
+        "end_creation_time": 1424783503732339456,
+        "large_gaps": 45,
+        "nonpositive_intervals": 8897,
+        "rows": 322433,
+        "start_creation_time": 1424781680338030336
+      },
+      "d|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 142.321,
+          "bike": 243.61,
+          "sit": 269.09,
+          "stairsdown": 190.08,
+          "stairsup": 255.441,
+          "stand": 289.712,
+          "walk": 320.758
+        },
+        "end_creation_time": 1424785348910181888,
+        "large_gaps": 47,
+        "nonpositive_intervals": 8414,
+        "rows": 327529,
+        "start_creation_time": 1424783522182966272
+      },
+      "d|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 129.752,
+          "bike": 193.556,
+          "sit": 290.947,
+          "stairsdown": 187.613,
+          "stairsup": 266.253,
+          "stand": 271.32,
+          "walk": 307.732
+        },
+        "end_creation_time": 138056447034000,
+        "large_gaps": 73,
+        "nonpositive_intervals": 1269,
+        "rows": 325727,
+        "start_creation_time": 136366966959000
+      },
+      "d|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 133.908,
+          "bike": 204.786,
+          "sit": 276.572,
+          "stairsdown": 181.217,
+          "stairsup": 249.003,
+          "stand": 254.92,
+          "walk": 311.063
+        },
+        "end_creation_time": 348663736645000,
+        "large_gaps": 74,
+        "nonpositive_intervals": 1408,
+        "rows": 318101,
+        "start_creation_time": 347016206641000
+      },
+      "d|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 138.65,
+          "bike": 214.862,
+          "sit": 309.346,
+          "stairsdown": 186.906,
+          "stairsup": 282.977,
+          "stand": 275.971,
+          "walk": 317.755
+        },
+        "end_creation_time": 7071215869000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 497,
+        "rows": 155759,
+        "start_creation_time": 5463175854000
+      },
+      "d|s3mini_2": {
+        "duration_seconds_by_label": {
+          "sit": 1.506,
+          "stairsdown": 1.084,
+          "stairsup": 1.647
+        },
+        "end_creation_time": 79535327392000,
+        "large_gaps": 3,
+        "nonpositive_intervals": 3,
+        "rows": 246,
+        "start_creation_time": 79531128153000
+      },
+      "e|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 368.213,
+          "bike": 265.228,
+          "sit": 290.3,
+          "stairsdown": 204.142,
+          "stairsup": 219.538,
+          "stand": 277.004,
+          "walk": 321.233
+        },
+        "end_creation_time": 1424789464107938048,
+        "large_gaps": 105,
+        "nonpositive_intervals": 8881,
+        "rows": 371841,
+        "start_creation_time": 1424787192806287872
+      },
+      "e|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 362.711,
+          "bike": 335.817,
+          "sit": 290.459,
+          "stairsdown": 220.935,
+          "stairsup": 241.574,
+          "stand": 282.795,
+          "walk": 330.596
+        },
+        "end_creation_time": 1424791305946108672,
+        "large_gaps": 80,
+        "nonpositive_intervals": 8446,
+        "rows": 396343,
+        "start_creation_time": 1424789037673690880
+      },
+      "e|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 380.539,
+          "bike": 286.428,
+          "sit": 284.908,
+          "stairsdown": 222.654,
+          "stairsup": 223.824,
+          "stand": 288.838,
+          "walk": 319.608
+        },
+        "end_creation_time": 143399877093000,
+        "large_gaps": 90,
+        "nonpositive_intervals": 1433,
+        "rows": 396275,
+        "start_creation_time": 141338316959000
+      },
+      "e|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 378.002,
+          "bike": 274.237,
+          "sit": 285.056,
+          "stairsdown": 213.182,
+          "stairsup": 227.865,
+          "stand": 284.138,
+          "walk": 315.5
+        },
+        "end_creation_time": 353949546661000,
+        "large_gaps": 104,
+        "nonpositive_intervals": 1728,
+        "rows": 390006,
+        "start_creation_time": 351920701679000
+      },
+      "e|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 402.978,
+          "bike": 306.353,
+          "sit": 299.029,
+          "stairsdown": 223.545,
+          "stairsup": 266.744,
+          "stand": 310.178,
+          "walk": 334.078
+        },
+        "end_creation_time": 12085995549000,
+        "large_gaps": 3,
+        "nonpositive_intervals": 781,
+        "rows": 187509,
+        "start_creation_time": 10145685085000
+      },
+      "e|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 20.158,
+          "bike": 10.473,
+          "sit": 2.39,
+          "stairsdown": 13.571,
+          "stairsup": 16.368,
+          "walk": 12.756
+        },
+        "end_creation_time": 79620423840000,
+        "large_gaps": 10,
+        "nonpositive_intervals": 34,
+        "rows": 5114,
+        "start_creation_time": 79545556035000
+      },
+      "f|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 296.709,
+          "bike": 278.806,
+          "sit": 288.145,
+          "stairsdown": 249.629,
+          "stairsup": 273.257,
+          "stand": 262.45,
+          "walk": 309.525
+        },
+        "end_creation_time": 1424781175853514496,
+        "large_gaps": 90,
+        "nonpositive_intervals": 8589,
+        "rows": 374309,
+        "start_creation_time": 1424778971778981120
+      },
+      "f|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 281.023,
+          "bike": 285.338,
+          "sit": 257.737,
+          "stairsdown": 210.552,
+          "stairsup": 245.642,
+          "stand": 290.505,
+          "walk": 315.063
+        },
+        "end_creation_time": 1424783017688415744,
+        "large_gaps": 97,
+        "nonpositive_intervals": 8447,
+        "rows": 362135,
+        "start_creation_time": 1424780813614800896
+      },
+      "f|s3_1": {
+        "duration_seconds_by_label": {},
+        "end_creation_time": 135949007123000,
+        "large_gaps": 0,
+        "nonpositive_intervals": 0,
+        "rows": 1,
+        "start_creation_time": 135949007123000
+      },
+      "f|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 281.32,
+          "bike": 288.549,
+          "sit": 274.12,
+          "stairsdown": 213.429,
+          "stairsup": 267.988,
+          "stand": 250.064,
+          "walk": 295.031
+        },
+        "end_creation_time": 346628217676000,
+        "large_gaps": 120,
+        "nonpositive_intervals": 1666,
+        "rows": 368314,
+        "start_creation_time": 344695031698000
+      },
+      "f|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 283.607,
+          "bike": 285.738,
+          "sit": 295.671,
+          "stairsdown": 248.625,
+          "stairsup": 319.689,
+          "stand": 310.761,
+          "walk": 319.992
+        },
+        "end_creation_time": 5074104718000,
+        "large_gaps": 9,
+        "nonpositive_intervals": 809,
+        "rows": 179424,
+        "start_creation_time": 3211462911000
+      },
+      "f|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 80.352,
+          "bike": 1.125,
+          "sit": 4.434,
+          "stairsdown": 108.167,
+          "stairsup": 141.676
+        },
+        "end_creation_time": 79527978805000,
+        "large_gaps": 10,
+        "nonpositive_intervals": 109,
+        "rows": 25335,
+        "start_creation_time": 79206717853000
+      },
+      "g|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 353.298,
+          "bike": 235.238,
+          "sit": 305.018,
+          "stairsdown": 208.06,
+          "stairsup": 202.911,
+          "stand": 276.334,
+          "walk": 317.539
+        },
+        "end_creation_time": 1424689042748664832,
+        "large_gaps": 132,
+        "nonpositive_intervals": 9245,
+        "rows": 361226,
+        "start_creation_time": 1424686728649478656
+      },
+      "g|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 384.8,
+          "bike": 245.986,
+          "sit": 295.898,
+          "stairsdown": 207.106,
+          "stairsup": 202.82,
+          "stand": 273.652,
+          "walk": 343.045
+        },
+        "end_creation_time": 1424690890804438528,
+        "large_gaps": 113,
+        "nonpositive_intervals": 9333,
+        "rows": 372163,
+        "start_creation_time": 1424688581007668224
+      },
+      "g|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 408.123,
+          "bike": 225.997,
+          "sit": 296.235,
+          "stairsdown": 248.619,
+          "stairsup": 232.81,
+          "stand": 283.534,
+          "walk": 336.205
+        },
+        "end_creation_time": 45291837155000,
+        "large_gaps": 100,
+        "nonpositive_intervals": 1945,
+        "rows": 400114,
+        "start_creation_time": 43199331969000
+      },
+      "g|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 388.136,
+          "bike": 224.025,
+          "sit": 280.459,
+          "stairsdown": 223.564,
+          "stairsup": 216.71,
+          "stand": 294.485,
+          "walk": 331.94
+        },
+        "end_creation_time": 267062466657000,
+        "large_gaps": 133,
+        "nonpositive_intervals": 1883,
+        "rows": 385720,
+        "start_creation_time": 265033811772000
+      },
+      "g|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 436.423,
+          "bike": 230.394,
+          "sit": 320.963,
+          "stairsdown": 258.29,
+          "stairsup": 253.411,
+          "stand": 329.573,
+          "walk": 347.786
+        },
+        "end_creation_time": 7296662633000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 955,
+        "rows": 186615,
+        "start_creation_time": 5358242282000
+      },
+      "g|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 9.029,
+          "bike": 1.001,
+          "sit": 3.754,
+          "stairsdown": 56.621,
+          "stairsup": 55.146,
+          "stand": 34.076,
+          "walk": 52.158
+        },
+        "end_creation_time": 4321603055000,
+        "large_gaps": 21,
+        "nonpositive_intervals": 122,
+        "rows": 13046,
+        "start_creation_time": 4117337877000
+      },
+      "h|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 142.527,
+          "bike": 206.151,
+          "sit": 314.585,
+          "stairsdown": 233.021,
+          "stairsup": 246.435,
+          "stand": 229.297,
+          "walk": 256.77
+        },
+        "end_creation_time": 1424701024551915776,
+        "large_gaps": 88,
+        "nonpositive_intervals": 9046,
+        "rows": 309743,
+        "start_creation_time": 1424699112132489984
+      },
+      "h|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 132.25,
+          "bike": 236.852,
+          "sit": 315.834,
+          "stairsdown": 215.518,
+          "stairsup": 235.955,
+          "stand": 222.957,
+          "walk": 264.804
+        },
+        "end_creation_time": 1424702874857357312,
+        "large_gaps": 96,
+        "nonpositive_intervals": 8983,
+        "rows": 308875,
+        "start_creation_time": 1424700960185383424
+      },
+      "h|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 155.386,
+          "bike": 247.292,
+          "sit": 305.762,
+          "stairsdown": 238.758,
+          "stairsup": 230.666,
+          "stand": 239.215,
+          "walk": 252.112
+        },
+        "end_creation_time": 56555022039000,
+        "large_gaps": 92,
+        "nonpositive_intervals": 1631,
+        "rows": 329262,
+        "start_creation_time": 54832086701000
+      },
+      "h|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 145.604,
+          "bike": 246.444,
+          "sit": 309.237,
+          "stairsdown": 238.894,
+          "stairsup": 230.144,
+          "stand": 232.892,
+          "walk": 251.372
+        },
+        "end_creation_time": 278157541708000,
+        "large_gaps": 86,
+        "nonpositive_intervals": 1568,
+        "rows": 325388,
+        "start_creation_time": 276461271676000
+      },
+      "h|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 187.389,
+          "bike": 247.719,
+          "sit": 308.33,
+          "stairsdown": 250.759,
+          "stairsup": 280.747,
+          "stand": 300.01,
+          "walk": 257.282
+        },
+        "end_creation_time": 18130044379000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 755,
+        "rows": 159287,
+        "start_creation_time": 16474504922000
+      },
+      "h|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 31.142,
+          "bike": 27.056,
+          "sit": 55.834,
+          "stairsdown": 64.536,
+          "stairsup": 52.74,
+          "walk": 59.206
+        },
+        "end_creation_time": 7085857801000,
+        "large_gaps": 18,
+        "nonpositive_intervals": 194,
+        "rows": 18396,
+        "start_creation_time": 6801971658000
+      },
+      "i|nexus4_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 271.266,
+          "bike": 241.12,
+          "sit": 304.695,
+          "stairsdown": 238.898,
+          "stairsup": 252.017,
+          "stand": 281.356,
+          "walk": 317.023
+        },
+        "end_creation_time": 1424778556887321344,
+        "large_gaps": 84,
+        "nonpositive_intervals": 8327,
+        "rows": 365740,
+        "start_creation_time": 1424776363072836352
+      },
+      "i|nexus4_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 256.56,
+          "bike": 309.146,
+          "sit": 304.192,
+          "stairsdown": 245.302,
+          "stairsup": 253.901,
+          "stand": 266.018,
+          "walk": 319.739
+        },
+        "end_creation_time": 1424780398719620608,
+        "large_gaps": 79,
+        "nonpositive_intervals": 8589,
+        "rows": 374691,
+        "start_creation_time": 1424778205004032768
+      },
+      "i|s3_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 269.295,
+          "bike": 290.488,
+          "sit": 297.352,
+          "stairsdown": 237.086,
+          "stairsup": 257.625,
+          "stand": 247.776,
+          "walk": 309.139
+        },
+        "end_creation_time": 133624117124000,
+        "large_gaps": 100,
+        "nonpositive_intervals": 1295,
+        "rows": 376388,
+        "start_creation_time": 131648892124000
+      },
+      "i|s3_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 246.514,
+          "bike": 295.935,
+          "sit": 298.01,
+          "stairsdown": 227.371,
+          "stairsup": 245.568,
+          "stand": 269.175,
+          "walk": 312.463
+        },
+        "end_creation_time": 344362036703000,
+        "large_gaps": 102,
+        "nonpositive_intervals": 1815,
+        "rows": 372633,
+        "start_creation_time": 342412821752000
+      },
+      "i|s3mini_1": {
+        "duration_seconds_by_label": {
+          "<missing>": 279.706,
+          "bike": 308.571,
+          "sit": 297.009,
+          "stairsdown": 263.86,
+          "stairsup": 272.133,
+          "stand": 305.158,
+          "walk": 321.271
+        },
+        "end_creation_time": 2902703335000,
+        "large_gaps": 7,
+        "nonpositive_intervals": 681,
+        "rows": 180495,
+        "start_creation_time": 1019237298000
+      },
+      "i|s3mini_2": {
+        "duration_seconds_by_label": {
+          "<missing>": 17.556,
+          "bike": 2.492,
+          "sit": 45.159,
+          "stairsdown": 2.636,
+          "stairsup": 2.958,
+          "stand": 27.985,
+          "walk": 80.774
+        },
+        "end_creation_time": 79199698266000,
+        "large_gaps": 13,
+        "nonpositive_intervals": 113,
+        "rows": 11311,
+        "start_creation_time": 79031193771000
+      }
+    }
+  },
+  "pairing": {
+    "accelerometer_only_streams": [
+      "a|samsungold_1",
+      "a|samsungold_2",
+      "b|samsungold_1",
+      "b|samsungold_2",
+      "c|samsungold_1",
+      "c|samsungold_2",
+      "d|samsungold_1",
+      "d|samsungold_2",
+      "e|samsungold_1",
+      "e|samsungold_2",
+      "f|samsungold_1",
+      "f|samsungold_2",
+      "g|samsungold_1",
+      "g|samsungold_2",
+      "h|samsungold_1",
+      "h|samsungold_2",
+      "i|samsungold_1",
+      "i|samsungold_2"
+    ],
+    "gyroscope_only_streams": [
+      "f|s3_1"
+    ],
+    "paired_stream_count": 53,
+    "paired_streams": {
+      "a|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 174.528,
+          "bike": 199.121,
+          "sit": 314.966,
+          "stairsdown": 235.779,
+          "stairsup": 226.187,
+          "stand": 289.061,
+          "walk": 265.893
+        }
+      },
+      "a|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 170.43,
+          "bike": 235.319,
+          "sit": 312.55,
+          "stairsdown": 204.106,
+          "stairsup": 226.953,
+          "stand": 300.408,
+          "walk": 258.25
+        }
+      },
+      "a|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 184.414,
+          "bike": 234.729,
+          "sit": 308.154,
+          "stairsdown": 219.396,
+          "stairsup": 220.714,
+          "stand": 283.487,
+          "walk": 249.978
+        }
+      },
+      "a|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 177.906,
+          "bike": 222.853,
+          "sit": 304.524,
+          "stairsdown": 196.526,
+          "stairsup": 225.158,
+          "stand": 286.89,
+          "walk": 243.354
+        }
+      },
+      "a|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 186.611,
+          "bike": 261.628,
+          "sit": 311.964,
+          "stairsdown": 229.252,
+          "stairsup": 245.79,
+          "stand": 296.34,
+          "walk": 257.503
+        }
+      },
+      "a|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 30.953,
+          "bike": 3.08,
+          "stairsdown": 7.634,
+          "stairsup": 13.626,
+          "stand": 7.027,
+          "walk": 65.566
+        }
+      },
+      "b|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 291.284,
+          "bike": 318.332,
+          "sit": 249.51,
+          "stairsdown": 218.718,
+          "stairsup": 248.053,
+          "stand": 228.878,
+          "walk": 333.066
+        }
+      },
+      "b|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 282.873,
+          "bike": 342.532,
+          "sit": 205.211,
+          "stairsdown": 238.453,
+          "stairsup": 268.857,
+          "stand": 234.622,
+          "walk": 334.624
+        }
+      },
+      "b|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 272.35,
+          "bike": 307.762,
+          "sit": 248.497,
+          "stairsdown": 213.841,
+          "stairsup": 279.741,
+          "stand": 251.064,
+          "walk": 323.331
+        }
+      },
+      "b|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 264.7,
+          "bike": 335.034,
+          "sit": 263.872,
+          "stairsdown": 200.663,
+          "stairsup": 254.205,
+          "stand": 239.568,
+          "walk": 322.737
+        }
+      },
+      "b|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 283.013,
+          "bike": 367.543,
+          "sit": 284.533,
+          "stairsdown": 241.525,
+          "stairsup": 288.011,
+          "stand": 294.221,
+          "walk": 337.542
+        }
+      },
+      "b|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 2.43,
+          "bike": 2.8,
+          "stairsdown": 1.544,
+          "stand": 1.791
+        }
+      },
+      "c|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 163.443,
+          "bike": 160.944,
+          "sit": 276.2,
+          "stairsdown": 208.62,
+          "stairsup": 265.747,
+          "stand": 204.79,
+          "walk": 288.765
+        }
+      },
+      "c|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 160.246,
+          "bike": 211.231,
+          "sit": 269.759,
+          "stairsdown": 218.954,
+          "stairsup": 249.073,
+          "stand": 282.234,
+          "walk": 283.804
+        }
+      },
+      "c|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 171.843,
+          "bike": 201.741,
+          "sit": 273.441,
+          "stairsdown": 207.7,
+          "stairsup": 256.696,
+          "stand": 237.798,
+          "walk": 296.001
+        }
+      },
+      "c|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 162.968,
+          "bike": 188.207,
+          "sit": 286.441,
+          "stairsdown": 206.541,
+          "stairsup": 234.675,
+          "stand": 239.884,
+          "walk": 287.676
+        }
+      },
+      "c|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 173.726,
+          "bike": 210.974,
+          "sit": 294.637,
+          "stairsdown": 216.193,
+          "stairsup": 282.799,
+          "stand": 259.612,
+          "walk": 313.744
+        }
+      },
+      "c|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 18.46,
+          "bike": 28.72,
+          "sit": 2.899,
+          "stairsdown": 58.691,
+          "stairsup": 47.619,
+          "stand": 10.13,
+          "walk": 55.061
+        }
+      },
+      "d|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 148.025,
+          "bike": 195.785,
+          "sit": 278.029,
+          "stairsdown": 202.675,
+          "stairsup": 265.659,
+          "stand": 272.98,
+          "walk": 322.296
+        }
+      },
+      "d|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 142.149,
+          "bike": 243.61,
+          "sit": 269.09,
+          "stairsdown": 190.08,
+          "stairsup": 255.441,
+          "stand": 289.712,
+          "walk": 320.758
+        }
+      },
+      "d|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 127.914,
+          "bike": 188.884,
+          "sit": 289.754,
+          "stairsdown": 184.654,
+          "stairsup": 264.72,
+          "stand": 269.571,
+          "walk": 306.395
+        }
+      },
+      "d|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 130.229,
+          "bike": 201.779,
+          "sit": 273.791,
+          "stairsdown": 177.853,
+          "stairsup": 247.498,
+          "stand": 252.547,
+          "walk": 309.858
+        }
+      },
+      "d|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 138.65,
+          "bike": 214.597,
+          "sit": 308.638,
+          "stairsdown": 186.906,
+          "stairsup": 282.956,
+          "stand": 275.971,
+          "walk": 317.755
+        }
+      },
+      "d|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "sit": 1.49,
+          "stairsdown": 1.084,
+          "stairsup": 1.62
+        }
+      },
+      "e|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 368.213,
+          "bike": 265.228,
+          "sit": 290.3,
+          "stairsdown": 203.414,
+          "stairsup": 219.538,
+          "stand": 277.004,
+          "walk": 321.233
+        }
+      },
+      "e|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 362.711,
+          "bike": 335.817,
+          "sit": 290.459,
+          "stairsdown": 220.935,
+          "stairsup": 241.574,
+          "stand": 282.795,
+          "walk": 330.596
+        }
+      },
+      "e|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 374.941,
+          "bike": 282.578,
+          "sit": 283.874,
+          "stairsdown": 219.739,
+          "stairsup": 220.814,
+          "stand": 286.62,
+          "walk": 318.296
+        }
+      },
+      "e|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 372.737,
+          "bike": 270.412,
+          "sit": 283.721,
+          "stairsdown": 209.734,
+          "stairsup": 225.102,
+          "stand": 281.61,
+          "walk": 314.378
+        }
+      },
+      "e|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 402.978,
+          "bike": 306.164,
+          "sit": 297.688,
+          "stairsdown": 223.545,
+          "stairsup": 266.744,
+          "stand": 310.178,
+          "walk": 333.513
+        }
+      },
+      "e|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 20.144,
+          "bike": 10.473,
+          "sit": 2.296,
+          "stairsdown": 13.571,
+          "stairsup": 16.245,
+          "walk": 12.743
+        }
+      },
+      "f|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 296.709,
+          "bike": 278.806,
+          "sit": 288.145,
+          "stairsdown": 249.629,
+          "stairsup": 273.257,
+          "stand": 262.45,
+          "walk": 309.525
+        }
+      },
+      "f|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 280.947,
+          "bike": 285.338,
+          "sit": 257.737,
+          "stairsdown": 210.552,
+          "stairsup": 245.642,
+          "stand": 290.505,
+          "walk": 314.7
+        }
+      },
+      "f|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 277.422,
+          "bike": 282.289,
+          "sit": 272.036,
+          "stairsdown": 209.796,
+          "stairsup": 266.226,
+          "stand": 246.804,
+          "walk": 293.974
+        }
+      },
+      "f|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 283.496,
+          "bike": 284.474,
+          "sit": 295.457,
+          "stairsdown": 248.625,
+          "stairsup": 319.689,
+          "stand": 310.321,
+          "walk": 319.992
+        }
+      },
+      "f|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 80.352,
+          "bike": 1.092,
+          "sit": 4.09,
+          "stairsdown": 108.05,
+          "stairsup": 140.879
+        }
+      },
+      "g|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 353.298,
+          "bike": 235.238,
+          "sit": 305.018,
+          "stairsdown": 208.06,
+          "stairsup": 202.911,
+          "stand": 276.334,
+          "walk": 317.539
+        }
+      },
+      "g|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 384.8,
+          "bike": 245.876,
+          "sit": 295.898,
+          "stairsdown": 207.106,
+          "stairsup": 202.82,
+          "stand": 273.652,
+          "walk": 343.045
+        }
+      },
+      "g|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 399.647,
+          "bike": 220.341,
+          "sit": 294.326,
+          "stairsdown": 245.734,
+          "stairsup": 230.972,
+          "stand": 278.735,
+          "walk": 333.954
+        }
+      },
+      "g|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 382.487,
+          "bike": 220.173,
+          "sit": 278.068,
+          "stairsdown": 219.083,
+          "stairsup": 213.382,
+          "stand": 292.028,
+          "walk": 330.133
+        }
+      },
+      "g|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 436.136,
+          "bike": 230.394,
+          "sit": 320.963,
+          "stairsdown": 257.605,
+          "stairsup": 253.066,
+          "stand": 328.922,
+          "walk": 347.786
+        }
+      },
+      "g|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 9.029,
+          "bike": 1.001,
+          "sit": 3.509,
+          "stairsdown": 56.39,
+          "stairsup": 55.146,
+          "stand": 33.931,
+          "walk": 51.686
+        }
+      },
+      "h|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 142.527,
+          "bike": 206.151,
+          "sit": 314.585,
+          "stairsdown": 232.966,
+          "stairsup": 246.435,
+          "stand": 229.297,
+          "walk": 256.77
+        }
+      },
+      "h|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 132.25,
+          "bike": 236.852,
+          "sit": 315.834,
+          "stairsdown": 215.518,
+          "stairsup": 235.955,
+          "stand": 222.957,
+          "walk": 264.804
+        }
+      },
+      "h|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 153.369,
+          "bike": 244.835,
+          "sit": 304.329,
+          "stairsdown": 235.464,
+          "stairsup": 227.839,
+          "stand": 234.038,
+          "walk": 250.035
+        }
+      },
+      "h|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 142.301,
+          "bike": 243.854,
+          "sit": 308.546,
+          "stairsdown": 235.501,
+          "stairsup": 227.04,
+          "stand": 226.693,
+          "walk": 250.308
+        }
+      },
+      "h|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 187.389,
+          "bike": 247.127,
+          "sit": 308.275,
+          "stairsdown": 250.489,
+          "stairsup": 279.35,
+          "stand": 300.01,
+          "walk": 257.064
+        }
+      },
+      "h|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 31.142,
+          "bike": 26.774,
+          "sit": 55.812,
+          "stairsdown": 63.653,
+          "stairsup": 52.372,
+          "walk": 58.847
+        }
+      },
+      "i|nexus4_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 271.266,
+          "bike": 241.12,
+          "sit": 304.695,
+          "stairsdown": 238.898,
+          "stairsup": 252.017,
+          "stand": 281.157,
+          "walk": 317.023
+        }
+      },
+      "i|nexus4_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 256.56,
+          "bike": 309.146,
+          "sit": 304.115,
+          "stairsdown": 245.302,
+          "stairsup": 253.901,
+          "stand": 265.797,
+          "walk": 319.715
+        }
+      },
+      "i|s3_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 264.52,
+          "bike": 286.109,
+          "sit": 297.034,
+          "stairsdown": 233.07,
+          "stairsup": 253.336,
+          "stand": 243.754,
+          "walk": 308.132
+        }
+      },
+      "i|s3_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 240.813,
+          "bike": 293.027,
+          "sit": 297.105,
+          "stairsdown": 222.171,
+          "stairsup": 240.733,
+          "stand": 265.758,
+          "walk": 310.856
+        }
+      },
+      "i|s3mini_1": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 279.706,
+          "bike": 308.571,
+          "sit": 296.977,
+          "stairsdown": 263.521,
+          "stairsup": 272.133,
+          "stand": 305.158,
+          "walk": 321.271
+        }
+      },
+      "i|s3mini_2": {
+        "duration_upper_bound_seconds_by_label": {
+          "<missing>": 17.556,
+          "bike": 2.492,
+          "sit": 45.159,
+          "stairsdown": 2.59,
+          "stairsup": 2.958,
+          "stand": 27.985,
+          "walk": 80.642
+        }
+      }
+    }
+  }
+}
