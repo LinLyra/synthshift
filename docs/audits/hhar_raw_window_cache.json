@@ -1,0 +1,14 @@
+{
+  "features_path": "data/processed/hhar/features_5s_antialias.npz",
+  "features_sha256": "906669eada04b44946e8ef50153fa77d97fbb5d90ff24d0c8de2d77f121bc2a9",
+  "segment_root": "data/processed/hhar/resampled_50hz_antialias",
+  "cache_path": "data/processed/hhar/raw_windows_5s_antialias.npy",
+  "cache_sha256": "88a83b5d92b73576c485f21506d0c3796484c3b0fcb20c3e0a6aec2423b269b2",
+  "shape": [
+    21305,
+    250,
+    6
+  ],
+  "dtype": "float32",
+  "row_alignment": "identical to features_path arrays"
+}
