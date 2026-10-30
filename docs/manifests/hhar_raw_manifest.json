@@ -1,0 +1,23 @@
+{
+  "dataset": "HHAR",
+  "source_url": "https://archive.ics.uci.edu/static/public/344/heterogeneity%2Bactivity%2Brecognition.zip",
+  "retrieved_at_utc": "2026-10-30T07:12:30.261583+00:00",
+  "archive_name": "hhar-uci-344.zip",
+  "archive_bytes": 822098071,
+  "sha256": "8c9f8dd5f50074feaad2c5cec5d927a4fc8366324de26079629a3de3aef0e124",
+  "zip_integrity": "passed",
+  "members": [
+    {
+      "path": "Activity recognition exp.zip",
+      "compressed_bytes": 777127275,
+      "uncompressed_bytes": 777127275,
+      "crc32": "a029db13"
+    },
+    {
+      "path": "Still exp.zip",
+      "compressed_bytes": 44970540,
+      "uncompressed_bytes": 44970540,
+      "crc32": "60fd31d4"
+    }
+  ]
+}
