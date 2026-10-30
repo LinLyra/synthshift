@@ -32,4 +32,7 @@ Initial known limitations:
 - Low-motion spectral shape is directionally associated with gain residuals,
   but calibration-user device rankings are unstable in several folds. Without
   a shared mechanical input, these spectra cannot identify hardware filters.
+- Exported quantization steps are stable device fingerprints but do not track
+  gain residuals. An apparent ±19.613 m/s² clipping rail is specific to
+  `s3mini_1`; clipping cannot be inverted for transfers away from that device.
 
