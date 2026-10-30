@@ -35,4 +35,7 @@ Initial known limitations:
 - Exported quantization steps are stable device fingerprints but do not track
   gain residuals. An apparent ±19.613 m/s² clipping rail is specific to
   `s3mini_1`; clipping cannot be inverted for transfers away from that device.
+- Applying the fixed `s3mini_1` ±2g rail after gain changes only 0.0186% of
+  scalar values and improves none of 12 valid target-direction cells for the
+  linear model. The rail is a domain marker, not a supported causal factor.
 

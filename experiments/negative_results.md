@@ -66,3 +66,17 @@ identify the activity instances. Low-motion white noise estimated from
 calibration users changes macro-F1 by at most 0.007. Degradation MAE is 0.108,
 against 0.109 for a forecast of no shift. Pearson r is -0.003.
 
+## s3mini-clipping-case-v0
+
+- Status: frozen-protocol exploratory null.
+- Protocol: `417f81f`.
+- Implementation: `345a461`.
+- Artifact: `results/reviewed/s3mini_clipping_case_study.json`.
+- Report: `docs/S3MINI_CLIPPING_CASE_STUDY.md`.
+
+A fixed ±2g clip after acceleration gain was evaluated only for the 12 valid
+directed cells whose target is `s3mini_1`. It changes 0.0186% of scalar values
+and 2.58% of windows on average. Nine cells are score-identical, three worsen,
+and none improve. MAE changes from 0.07903 to 0.07936. The rail is a device
+fingerprint but does not explain target degradation for the current model.
+
