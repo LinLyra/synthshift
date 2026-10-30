@@ -1,0 +1,1489 @@
+{
+  "protocol_commit": "cc76dd4",
+  "method": "descriptive calibration-only factor audit of gain residuals",
+  "summary": {
+    "cells": 60,
+    "same_model": {
+      "cells": 12,
+      "mean_signed_gain_residual": 0.024485583333333335,
+      "median_signed_gain_residual": 0.0029695000000000017,
+      "mean_absolute_gain_error": 0.04207891666666667
+    },
+    "cross_model": {
+      "cells": 48,
+      "mean_signed_gain_residual": -0.0035186041666666634,
+      "median_signed_gain_residual": 0.012191500000000008,
+      "mean_absolute_gain_error": 0.0738333125
+    },
+    "correlations": {
+      "absolute_log_gain_ratio": {
+        "signed_gain_residual": {
+          "pearson_r": -0.05544954597018763,
+          "spearman_r": -0.09119199777716035
+        },
+        "absolute_gain_error": {
+          "pearson_r": -0.058200809351257654,
+          "spearman_r": -0.1206446235065296
+        }
+      },
+      "gyroscope_bias_delta_l2": {
+        "signed_gain_residual": {
+          "pearson_r": -0.05551687004039377,
+          "spearman_r": -0.051146634049876606
+        },
+        "absolute_gain_error": {
+          "pearson_r": 0.22559783138935308,
+          "spearman_r": 0.2745239988459681
+        }
+      },
+      "gyroscope_bias_user_disagreement_max": {
+        "signed_gain_residual": {
+          "pearson_r": 0.10368037217374992,
+          "spearman_r": 0.07347503915427711
+        },
+        "absolute_gain_error": {
+          "pearson_r": 0.2168142213267472,
+          "spearman_r": 0.11823055730072271
+        }
+      },
+      "noise_sigma_delta_l2": {
+        "signed_gain_residual": {
+          "pearson_r": -0.21483879818128776,
+          "spearman_r": -0.18946492265432555
+        },
+        "absolute_gain_error": {
+          "pearson_r": 0.6022122310707266,
+          "spearman_r": 0.2927588857680981
+        }
+      },
+      "one_sided_added_noise_l2": {
+        "signed_gain_residual": {
+          "pearson_r": -0.6673678121912903,
+          "spearman_r": -0.523922846144552
+        },
+        "absolute_gain_error": {
+          "pearson_r": 0.38488788333265506,
+          "spearman_r": 0.27894676779254834
+        }
+      }
+    },
+    "folds": [
+      {
+        "fold": "fold_0",
+        "cells": 20,
+        "mean_signed_gain_residual": -0.007157199999999998,
+        "mean_absolute_gain_error": 0.10673629999999998
+      },
+      {
+        "fold": "fold_1",
+        "cells": 20,
+        "mean_signed_gain_residual": -0.01190515,
+        "mean_absolute_gain_error": 0.04404735
+      },
+      {
+        "fold": "fold_2",
+        "cells": 20,
+        "mean_signed_gain_residual": 0.025309050000000007,
+        "mean_absolute_gain_error": 0.05166364999999999
+      }
+    ],
+    "unordered_device_pairs": [
+      {
+        "unordered_device_pair": "nexus4_1|nexus4_2",
+        "cells": 6,
+        "mean_signed_gain_residual": 0.004121166666666663,
+        "mean_absolute_gain_error": 0.02711683333333334
+      },
+      {
+        "unordered_device_pair": "nexus4_1|s3_1",
+        "cells": 6,
+        "mean_signed_gain_residual": -0.009157666666666663,
+        "mean_absolute_gain_error": 0.040182
+      },
+      {
+        "unordered_device_pair": "nexus4_1|s3_2",
+        "cells": 6,
+        "mean_signed_gain_residual": 0.04605033333333334,
+        "mean_absolute_gain_error": 0.05692933333333334
+      },
+      {
+        "unordered_device_pair": "nexus4_1|s3mini_1",
+        "cells": 6,
+        "mean_signed_gain_residual": -0.053369333333333345,
+        "mean_absolute_gain_error": 0.07966000000000001
+      },
+      {
+        "unordered_device_pair": "nexus4_2|s3_1",
+        "cells": 6,
+        "mean_signed_gain_residual": 0.021412999999999998,
+        "mean_absolute_gain_error": 0.027331666666666667
+      },
+      {
+        "unordered_device_pair": "nexus4_2|s3_2",
+        "cells": 6,
+        "mean_signed_gain_residual": 0.021841666666666672,
+        "mean_absolute_gain_error": 0.04362166666666667
+      },
+      {
+        "unordered_device_pair": "nexus4_2|s3mini_1",
+        "cells": 6,
+        "mean_signed_gain_residual": -0.035205833333333325,
+        "mean_absolute_gain_error": 0.11070583333333332
+      },
+      {
+        "unordered_device_pair": "s3_1|s3_2",
+        "cells": 6,
+        "mean_signed_gain_residual": 0.04485,
+        "mean_absolute_gain_error": 0.057041
+      },
+      {
+        "unordered_device_pair": "s3_1|s3mini_1",
+        "cells": 6,
+        "mean_signed_gain_residual": -0.006457,
+        "mean_absolute_gain_error": 0.11942866666666667
+      },
+      {
+        "unordered_device_pair": "s3_2|s3mini_1",
+        "cells": 6,
+        "mean_signed_gain_residual": -0.013263999999999998,
+        "mean_absolute_gain_error": 0.11280733333333333
+      }
+    ],
+    "largest_negative_signed_residuals": [
+      {
+        "fold": "fold_0",
+        "source_device": "s3mini_1",
+        "target_device": "nexus4_2",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": -0.325188,
+        "gain_synthetic_degradation": -0.018832,
+        "signed_gain_residual": -0.30635599999999996,
+        "absolute_gain_error": 0.30635599999999996,
+        "absolute_log_gain_ratio": 0.02657593451511738,
+        "gyroscope_bias_delta_l2": 0.018825323287826257,
+        "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+        "noise_sigma_delta_l2": 0.015691656988785812,
+        "one_sided_added_noise_l2": 0.030628928526659882,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "s3mini_1",
+        "target_device": "s3_1",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": -0.305217,
+        "gain_synthetic_degradation": -0.019527,
+        "signed_gain_residual": -0.28569,
+        "absolute_gain_error": 0.28569,
+        "absolute_log_gain_ratio": 0.03342776469259763,
+        "gyroscope_bias_delta_l2": 0.023708819954339096,
+        "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+        "noise_sigma_delta_l2": 0.017258963626864764,
+        "one_sided_added_noise_l2": 0.03200997539995362,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "s3mini_1",
+        "target_device": "nexus4_1",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": -0.276634,
+        "gain_synthetic_degradation": -0.026733,
+        "signed_gain_residual": -0.24990099999999998,
+        "absolute_gain_error": 0.24990099999999998,
+        "absolute_log_gain_ratio": 0.07005120356115146,
+        "gyroscope_bias_delta_l2": 0.01920958479722948,
+        "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+        "noise_sigma_delta_l2": 0.012664740096731976,
+        "one_sided_added_noise_l2": 0.026806641952874844,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "s3mini_1",
+        "target_device": "s3_2",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": -0.22559,
+        "gain_synthetic_degradation": -0.010153,
+        "signed_gain_residual": -0.21543700000000002,
+        "absolute_gain_error": 0.21543700000000002,
+        "absolute_log_gain_ratio": 0.008154687766343562,
+        "gyroscope_bias_delta_l2": 0.02964994144849716,
+        "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+        "noise_sigma_delta_l2": 0.017475293703531757,
+        "one_sided_added_noise_l2": 0.03207007491256795,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_1",
+        "source_device": "s3mini_1",
+        "target_device": "s3_1",
+        "calibration_users": [
+          "a",
+          "h"
+        ],
+        "real_degradation": -0.039786,
+        "gain_synthetic_degradation": 0.052181,
+        "signed_gain_residual": -0.091967,
+        "absolute_gain_error": 0.091967,
+        "absolute_log_gain_ratio": 0.023012121823412807,
+        "gyroscope_bias_delta_l2": 0.019845062699778503,
+        "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+        "noise_sigma_delta_l2": 0.010413511428726365,
+        "one_sided_added_noise_l2": 0.022834720373628718,
+        "same_model": 0
+      }
+    ],
+    "largest_positive_signed_residuals": [
+      {
+        "fold": "fold_0",
+        "source_device": "s3_1",
+        "target_device": "s3mini_1",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": 0.207638,
+        "gain_synthetic_degradation": -0.036332,
+        "signed_gain_residual": 0.24397,
+        "absolute_gain_error": 0.24397,
+        "absolute_log_gain_ratio": 0.033427764692597624,
+        "gyroscope_bias_delta_l2": 0.023708819954339096,
+        "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+        "noise_sigma_delta_l2": 0.017258963626864764,
+        "one_sided_added_noise_l2": 0.0,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "s3_2",
+        "target_device": "s3mini_1",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": 0.228449,
+        "gain_synthetic_degradation": -0.010271,
+        "signed_gain_residual": 0.23872000000000002,
+        "absolute_gain_error": 0.23872000000000002,
+        "absolute_log_gain_ratio": 0.008154687766343552,
+        "gyroscope_bias_delta_l2": 0.02964994144849716,
+        "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+        "noise_sigma_delta_l2": 0.017475293703531757,
+        "one_sided_added_noise_l2": 0.0,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "nexus4_2",
+        "target_device": "s3mini_1",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": 0.183202,
+        "gain_synthetic_degradation": 0.028867,
+        "signed_gain_residual": 0.154335,
+        "absolute_gain_error": 0.154335,
+        "absolute_log_gain_ratio": 0.026575934515117482,
+        "gyroscope_bias_delta_l2": 0.018825323287826257,
+        "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+        "noise_sigma_delta_l2": 0.015691656988785812,
+        "one_sided_added_noise_l2": 0.0,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_0",
+        "source_device": "nexus4_1",
+        "target_device": "s3_2",
+        "calibration_users": [
+          "b",
+          "g"
+        ],
+        "real_degradation": 0.251553,
+        "gain_synthetic_degradation": 0.113569,
+        "signed_gain_residual": 0.13798400000000002,
+        "absolute_gain_error": 0.13798400000000002,
+        "absolute_log_gain_ratio": 0.06189651579480801,
+        "gyroscope_bias_delta_l2": 0.017404386915344957,
+        "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+        "noise_sigma_delta_l2": 0.006202516088054052,
+        "one_sided_added_noise_l2": 0.01933871393140085,
+        "same_model": 0
+      },
+      {
+        "fold": "fold_2",
+        "source_device": "s3_2",
+        "target_device": "nexus4_1",
+        "calibration_users": [
+          "c",
+          "i"
+        ],
+        "real_degradation": 0.259923,
+        "gain_synthetic_degradation": 0.143501,
+        "signed_gain_residual": 0.11642200000000003,
+        "absolute_gain_error": 0.11642200000000003,
+        "absolute_log_gain_ratio": 0.07095584335916767,
+        "gyroscope_bias_delta_l2": 0.010400338479721195,
+        "gyroscope_bias_user_disagreement_max": 0.0018166967296315575,
+        "noise_sigma_delta_l2": 0.002901432498034691,
+        "one_sided_added_noise_l2": 0.0,
+        "same_model": 0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.065049,
+      "gain_synthetic_degradation": 0.072931,
+      "signed_gain_residual": -0.007882,
+      "absolute_gain_error": 0.007882,
+      "absolute_log_gain_ratio": 0.04347526904603404,
+      "gyroscope_bias_delta_l2": 0.00043959267655819357,
+      "gyroscope_bias_user_disagreement_max": 0.001092350634020574,
+      "noise_sigma_delta_l2": 0.0030324311835673414,
+      "one_sided_added_noise_l2": 0.014816720619003713,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.074101,
+      "gain_synthetic_degradation": 0.062716,
+      "signed_gain_residual": 0.011385000000000006,
+      "absolute_gain_error": 0.011385000000000006,
+      "absolute_log_gain_ratio": 0.036623438868553855,
+      "gyroscope_bias_delta_l2": 0.00829780434058863,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.005609910469468609,
+      "one_sided_added_noise_l2": 0.018541586036042255,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.251553,
+      "gain_synthetic_degradation": 0.113569,
+      "signed_gain_residual": 0.13798400000000002,
+      "absolute_gain_error": 0.13798400000000002,
+      "absolute_log_gain_ratio": 0.06189651579480801,
+      "gyroscope_bias_delta_l2": 0.017404386915344957,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.006202516088054052,
+      "one_sided_added_noise_l2": 0.01933871393140085,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.195293,
+      "gain_synthetic_degradation": 0.188222,
+      "signed_gain_residual": 0.007070999999999994,
+      "absolute_gain_error": 0.007070999999999994,
+      "absolute_log_gain_ratio": 0.07005120356115153,
+      "gyroscope_bias_delta_l2": 0.01920958479722948,
+      "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+      "noise_sigma_delta_l2": 0.012664740096731976,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": -0.036169,
+      "gain_synthetic_degradation": -0.030776,
+      "signed_gain_residual": -0.0053929999999999985,
+      "absolute_gain_error": 0.0053929999999999985,
+      "absolute_log_gain_ratio": 0.043475269046034035,
+      "gyroscope_bias_delta_l2": 0.00043959267655819357,
+      "gyroscope_bias_user_disagreement_max": 0.001092350634020574,
+      "noise_sigma_delta_l2": 0.0030324311835673414,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.015177,
+      "gain_synthetic_degradation": -0.00966,
+      "signed_gain_residual": 0.024836999999999998,
+      "absolute_gain_error": 0.024836999999999998,
+      "absolute_log_gain_ratio": 0.006851830177480216,
+      "gyroscope_bias_delta_l2": 0.008265764627538755,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.0038310229806863146,
+      "one_sided_added_noise_l2": 0.01368944179068435,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.066749,
+      "gain_synthetic_degradation": 0.024461,
+      "signed_gain_residual": 0.042288000000000006,
+      "absolute_gain_error": 0.042288000000000006,
+      "absolute_log_gain_ratio": 0.01842124674877391,
+      "gyroscope_bias_delta_l2": 0.017715894941305117,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.0046280294844793434,
+      "one_sided_added_noise_l2": 0.014751144373543879,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.183202,
+      "gain_synthetic_degradation": 0.028867,
+      "signed_gain_residual": 0.154335,
+      "absolute_gain_error": 0.154335,
+      "absolute_log_gain_ratio": 0.026575934515117482,
+      "gyroscope_bias_delta_l2": 0.018825323287826257,
+      "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+      "noise_sigma_delta_l2": 0.015691656988785812,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.027738,
+      "gain_synthetic_degradation": 0.05259,
+      "signed_gain_residual": -0.024852,
+      "absolute_gain_error": 0.024852,
+      "absolute_log_gain_ratio": 0.03662343886855383,
+      "gyroscope_bias_delta_l2": 0.00829780434058863,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.005609910469468609,
+      "one_sided_added_noise_l2": 0.006143935254863208,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.013998,
+      "gain_synthetic_degradation": -0.003965,
+      "signed_gain_residual": 0.017963,
+      "absolute_gain_error": 0.017963,
+      "absolute_log_gain_ratio": 0.006851830177480227,
+      "gyroscope_bias_delta_l2": 0.008265764627538755,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.0038310229806863146,
+      "one_sided_added_noise_l2": 0.010044578344865393,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.07773,
+      "gain_synthetic_degradation": -0.034078,
+      "signed_gain_residual": 0.11180799999999999,
+      "absolute_gain_error": 0.11180799999999999,
+      "absolute_log_gain_ratio": 0.025273076926254148,
+      "gyroscope_bias_delta_l2": 0.024121101062750096,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.0008422751183383497,
+      "one_sided_added_noise_l2": 0.005495038106200915,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.207638,
+      "gain_synthetic_degradation": -0.036332,
+      "signed_gain_residual": 0.24397,
+      "absolute_gain_error": 0.24397,
+      "absolute_log_gain_ratio": 0.033427764692597624,
+      "gyroscope_bias_delta_l2": 0.023708819954339096,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.017258963626864764,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.128383,
+      "gain_synthetic_degradation": 0.122953,
+      "signed_gain_residual": 0.00542999999999999,
+      "absolute_gain_error": 0.00542999999999999,
+      "absolute_log_gain_ratio": 0.06189651579480805,
+      "gyroscope_bias_delta_l2": 0.017404386915344957,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.006202516088054052,
+      "one_sided_added_noise_l2": 0.008005760701673924,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.007194,
+      "gain_synthetic_degradation": 0.041133,
+      "signed_gain_residual": -0.033939000000000004,
+      "absolute_gain_error": 0.033939000000000004,
+      "absolute_log_gain_ratio": 0.018421246748773816,
+      "gyroscope_bias_delta_l2": 0.017715894941305117,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.0046280294844793434,
+      "one_sided_added_noise_l2": 0.011279974207534979,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.049433,
+      "gain_synthetic_degradation": 0.058918,
+      "signed_gain_residual": -0.009485,
+      "absolute_gain_error": 0.009485,
+      "absolute_log_gain_ratio": 0.025273076926254027,
+      "gyroscope_bias_delta_l2": 0.024121101062750096,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.0008422751183383497,
+      "one_sided_added_noise_l2": 0.005132666363257556,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": 0.228449,
+      "gain_synthetic_degradation": -0.010271,
+      "signed_gain_residual": 0.23872000000000002,
+      "absolute_gain_error": 0.23872000000000002,
+      "absolute_log_gain_ratio": 0.008154687766343552,
+      "gyroscope_bias_delta_l2": 0.02964994144849716,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.017475293703531757,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": -0.276634,
+      "gain_synthetic_degradation": -0.026733,
+      "signed_gain_residual": -0.24990099999999998,
+      "absolute_gain_error": 0.24990099999999998,
+      "absolute_log_gain_ratio": 0.07005120356115146,
+      "gyroscope_bias_delta_l2": 0.01920958479722948,
+      "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+      "noise_sigma_delta_l2": 0.012664740096731976,
+      "one_sided_added_noise_l2": 0.026806641952874844,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": -0.325188,
+      "gain_synthetic_degradation": -0.018832,
+      "signed_gain_residual": -0.30635599999999996,
+      "absolute_gain_error": 0.30635599999999996,
+      "absolute_log_gain_ratio": 0.02657593451511738,
+      "gyroscope_bias_delta_l2": 0.018825323287826257,
+      "gyroscope_bias_user_disagreement_max": 0.006749509360191462,
+      "noise_sigma_delta_l2": 0.015691656988785812,
+      "one_sided_added_noise_l2": 0.030628928526659882,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": -0.305217,
+      "gain_synthetic_degradation": -0.019527,
+      "signed_gain_residual": -0.28569,
+      "absolute_gain_error": 0.28569,
+      "absolute_log_gain_ratio": 0.03342776469259763,
+      "gyroscope_bias_delta_l2": 0.023708819954339096,
+      "gyroscope_bias_user_disagreement_max": 0.01043449850838288,
+      "noise_sigma_delta_l2": 0.017258963626864764,
+      "one_sided_added_noise_l2": 0.03200997539995362,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "real_degradation": -0.22559,
+      "gain_synthetic_degradation": -0.010153,
+      "signed_gain_residual": -0.21543700000000002,
+      "absolute_gain_error": 0.21543700000000002,
+      "absolute_log_gain_ratio": 0.008154687766343562,
+      "gyroscope_bias_delta_l2": 0.02964994144849716,
+      "gyroscope_bias_user_disagreement_max": 0.039350112215351486,
+      "noise_sigma_delta_l2": 0.017475293703531757,
+      "one_sided_added_noise_l2": 0.03207007491256795,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.045544,
+      "gain_synthetic_degradation": -0.010915,
+      "signed_gain_residual": -0.034629,
+      "absolute_gain_error": 0.034629,
+      "absolute_log_gain_ratio": 0.040010063892292155,
+      "gyroscope_bias_delta_l2": 0.0008593519150835414,
+      "gyroscope_bias_user_disagreement_max": 0.0009147301132124736,
+      "noise_sigma_delta_l2": 0.00125227460435133,
+      "one_sided_added_noise_l2": 0.00786509690232173,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.103066,
+      "gain_synthetic_degradation": -0.013186,
+      "signed_gain_residual": -0.08988,
+      "absolute_gain_error": 0.08988,
+      "absolute_log_gain_ratio": 0.05425542417457097,
+      "gyroscope_bias_delta_l2": 0.00920939523666278,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.002890414866056806,
+      "one_sided_added_noise_l2": 0.011092283636852837,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.0136,
+      "gain_synthetic_degradation": 0.019037,
+      "signed_gain_residual": -0.032637,
+      "absolute_gain_error": 0.032637,
+      "absolute_log_gain_ratio": 0.07729902847704517,
+      "gyroscope_bias_delta_l2": 0.03203154633781023,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.0025918293033433213,
+      "one_sided_added_noise_l2": 0.011061020356346108,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.002054,
+      "gain_synthetic_degradation": 0.018317,
+      "signed_gain_residual": -0.016263,
+      "absolute_gain_error": 0.016263,
+      "absolute_log_gain_ratio": 0.07726754599798367,
+      "gyroscope_bias_delta_l2": 0.017635256560284647,
+      "gyroscope_bias_user_disagreement_max": 0.0011429453600807454,
+      "noise_sigma_delta_l2": 0.008197943020354495,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.118658,
+      "gain_synthetic_degradation": 0.036276,
+      "signed_gain_residual": 0.082382,
+      "absolute_gain_error": 0.082382,
+      "absolute_log_gain_ratio": 0.04001006389229216,
+      "gyroscope_bias_delta_l2": 0.0008593519150835414,
+      "gyroscope_bias_user_disagreement_max": 0.0009147301132124736,
+      "noise_sigma_delta_l2": 0.00125227460435133,
+      "one_sided_added_noise_l2": 0.0021158150535878694,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.01683,
+      "gain_synthetic_degradation": 0.000926,
+      "signed_gain_residual": -0.017756,
+      "absolute_gain_error": 0.017756,
+      "absolute_log_gain_ratio": 0.014245360282278796,
+      "gyroscope_bias_delta_l2": 0.009323647997960743,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.0028154738527809134,
+      "one_sided_added_noise_l2": 0.009909016716096402,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.044127,
+      "gain_synthetic_degradation": 0.00483,
+      "signed_gain_residual": 0.039297,
+      "absolute_gain_error": 0.039297,
+      "absolute_log_gain_ratio": 0.03728896458475298,
+      "gyroscope_bias_delta_l2": 0.031966661381820166,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.002564291018950901,
+      "one_sided_added_noise_l2": 0.009887836759463283,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.004997,
+      "gain_synthetic_degradation": 0.00483,
+      "signed_gain_residual": 0.00016699999999999961,
+      "absolute_gain_error": 0.00016699999999999961,
+      "absolute_log_gain_ratio": 0.03725748210569152,
+      "gyroscope_bias_delta_l2": 0.016912512824427083,
+      "gyroscope_bias_user_disagreement_max": 0.0011429453600807454,
+      "noise_sigma_delta_l2": 0.009064773240698374,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.040248,
+      "gain_synthetic_degradation": 0.027122,
+      "signed_gain_residual": 0.013125999999999999,
+      "absolute_gain_error": 0.013125999999999999,
+      "absolute_log_gain_ratio": 0.054255424174570924,
+      "gyroscope_bias_delta_l2": 0.00920939523666278,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.002890414866056806,
+      "one_sided_added_noise_l2": 0.004626994387646914,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.021027,
+      "gain_synthetic_degradation": -0.010841,
+      "signed_gain_residual": 0.031868,
+      "absolute_gain_error": 0.031868,
+      "absolute_log_gain_ratio": 0.014245360282278753,
+      "gyroscope_bias_delta_l2": 0.009323647997960743,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.0028154738527809134,
+      "one_sided_added_noise_l2": 0.007344522380980441,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.096847,
+      "gain_synthetic_degradation": 0.006948,
+      "signed_gain_residual": 0.089899,
+      "absolute_gain_error": 0.089899,
+      "absolute_log_gain_ratio": 0.0230436043024743,
+      "gyroscope_bias_delta_l2": 0.03898907137271306,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.0007497917052799537,
+      "one_sided_added_noise_l2": 0.004797574939860991,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.058633,
+      "gain_synthetic_degradation": 0.006948,
+      "signed_gain_residual": 0.051684999999999995,
+      "absolute_gain_error": 0.051684999999999995,
+      "absolute_log_gain_ratio": 0.02301212182341271,
+      "gyroscope_bias_delta_l2": 0.019845062699778503,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.010413511428726365,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.093531,
+      "gain_synthetic_degradation": 0.080533,
+      "signed_gain_residual": 0.01299800000000001,
+      "absolute_gain_error": 0.01299800000000001,
+      "absolute_log_gain_ratio": 0.07729902847704526,
+      "gyroscope_bias_delta_l2": 0.03203154633781023,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.0025918293033433213,
+      "one_sided_added_noise_l2": 0.004143426208244793,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.021513,
+      "gain_synthetic_degradation": 0.009888,
+      "signed_gain_residual": -0.031401,
+      "absolute_gain_error": 0.031401,
+      "absolute_log_gain_ratio": 0.03728896458475292,
+      "gyroscope_bias_delta_l2": 0.031966661381820166,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.002564291018950901,
+      "one_sided_added_noise_l2": 0.007069243321840185,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.038193,
+      "gain_synthetic_degradation": -0.011105,
+      "signed_gain_residual": -0.027087999999999997,
+      "absolute_gain_error": 0.027087999999999997,
+      "absolute_log_gain_ratio": 0.023043604302474176,
+      "gyroscope_bias_delta_l2": 0.03898907137271306,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.0007497917052799537,
+      "one_sided_added_noise_l2": 0.004412279902762992,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.017758,
+      "gain_synthetic_degradation": 0.0,
+      "signed_gain_residual": -0.017758,
+      "absolute_gain_error": 0.017758,
+      "absolute_log_gain_ratio": 3.148247906150683e-05,
+      "gyroscope_bias_delta_l2": 0.04171430032223344,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.010321193768500887,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.285576,
+      "gain_synthetic_degradation": 0.343499,
+      "signed_gain_residual": -0.057923,
+      "absolute_gain_error": 0.057923,
+      "absolute_log_gain_ratio": 0.07726754599798362,
+      "gyroscope_bias_delta_l2": 0.017635256560284647,
+      "gyroscope_bias_user_disagreement_max": 0.0011429453600807454,
+      "noise_sigma_delta_l2": 0.008197943020354495,
+      "one_sided_added_noise_l2": 0.020488893950741632,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": 0.024908,
+      "gain_synthetic_degradation": 0.101735,
+      "signed_gain_residual": -0.076827,
+      "absolute_gain_error": 0.076827,
+      "absolute_log_gain_ratio": 0.03725748210569159,
+      "gyroscope_bias_delta_l2": 0.016912512824427083,
+      "gyroscope_bias_user_disagreement_max": 0.0011429453600807454,
+      "noise_sigma_delta_l2": 0.009064773240698374,
+      "one_sided_added_noise_l2": 0.021844400913429943,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.039786,
+      "gain_synthetic_degradation": 0.052181,
+      "signed_gain_residual": -0.091967,
+      "absolute_gain_error": 0.091967,
+      "absolute_log_gain_ratio": 0.023012121823412807,
+      "gyroscope_bias_delta_l2": 0.019845062699778503,
+      "gyroscope_bias_user_disagreement_max": 0.0033785387377650794,
+      "noise_sigma_delta_l2": 0.010413511428726365,
+      "one_sided_added_noise_l2": 0.022834720373628718,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "real_degradation": -0.065396,
+      "gain_synthetic_degradation": 0.0,
+      "signed_gain_residual": -0.065396,
+      "absolute_gain_error": 0.065396,
+      "absolute_log_gain_ratio": 3.148247906149656e-05,
+      "gyroscope_bias_delta_l2": 0.04171430032223344,
+      "gyroscope_bias_user_disagreement_max": 0.009923060442887472,
+      "noise_sigma_delta_l2": 0.010321193768500887,
+      "one_sided_added_noise_l2": 0.022912288534868583,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.118749,
+      "gain_synthetic_degradation": 0.139832,
+      "signed_gain_residual": -0.02108300000000002,
+      "absolute_gain_error": 0.02108300000000002,
+      "absolute_log_gain_ratio": 0.041393494720936425,
+      "gyroscope_bias_delta_l2": 0.0008510478746258505,
+      "gyroscope_bias_user_disagreement_max": 0.0017865856210293476,
+      "noise_sigma_delta_l2": 0.003064784302493777,
+      "one_sided_added_noise_l2": 0.014183048163844804,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.233792,
+      "gain_synthetic_degradation": 0.16523,
+      "signed_gain_residual": 0.06856200000000001,
+      "absolute_gain_error": 0.06856200000000001,
+      "absolute_log_gain_ratio": 0.045436881301746085,
+      "gyroscope_bias_delta_l2": 0.010323009434578756,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.0027390826304275317,
+      "one_sided_added_noise_l2": 0.013170430077295348,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.315889,
+      "gain_synthetic_degradation": 0.279784,
+      "signed_gain_residual": 0.036105,
+      "absolute_gain_error": 0.036105,
+      "absolute_log_gain_ratio": 0.07095584335916776,
+      "gyroscope_bias_delta_l2": 0.010400338479721195,
+      "gyroscope_bias_user_disagreement_max": 0.0018166967296315575,
+      "noise_sigma_delta_l2": 0.002901432498034691,
+      "one_sided_added_noise_l2": 0.012921092690271562,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.353747,
+      "gain_synthetic_degradation": 0.281946,
+      "signed_gain_residual": 0.071801,
+      "absolute_gain_error": 0.071801,
+      "absolute_log_gain_ratio": 0.07403167261113014,
+      "gyroscope_bias_delta_l2": 0.016434951799754478,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.010562547187913409,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": -0.022624,
+      "gain_synthetic_degradation": -0.033956,
+      "signed_gain_residual": 0.011332000000000002,
+      "absolute_gain_error": 0.011332000000000002,
+      "absolute_log_gain_ratio": 0.04139349472093638,
+      "gyroscope_bias_delta_l2": 0.0008510478746258505,
+      "gyroscope_bias_user_disagreement_max": 0.0017865856210293476,
+      "noise_sigma_delta_l2": 0.003064784302493777,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.064511,
+      "gain_synthetic_degradation": 0.011754,
+      "signed_gain_residual": 0.052757,
+      "absolute_gain_error": 0.052757,
+      "absolute_log_gain_ratio": 0.004043386580809654,
+      "gyroscope_bias_delta_l2": 0.01107353742059726,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.0025567986920384104,
+      "one_sided_added_noise_l2": 0.008113039863749377,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.126646,
+      "gain_synthetic_degradation": 0.048836,
+      "signed_gain_residual": 0.07781000000000002,
+      "absolute_gain_error": 0.07781000000000002,
+      "absolute_log_gain_ratio": 0.029562348638231317,
+      "gyroscope_bias_delta_l2": 0.009709004476194272,
+      "gyroscope_bias_user_disagreement_max": 0.0018166967296315575,
+      "noise_sigma_delta_l2": 0.002749048036248943,
+      "one_sided_added_noise_l2": 0.007923020672856995,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.130976,
+      "gain_synthetic_degradation": 0.058978,
+      "signed_gain_residual": 0.071998,
+      "absolute_gain_error": 0.071998,
+      "absolute_log_gain_ratio": 0.03263817789019376,
+      "gyroscope_bias_delta_l2": 0.015937222066400636,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.01310296329052418,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.034177,
+      "gain_synthetic_degradation": 0.067464,
+      "signed_gain_residual": -0.033287,
+      "absolute_gain_error": 0.033287,
+      "absolute_log_gain_ratio": 0.045436881301746175,
+      "gyroscope_bias_delta_l2": 0.010323009434578756,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.0027390826304275317,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.024248,
+      "gain_synthetic_degradation": 0.005439,
+      "signed_gain_residual": 0.018809,
+      "absolute_gain_error": 0.018809,
+      "absolute_log_gain_ratio": 0.00404338658080975,
+      "gyroscope_bias_delta_l2": 0.01107353742059726,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.0025567986920384104,
+      "one_sided_added_noise_l2": 0.009670576126984472,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.032804,
+      "gain_synthetic_degradation": 0.015148,
+      "signed_gain_residual": 0.017655999999999998,
+      "absolute_gain_error": 0.017655999999999998,
+      "absolute_log_gain_ratio": 0.025518962057421678,
+      "gyroscope_bias_delta_l2": 0.01819474773109568,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.00093983054023186,
+      "one_sided_added_noise_l2": 0.005167598329439924,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.030723,
+      "gain_synthetic_degradation": 0.016075,
+      "signed_gain_residual": 0.014648000000000001,
+      "absolute_gain_error": 0.014648000000000001,
+      "absolute_log_gain_ratio": 0.02859479130938415,
+      "gyroscope_bias_delta_l2": 0.023650514711049703,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.013069525018754566,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.259923,
+      "gain_synthetic_degradation": 0.143501,
+      "signed_gain_residual": 0.11642200000000003,
+      "absolute_gain_error": 0.11642200000000003,
+      "absolute_log_gain_ratio": 0.07095584335916767,
+      "gyroscope_bias_delta_l2": 0.010400338479721195,
+      "gyroscope_bias_user_disagreement_max": 0.0018166967296315575,
+      "noise_sigma_delta_l2": 0.002901432498034691,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.037877,
+      "gain_synthetic_degradation": 0.000882,
+      "signed_gain_residual": 0.036995,
+      "absolute_gain_error": 0.036995,
+      "absolute_log_gain_ratio": 0.02956234863823134,
+      "gyroscope_bias_delta_l2": 0.009709004476194272,
+      "gyroscope_bias_user_disagreement_max": 0.0018166967296315575,
+      "noise_sigma_delta_l2": 0.002749048036248943,
+      "one_sided_added_noise_l2": 0.00984776499972819,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.0835,
+      "gain_synthetic_degradation": -0.00281,
+      "signed_gain_residual": 0.08631,
+      "absolute_gain_error": 0.08631,
+      "absolute_log_gain_ratio": 0.025518962057421643,
+      "gyroscope_bias_delta_l2": 0.01819474773109568,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.00093983054023186,
+      "one_sided_added_noise_l2": 0.0057627827136520655,
+      "same_model": 1
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.064577,
+      "gain_synthetic_degradation": 0.004667,
+      "signed_gain_residual": 0.05991,
+      "absolute_gain_error": 0.05991,
+      "absolute_log_gain_ratio": 0.003075829251962409,
+      "gyroscope_bias_delta_l2": 0.018114498349702985,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.01289134315499275,
+      "one_sided_added_noise_l2": 0.0,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.248572,
+      "gain_synthetic_degradation": 0.323573,
+      "signed_gain_residual": -0.07500100000000001,
+      "absolute_gain_error": 0.07500100000000001,
+      "absolute_log_gain_ratio": 0.07403167261113017,
+      "gyroscope_bias_delta_l2": 0.016434951799754478,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.010562547187913409,
+      "one_sided_added_noise_l2": 0.024497802507695985,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.157473,
+      "gain_synthetic_degradation": 0.212025,
+      "signed_gain_residual": -0.05455199999999999,
+      "absolute_gain_error": 0.05455199999999999,
+      "absolute_log_gain_ratio": 0.0326381778901939,
+      "gyroscope_bias_delta_l2": 0.015937222066400636,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.01310296329052418,
+      "one_sided_added_noise_l2": 0.028307263783771422,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": 0.241994,
+      "gain_synthetic_degradation": 0.213382,
+      "signed_gain_residual": 0.028612,
+      "absolute_gain_error": 0.028612,
+      "absolute_log_gain_ratio": 0.028594791309384002,
+      "gyroscope_bias_delta_l2": 0.023650514711049703,
+      "gyroscope_bias_user_disagreement_max": 0.003487851423888358,
+      "noise_sigma_delta_l2": 0.013069525018754566,
+      "one_sided_added_noise_l2": 0.027813711656789024,
+      "same_model": 0
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "real_degradation": -0.026855,
+      "gain_synthetic_degradation": 0.052768,
+      "signed_gain_residual": -0.079623,
+      "absolute_gain_error": 0.079623,
+      "absolute_log_gain_ratio": 0.0030758292519623754,
+      "gyroscope_bias_delta_l2": 0.018114498349702985,
+      "gyroscope_bias_user_disagreement_max": 0.0032640580972255195,
+      "noise_sigma_delta_l2": 0.01289134315499275,
+      "one_sided_added_noise_l2": 0.027696515376788192,
+      "same_model": 0
+    }
+  ]
+}
