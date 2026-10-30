@@ -1,0 +1,126 @@
+{
+  "protocol_commit": "b564116",
+  "training_implementation_commit": "5e1a7d7",
+  "scope": "source-only reduced lifecycle smoke test; no target device evaluated",
+  "fold": "fold_0",
+  "source_device": "nexus4_1",
+  "train_users": [
+    "b",
+    "d",
+    "f",
+    "g",
+    "i"
+  ],
+  "validation_users": [
+    "h"
+  ],
+  "train_rows": 384,
+  "validation_rows": 192,
+  "selection_epoch_cap": 2,
+  "classes": [
+    "bike",
+    "sit",
+    "stairsdown",
+    "stairsup",
+    "stand",
+    "walk"
+  ],
+  "backend": "cpu",
+  "python": "3.12.14",
+  "platform": "macOS-15.7.7-arm64-arm-64bit",
+  "torch": "2.15.0",
+  "torch_threads": 4,
+  "mps_built": true,
+  "mps_available": false,
+  "maximum_resident_set_size_raw": 858701824,
+  "architectures": [
+    {
+      "architecture": "compact_cnn",
+      "parameters": 94534,
+      "best_epoch": 2,
+      "selection_epochs_run": 2,
+      "source_validation_macro_f1": 0.3320719016083254,
+      "selection_seconds": 2.081071749998955,
+      "total_selection_and_refit_seconds": 4.836464708001586,
+      "refit_losses": [
+        1.4002231359481812,
+        0.7940133213996887
+      ],
+      "normalization_mean": [
+        -1.7993006706237793,
+        0.3031790852546692,
+        9.4031982421875,
+        0.0036302951630204916,
+        -0.007335270289331675,
+        -0.01757723093032837
+      ],
+      "normalization_std": [
+        3.699629068374634,
+        1.5143569707870483,
+        2.21905255317688,
+        0.49708008766174316,
+        0.5090619325637817,
+        0.5459226369857788
+      ],
+      "checkpoint_sha256": "a032e059500fa113237296b67702387ef189484f00980614734e3d28d623c8ed"
+    },
+    {
+      "architecture": "deepconvlstm",
+      "parameters": 295814,
+      "best_epoch": 1,
+      "selection_epochs_run": 2,
+      "source_validation_macro_f1": 0.16576064574581995,
+      "selection_seconds": 3.5684339579893276,
+      "total_selection_and_refit_seconds": 5.577587584004505,
+      "refit_losses": [
+        1.7924578587214153
+      ],
+      "normalization_mean": [
+        -1.7993006706237793,
+        0.3031790852546692,
+        9.4031982421875,
+        0.0036302951630204916,
+        -0.007335270289331675,
+        -0.01757723093032837
+      ],
+      "normalization_std": [
+        3.699629068374634,
+        1.5143569707870483,
+        2.21905255317688,
+        0.49708008766174316,
+        0.5090619325637817,
+        0.5459226369857788
+      ],
+      "checkpoint_sha256": "dc253e25116088995b2c939b54486eb236900c63c3bc5530f665e8b50cc58bd4"
+    },
+    {
+      "architecture": "resnet1d",
+      "parameters": 961222,
+      "best_epoch": 1,
+      "selection_epochs_run": 2,
+      "source_validation_macro_f1": 0.20290426872705355,
+      "selection_seconds": 8.08544058399275,
+      "total_selection_and_refit_seconds": 12.423685207992094,
+      "refit_losses": [
+        1.0655249820815191
+      ],
+      "normalization_mean": [
+        -1.7993006706237793,
+        0.3031790852546692,
+        9.4031982421875,
+        0.0036302951630204916,
+        -0.007335270289331675,
+        -0.01757723093032837
+      ],
+      "normalization_std": [
+        3.699629068374634,
+        1.5143569707870483,
+        2.21905255317688,
+        0.49708008766174316,
+        0.5090619325637817,
+        0.5459226369857788
+      ],
+      "checkpoint_sha256": "c638604e8709fbdeeba486962c84b499a44f1ecdb9b39e009485fafa7a3a2e72"
+    }
+  ]
+}
