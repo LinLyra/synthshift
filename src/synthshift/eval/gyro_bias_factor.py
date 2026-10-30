@@ -10,6 +10,7 @@ import numpy as np
 from synthshift.data.features import extract_features
 from synthshift.devices.gain import apply_accelerometer_gain, estimate_gain_profile, gain_ratio
 from synthshift.devices.gyro_bias import apply_gyroscope_bias, estimate_gyroscope_bias_profile
+from synthshift.devices.noise import GYRO_MAX_RAD_S
 from synthshift.eval.affine_synthetic import _raw_windows, _score
 from synthshift.eval.noise_synthetic import _fit
 from synthshift.models.statistical_baseline import _model
@@ -80,6 +81,8 @@ def run_gyro_bias_factor_experiment(
     manifest_path: Path,
     segment_root: Path,
     output_path: Path,
+    *,
+    gyro_max_rad_s: float = GYRO_MAX_RAD_S,
 ) -> dict[str, object]:
     with np.load(features_path) as bundle:
         table = {name: bundle[name] for name in bundle.files}
@@ -101,7 +104,11 @@ def run_gyro_bias_factor_experiment(
             if gain_profiles[key]["usable_users"] != fold["target_calibration_users"]:
                 raise ValueError(f"Gain profile does not contain both calibration users: {key}")
             bias_profiles[key] = estimate_gyroscope_bias_profile(
-                manifest_path, segment_root, fold["target_calibration_users"], device
+                manifest_path,
+                segment_root,
+                fold["target_calibration_users"],
+                device,
+                gyro_max_rad_s=gyro_max_rad_s,
             )
 
         for source in devices:
@@ -220,6 +227,7 @@ def run_gyro_bias_factor_experiment(
     payload = {
         "protocol_commit": "fb205ef",
         "method": "frozen four-condition accelerometer-gain and gyroscope-bias factor test",
+        "gyro_max_rad_s": gyro_max_rad_s,
         "summary": summary,
         "gain_profiles": list(gain_profiles.values()),
         "gyroscope_bias_profiles": list(bias_profiles.values()),
