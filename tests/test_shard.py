@@ -11,6 +11,7 @@ class ShardTest(unittest.TestCase):
     def test_shards_across_chunk_boundaries_without_duplicate_headers(self) -> None:
         frame = pd.DataFrame(
             {
+                "Arrival_Time": [1, 2, 3],
                 "Creation_Time": [1, 2, 3],
                 "x": [0.0] * 3,
                 "y": [0.0] * 3,

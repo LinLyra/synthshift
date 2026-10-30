@@ -1,0 +1,2586 @@
+{
+  "method": "Cross-correlation of high-passed acceleration magnitude on Arrival_Time. Labels are not read and no 3x3 map is fit.",
+  "parameters": {
+    "coarse_bin_ms": 50,
+    "fine_bin_ms": 5,
+    "fine_radius_ms": 200,
+    "max_lag_ms": 120000,
+    "highpass_window_s": 2.0,
+    "dynamic_percentile": 50.0,
+    "min_overlap_s": 20.0,
+    "min_dynamic_overlap_s": 5.0,
+    "min_correlation": 0.3,
+    "min_peak_margin": 0.1,
+    "max_half_diff_ms": 50.0,
+    "max_cross_user_diff_ms": 50.0,
+    "peak_separation_ms": 1000
+  },
+  "gates_fixed_before_hhar_result": true,
+  "sampling_density_note": "Fraction within 20 ms after applying the offset measures concurrent sampling density. A wrong constant offset still yields a near neighbour when both phones sample continuously.",
+  "split_config_sha256": "afa91bbc439e03c87c1b8a0007772a4c393a56cd206ea9a7951e8d5727381d61",
+  "streams": [
+    {
+      "user": "a",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 43556,
+        "outlier_timestamps": 0,
+        "samples": 280261,
+        "median_dt_ms": 5.0,
+        "span_s": 1883.521
+      }
+    },
+    {
+      "user": "a",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 43425,
+        "outlier_timestamps": 0,
+        "samples": 279583,
+        "median_dt_ms": 5.0,
+        "span_s": 1883.511
+      }
+    },
+    {
+      "user": "a",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 192,
+        "outlier_timestamps": 0,
+        "samples": 165719,
+        "median_dt_ms": 10.0,
+        "span_s": 1880.518
+      }
+    },
+    {
+      "user": "a",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 468,
+        "outlier_timestamps": 0,
+        "samples": 161538,
+        "median_dt_ms": 10.0,
+        "span_s": 1883.508
+      }
+    },
+    {
+      "user": "a",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 631,
+        "outlier_timestamps": 0,
+        "samples": 158687,
+        "median_dt_ms": 10.0,
+        "span_s": 1879.915
+      }
+    },
+    {
+      "user": "b",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 41532,
+        "outlier_timestamps": 0,
+        "samples": 321738,
+        "median_dt_ms": 5.0,
+        "span_s": 2235.708
+      }
+    },
+    {
+      "user": "b",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 40335,
+        "outlier_timestamps": 0,
+        "samples": 326313,
+        "median_dt_ms": 5.0,
+        "span_s": 2231.111
+      }
+    },
+    {
+      "user": "b",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 169,
+        "outlier_timestamps": 0,
+        "samples": 183650,
+        "median_dt_ms": 10.0,
+        "span_s": 2236.036
+      }
+    },
+    {
+      "user": "b",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 496,
+        "outlier_timestamps": 0,
+        "samples": 182801,
+        "median_dt_ms": 10.0,
+        "span_s": 2237.001
+      }
+    },
+    {
+      "user": "b",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 689,
+        "outlier_timestamps": 0,
+        "samples": 179782,
+        "median_dt_ms": 10.0,
+        "span_s": 2234.927
+      }
+    },
+    {
+      "user": "c",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 36564,
+        "outlier_timestamps": 0,
+        "samples": 262874,
+        "median_dt_ms": 5.0,
+        "span_s": 1926.98
+      }
+    },
+    {
+      "user": "c",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 40325,
+        "outlier_timestamps": 0,
+        "samples": 277478,
+        "median_dt_ms": 5.0,
+        "span_s": 1931.772
+      }
+    },
+    {
+      "user": "c",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 175,
+        "outlier_timestamps": 0,
+        "samples": 159356,
+        "median_dt_ms": 10.0,
+        "span_s": 1931.776
+      }
+    },
+    {
+      "user": "c",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 445,
+        "outlier_timestamps": 0,
+        "samples": 155618,
+        "median_dt_ms": 10.0,
+        "span_s": 1931.769
+      }
+    },
+    {
+      "user": "c",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 757,
+        "outlier_timestamps": 0,
+        "samples": 149848,
+        "median_dt_ms": 10.0,
+        "span_s": 1929.63
+      }
+    },
+    {
+      "user": "g",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 47656,
+        "outlier_timestamps": 0,
+        "samples": 313578,
+        "median_dt_ms": 5.0,
+        "span_s": 2314.104
+      }
+    },
+    {
+      "user": "g",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 48182,
+        "outlier_timestamps": 0,
+        "samples": 323967,
+        "median_dt_ms": 5.0,
+        "span_s": 2309.79
+      }
+    },
+    {
+      "user": "g",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 220,
+        "outlier_timestamps": 0,
+        "samples": 194631,
+        "median_dt_ms": 10.0,
+        "span_s": 2309.729
+      }
+    },
+    {
+      "user": "g",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 519,
+        "outlier_timestamps": 0,
+        "samples": 187943,
+        "median_dt_ms": 10.0,
+        "span_s": 2306.225
+      }
+    },
+    {
+      "user": "g",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 831,
+        "outlier_timestamps": 0,
+        "samples": 185768,
+        "median_dt_ms": 10.0,
+        "span_s": 2311.364
+      }
+    },
+    {
+      "user": "h",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 41568,
+        "outlier_timestamps": 0,
+        "samples": 268156,
+        "median_dt_ms": 5.0,
+        "span_s": 1913.222
+      }
+    },
+    {
+      "user": "h",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 39971,
+        "outlier_timestamps": 0,
+        "samples": 268913,
+        "median_dt_ms": 5.0,
+        "span_s": 1914.664
+      }
+    },
+    {
+      "user": "h",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 164,
+        "outlier_timestamps": 0,
+        "samples": 160531,
+        "median_dt_ms": 10.0,
+        "span_s": 1914.665
+      }
+    },
+    {
+      "user": "h",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 479,
+        "outlier_timestamps": 0,
+        "samples": 158708,
+        "median_dt_ms": 10.0,
+        "span_s": 1914.658
+      }
+    },
+    {
+      "user": "h",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 735,
+        "outlier_timestamps": 0,
+        "samples": 158544,
+        "median_dt_ms": 10.0,
+        "span_s": 1914.664
+      }
+    },
+    {
+      "user": "i",
+      "device": "nexus4_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 42059,
+        "outlier_timestamps": 0,
+        "samples": 323666,
+        "median_dt_ms": 5.0,
+        "span_s": 2193.801
+      }
+    },
+    {
+      "user": "i",
+      "device": "nexus4_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 43306,
+        "outlier_timestamps": 0,
+        "samples": 331393,
+        "median_dt_ms": 5.0,
+        "span_s": 2193.709
+      }
+    },
+    {
+      "user": "i",
+      "device": "s3_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 142,
+        "outlier_timestamps": 0,
+        "samples": 183931,
+        "median_dt_ms": 10.0,
+        "span_s": 2193.797
+      }
+    },
+    {
+      "user": "i",
+      "device": "s3_2",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 548,
+        "outlier_timestamps": 0,
+        "samples": 181601,
+        "median_dt_ms": 10.0,
+        "span_s": 2192.076
+      }
+    },
+    {
+      "user": "i",
+      "device": "s3mini_1",
+      "cleaning": {
+        "invalid_rows": 0,
+        "reversals": 0,
+        "duplicate_timestamps": 691,
+        "outlier_timestamps": 0,
+        "samples": 179821,
+        "median_dt_ms": 10.0,
+        "span_s": 2193.802
+      }
+    }
+  ],
+  "folds": [
+    {
+      "name": "fold_0",
+      "calibration_users": [
+        "b",
+        "g"
+      ],
+      "pairs": [
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "nexus4_2",
+          "shift_level": "instance",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": -345,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.805315,
+              "correlation_at_zero": -0.354237,
+              "second_peak_offset_ms": 750,
+              "second_peak_correlation": 0.54378,
+              "peak_margin": 0.261535,
+              "overlap_s": 2231.111,
+              "joint_bins": 13805,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -355,
+                -335
+              ],
+              "half_offset_abs_diff_ms": 20.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 320894,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.871864,
+                "fraction_within_50ms": 0.876863
+              },
+              "sampling_density_after_offset": {
+                "queries": 320890,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.872841,
+                "fraction_within_50ms": 0.877933
+              },
+              "usable": true
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": -350,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.300481,
+              "correlation_at_zero": 0.034609,
+              "second_peak_offset_ms": 4550,
+              "second_peak_correlation": 0.259932,
+              "peak_margin": 0.040548,
+              "overlap_s": 2309.785,
+              "joint_bins": 13694,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -30,
+                -345
+              ],
+              "half_offset_abs_diff_ms": 315.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 313577,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.857257,
+                "fraction_within_50ms": 0.863539
+              },
+              "sampling_density_after_offset": {
+                "queries": 313524,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.856458,
+                "fraction_within_50ms": 0.86261
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 5.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": -720,
+              "coarse_offset_ms": -700,
+              "peak_correlation": 0.806958,
+              "correlation_at_zero": -0.302535,
+              "second_peak_offset_ms": -1800,
+              "second_peak_correlation": 0.511612,
+              "peak_margin": 0.295346,
+              "overlap_s": 2235.702,
+              "joint_bins": 13792,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -725,
+                -715
+              ],
+              "half_offset_abs_diff_ms": 10.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 321736,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.872184,
+                "fraction_within_50ms": 0.876716
+              },
+              "sampling_density_after_offset": {
+                "queries": 321601,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.877643,
+                "fraction_within_50ms": 0.882037
+              },
+              "usable": true
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": 155,
+              "coarse_offset_ms": 150,
+              "peak_correlation": 0.320889,
+              "correlation_at_zero": -0.090556,
+              "second_peak_offset_ms": 1550,
+              "second_peak_correlation": 0.254049,
+              "peak_margin": 0.06684,
+              "overlap_s": 2309.729,
+              "joint_bins": 14150,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                410,
+                160
+              ],
+              "half_offset_abs_diff_ms": 250.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 313311,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.885883,
+                "fraction_within_50ms": 0.889117
+              },
+              "sampling_density_after_offset": {
+                "queries": 313331,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.886593,
+                "fraction_within_50ms": 0.890017
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 875.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": 120,
+              "coarse_offset_ms": 100,
+              "peak_correlation": 0.333922,
+              "correlation_at_zero": -0.021648,
+              "second_peak_offset_ms": 7600,
+              "second_peak_correlation": 0.156749,
+              "peak_margin": 0.177173,
+              "overlap_s": 2235.564,
+              "joint_bins": 13532,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -135,
+                110
+              ],
+              "half_offset_abs_diff_ms": 245.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 321710,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.860638,
+                "fraction_within_50ms": 0.864375
+              },
+              "sampling_density_after_offset": {
+                "queries": 321733,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.860179,
+                "fraction_within_50ms": 0.863903
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": 280,
+              "coarse_offset_ms": 300,
+              "peak_correlation": 0.704535,
+              "correlation_at_zero": -0.452517,
+              "second_peak_offset_ms": 1450,
+              "second_peak_correlation": 0.444448,
+              "peak_margin": 0.260087,
+              "overlap_s": 2306.225,
+              "joint_bins": 13467,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                285,
+                270
+              ],
+              "half_offset_abs_diff_ms": 15.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 312977,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.857114,
+                "fraction_within_50ms": 0.860747
+              },
+              "sampling_density_after_offset": {
+                "queries": 312992,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.855175,
+                "fraction_within_50ms": 0.858757
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 160.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": -210,
+              "coarse_offset_ms": -200,
+              "peak_correlation": 0.224107,
+              "correlation_at_zero": -0.146173,
+              "second_peak_offset_ms": 5100,
+              "second_peak_correlation": 0.175689,
+              "peak_margin": 0.048418,
+              "overlap_s": 2233.187,
+              "joint_bins": 13198,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                100,
+                -205
+              ],
+              "half_offset_abs_diff_ms": 305.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 321271,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849081,
+                "fraction_within_50ms": 0.852592
+              },
+              "sampling_density_after_offset": {
+                "queries": 321229,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.848127,
+                "fraction_within_50ms": 0.85166
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": -170,
+              "coarse_offset_ms": -150,
+              "peak_correlation": 0.348679,
+              "correlation_at_zero": -0.248254,
+              "second_peak_offset_ms": 2550,
+              "second_peak_correlation": 0.178765,
+              "peak_margin": 0.169914,
+              "overlap_s": 2311.352,
+              "joint_bins": 13832,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                170,
+                -170
+              ],
+              "half_offset_abs_diff_ms": 340.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 313577,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871304,
+                "fraction_within_50ms": 0.874882
+              },
+              "sampling_density_after_offset": {
+                "queries": 313551,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.872301,
+                "fraction_within_50ms": 0.875873
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 40.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": -375,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.870457,
+              "correlation_at_zero": -0.29829,
+              "second_peak_offset_ms": -1450,
+              "second_peak_correlation": 0.527359,
+              "peak_margin": 0.343097,
+              "overlap_s": 2231.111,
+              "joint_bins": 13800,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -370,
+                -375
+              ],
+              "half_offset_abs_diff_ms": 5.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.870017,
+                "fraction_within_50ms": 0.874476
+              },
+              "sampling_density_after_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.870643,
+                "fraction_within_50ms": 0.875224
+              },
+              "usable": true
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": 490,
+              "coarse_offset_ms": 500,
+              "peak_correlation": 0.569949,
+              "correlation_at_zero": 0.139845,
+              "second_peak_offset_ms": 3300,
+              "second_peak_correlation": 0.262501,
+              "peak_margin": 0.307448,
+              "overlap_s": 2308.166,
+              "joint_bins": 14410,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                455,
+                500
+              ],
+              "half_offset_abs_diff_ms": 45.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323676,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.892358,
+                "fraction_within_50ms": 0.895429
+              },
+              "sampling_density_after_offset": {
+                "queries": 323755,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.891436,
+                "fraction_within_50ms": 0.894757
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 865.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": 450,
+              "coarse_offset_ms": 450,
+              "peak_correlation": 0.459766,
+              "correlation_at_zero": 0.036075,
+              "second_peak_offset_ms": 1500,
+              "second_peak_correlation": 0.1756,
+              "peak_margin": 0.284166,
+              "overlap_s": 2231.111,
+              "joint_bins": 13744,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                225,
+                455
+              ],
+              "half_offset_abs_diff_ms": 230.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.870263,
+                "fraction_within_50ms": 0.873983
+              },
+              "sampling_density_after_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.869175,
+                "fraction_within_50ms": 0.872843
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": -4255,
+              "coarse_offset_ms": -4250,
+              "peak_correlation": 0.237236,
+              "correlation_at_zero": -0.016065,
+              "second_peak_offset_ms": -6500,
+              "second_peak_correlation": 0.2316,
+              "peak_margin": 0.005635,
+              "overlap_s": 2306.187,
+              "joint_bins": 12876,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                315,
+                625
+              ],
+              "half_offset_abs_diff_ms": 310.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323417,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.850428,
+                "fraction_within_50ms": 0.854355
+              },
+              "sampling_density_after_offset": {
+                "queries": 322770,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.860037,
+                "fraction_within_50ms": 0.863751
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 4705.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": 110,
+              "coarse_offset_ms": 100,
+              "peak_correlation": 0.299457,
+              "correlation_at_zero": 0.1241,
+              "second_peak_offset_ms": 1600,
+              "second_peak_correlation": 0.211887,
+              "peak_margin": 0.087571,
+              "overlap_s": 2231.111,
+              "joint_bins": 12930,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                460,
+                105
+              ],
+              "half_offset_abs_diff_ms": 355.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.835204,
+                "fraction_within_50ms": 0.838581
+              },
+              "sampling_density_after_offset": {
+                "queries": 326313,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.834791,
+                "fraction_within_50ms": 0.838284
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": 180,
+              "coarse_offset_ms": 200,
+              "peak_correlation": 0.350277,
+              "correlation_at_zero": -0.160663,
+              "second_peak_offset_ms": -58800,
+              "second_peak_correlation": 0.196939,
+              "peak_margin": 0.153338,
+              "overlap_s": 2309.79,
+              "joint_bins": 13975,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -61100,
+                175
+              ],
+              "half_offset_abs_diff_ms": 61275.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323967,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849605,
+                "fraction_within_50ms": 0.853442
+              },
+              "sampling_density_after_offset": {
+                "queries": 323967,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849096,
+                "fraction_within_50ms": 0.852917
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 70.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3_2",
+          "shift_level": "instance",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": 830,
+              "coarse_offset_ms": 850,
+              "peak_correlation": 0.468966,
+              "correlation_at_zero": -0.026893,
+              "second_peak_offset_ms": -10500,
+              "second_peak_correlation": 0.165636,
+              "peak_margin": 0.30333,
+              "overlap_s": 2235.898,
+              "joint_bins": 14499,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                595,
+                830
+              ],
+              "half_offset_abs_diff_ms": 235.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 183636,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.870488,
+                "fraction_within_50ms": 0.874229
+              },
+              "sampling_density_after_offset": {
+                "queries": 183650,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.866447,
+                "fraction_within_50ms": 0.870215
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": 120,
+              "coarse_offset_ms": 100,
+              "peak_correlation": 0.276256,
+              "correlation_at_zero": 0.05852,
+              "second_peak_offset_ms": -1250,
+              "second_peak_correlation": 0.251013,
+              "peak_margin": 0.025243,
+              "overlap_s": 2306.225,
+              "joint_bins": 15080,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -115,
+                110
+              ],
+              "half_offset_abs_diff_ms": 225.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 194304,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.85884,
+                "fraction_within_50ms": 0.862504
+              },
+              "sampling_density_after_offset": {
+                "queries": 194304,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.859437,
+                "fraction_within_50ms": 0.863137
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 710.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": 490,
+              "coarse_offset_ms": 500,
+              "peak_correlation": 0.280845,
+              "correlation_at_zero": 0.075342,
+              "second_peak_offset_ms": 1950,
+              "second_peak_correlation": 0.223695,
+              "peak_margin": 0.05715,
+              "overlap_s": 2233.521,
+              "joint_bins": 13294,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                1945,
+                500
+              ],
+              "half_offset_abs_diff_ms": 1445.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 183404,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.846497,
+                "fraction_within_50ms": 0.850009
+              },
+              "sampling_density_after_offset": {
+                "queries": 183452,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.848445,
+                "fraction_within_50ms": 0.851667
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": -1720,
+              "coarse_offset_ms": -1700,
+              "peak_correlation": 0.267794,
+              "correlation_at_zero": 0.077354,
+              "second_peak_offset_ms": 1750,
+              "second_peak_correlation": 0.215932,
+              "peak_margin": 0.051861,
+              "overlap_s": 2309.729,
+              "joint_bins": 13844,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -10,
+                -330
+              ],
+              "half_offset_abs_diff_ms": 320.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 194631,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849726,
+                "fraction_within_50ms": 0.853538
+              },
+              "sampling_density_after_offset": {
+                "queries": 194622,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.841719,
+                "fraction_within_50ms": 0.84568
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 2210.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "b": {
+              "status": "ok",
+              "offset_ms": -330,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.577287,
+              "correlation_at_zero": -0.16026,
+              "second_peak_offset_ms": -1450,
+              "second_peak_correlation": 0.330853,
+              "peak_margin": 0.246435,
+              "overlap_s": 2234.624,
+              "joint_bins": 13663,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                225,
+                -330
+              ],
+              "half_offset_abs_diff_ms": 555.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 182567,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.844495,
+                "fraction_within_50ms": 0.848242
+              },
+              "sampling_density_after_offset": {
+                "queries": 182535,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.8446,
+                "fraction_within_50ms": 0.84833
+              },
+              "usable": false
+            },
+            "g": {
+              "status": "ok",
+              "offset_ms": -460,
+              "coarse_offset_ms": -450,
+              "peak_correlation": 0.337929,
+              "correlation_at_zero": 0.026507,
+              "second_peak_offset_ms": 2350,
+              "second_peak_correlation": 0.215845,
+              "peak_margin": 0.122084,
+              "overlap_s": 2306.225,
+              "joint_bins": 14181,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -83670,
+                -460
+              ],
+              "half_offset_abs_diff_ms": 83210.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 187943,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849348,
+                "fraction_within_50ms": 0.853126
+              },
+              "sampling_density_after_offset": {
+                "queries": 187943,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849641,
+                "fraction_within_50ms": 0.85353
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 130.0,
+          "stable_across_calibration_users": false
+        }
+      ],
+      "stable_pairs": 0
+    },
+    {
+      "name": "fold_1",
+      "calibration_users": [
+        "a",
+        "h"
+      ],
+      "pairs": [
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "nexus4_2",
+          "shift_level": "instance",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": -310,
+              "coarse_offset_ms": -300,
+              "peak_correlation": 0.412448,
+              "correlation_at_zero": -0.228307,
+              "second_peak_offset_ms": 1850,
+              "second_peak_correlation": 0.261629,
+              "peak_margin": 0.150819,
+              "overlap_s": 1883.511,
+              "joint_bins": 12686,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -270,
+                -330
+              ],
+              "half_offset_abs_diff_ms": 60.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 280258,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.901077,
+                "fraction_within_50ms": 0.9066
+              },
+              "sampling_density_after_offset": {
+                "queries": 280210,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.899258,
+                "fraction_within_50ms": 0.904921
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": -305,
+              "coarse_offset_ms": -300,
+              "peak_correlation": 0.403193,
+              "correlation_at_zero": -0.20232,
+              "second_peak_offset_ms": 900,
+              "second_peak_correlation": 0.271845,
+              "peak_margin": 0.131348,
+              "overlap_s": 1913.222,
+              "joint_bins": 11159,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                340,
+                -320
+              ],
+              "half_offset_abs_diff_ms": 660.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.856804,
+                "fraction_within_50ms": 0.861838
+              },
+              "sampling_density_after_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.856326,
+                "fraction_within_50ms": 0.861361
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 5.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": -35,
+              "coarse_offset_ms": -50,
+              "peak_correlation": 0.643653,
+              "correlation_at_zero": 0.546732,
+              "second_peak_offset_ms": 1000,
+              "second_peak_correlation": 0.372663,
+              "peak_margin": 0.27099,
+              "overlap_s": 1880.518,
+              "joint_bins": 13323,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -35,
+                -30
+              ],
+              "half_offset_abs_diff_ms": 5.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 279729,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.921034,
+                "fraction_within_50ms": 0.923687
+              },
+              "sampling_density_after_offset": {
+                "queries": 279727,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.920977,
+                "fraction_within_50ms": 0.923583
+              },
+              "usable": true
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": -80,
+              "coarse_offset_ms": -100,
+              "peak_correlation": 0.532064,
+              "correlation_at_zero": 0.180646,
+              "second_peak_offset_ms": 1600,
+              "second_peak_correlation": 0.278658,
+              "peak_margin": 0.253406,
+              "overlap_s": 1913.222,
+              "joint_bins": 11588,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -60,
+                -90
+              ],
+              "half_offset_abs_diff_ms": 30.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.877348,
+                "fraction_within_50ms": 0.880625
+              },
+              "sampling_density_after_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.877418,
+                "fraction_within_50ms": 0.880842
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 45.0,
+          "stable_across_calibration_users": true
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": 155,
+              "coarse_offset_ms": 150,
+              "peak_correlation": 0.770116,
+              "correlation_at_zero": -0.329361,
+              "second_peak_offset_ms": 1200,
+              "second_peak_correlation": 0.456536,
+              "peak_margin": 0.313579,
+              "overlap_s": 1883.508,
+              "joint_bins": 12969,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                155,
+                155
+              ],
+              "half_offset_abs_diff_ms": 0.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 280257,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.911745,
+                "fraction_within_50ms": 0.913786
+              },
+              "sampling_density_after_offset": {
+                "queries": 280229,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.911276,
+                "fraction_within_50ms": 0.913478
+              },
+              "usable": true
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": 115,
+              "coarse_offset_ms": 100,
+              "peak_correlation": 0.795614,
+              "correlation_at_zero": -0.192892,
+              "second_peak_offset_ms": -1550,
+              "second_peak_correlation": 0.375619,
+              "peak_margin": 0.419995,
+              "overlap_s": 1913.222,
+              "joint_bins": 11624,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                125,
+                115
+              ],
+              "half_offset_abs_diff_ms": 10.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.868282,
+                "fraction_within_50ms": 0.871224
+              },
+              "sampling_density_after_offset": {
+                "queries": 268132,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.867864,
+                "fraction_within_50ms": 0.870855
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 40.0,
+          "stable_across_calibration_users": true
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": -195,
+              "coarse_offset_ms": -200,
+              "peak_correlation": 0.347814,
+              "correlation_at_zero": -0.32609,
+              "second_peak_offset_ms": 22600,
+              "second_peak_correlation": 0.154949,
+              "peak_margin": 0.192866,
+              "overlap_s": 1879.915,
+              "joint_bins": 12520,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -190,
+                685
+              ],
+              "half_offset_abs_diff_ms": 875.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 279626,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.884682,
+                "fraction_within_50ms": 0.887657
+              },
+              "sampling_density_after_offset": {
+                "queries": 279622,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.884319,
+                "fraction_within_50ms": 0.887208
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": -190,
+              "coarse_offset_ms": -200,
+              "peak_correlation": 0.293746,
+              "correlation_at_zero": -0.296185,
+              "second_peak_offset_ms": 2400,
+              "second_peak_correlation": 0.120401,
+              "peak_margin": 0.173345,
+              "overlap_s": 1913.222,
+              "joint_bins": 11200,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                64960,
+                -185
+              ],
+              "half_offset_abs_diff_ms": 65145.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.875229,
+                "fraction_within_50ms": 0.879003
+              },
+              "sampling_density_after_offset": {
+                "queries": 268156,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.87489,
+                "fraction_within_50ms": 0.878619
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 5.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": 265,
+              "coarse_offset_ms": 250,
+              "peak_correlation": 0.459092,
+              "correlation_at_zero": -0.273509,
+              "second_peak_offset_ms": 1300,
+              "second_peak_correlation": 0.259532,
+              "peak_margin": 0.19956,
+              "overlap_s": 1880.518,
+              "joint_bins": 12948,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                230,
+                285
+              ],
+              "half_offset_abs_diff_ms": 55.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 279281,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.924187,
+                "fraction_within_50ms": 0.926737
+              },
+              "sampling_density_after_offset": {
+                "queries": 279237,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.923953,
+                "fraction_within_50ms": 0.926507
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": 230,
+              "coarse_offset_ms": 250,
+              "peak_correlation": 0.528794,
+              "correlation_at_zero": -0.156711,
+              "second_peak_offset_ms": 1850,
+              "second_peak_correlation": 0.197752,
+              "peak_margin": 0.331042,
+              "overlap_s": 1914.66,
+              "joint_bins": 11367,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                3440,
+                240
+              ],
+              "half_offset_abs_diff_ms": 3200.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268911,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.881812,
+                "fraction_within_50ms": 0.884966
+              },
+              "sampling_density_after_offset": {
+                "queries": 268874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.880089,
+                "fraction_within_50ms": 0.883235
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 35.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": 465,
+              "coarse_offset_ms": 450,
+              "peak_correlation": 0.586126,
+              "correlation_at_zero": 0.294044,
+              "second_peak_offset_ms": -600,
+              "second_peak_correlation": 0.339477,
+              "peak_margin": 0.246649,
+              "overlap_s": 1883.507,
+              "joint_bins": 12801,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                425,
+                475
+              ],
+              "half_offset_abs_diff_ms": 50.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 279582,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.905645,
+                "fraction_within_50ms": 0.907877
+              },
+              "sampling_density_after_offset": {
+                "queries": 279543,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.901979,
+                "fraction_within_50ms": 0.904262
+              },
+              "usable": true
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": 430,
+              "coarse_offset_ms": 450,
+              "peak_correlation": 0.561149,
+              "correlation_at_zero": 0.030135,
+              "second_peak_offset_ms": -750,
+              "second_peak_correlation": 0.298361,
+              "peak_margin": 0.262788,
+              "overlap_s": 1914.656,
+              "joint_bins": 11516,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -215,
+                440
+              ],
+              "half_offset_abs_diff_ms": 655.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268911,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.882667,
+                "fraction_within_50ms": 0.885609
+              },
+              "sampling_density_after_offset": {
+                "queries": 268840,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.883421,
+                "fraction_within_50ms": 0.886431
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 35.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": 70,
+              "coarse_offset_ms": 50,
+              "peak_correlation": 0.344449,
+              "correlation_at_zero": 0.227054,
+              "second_peak_offset_ms": 1100,
+              "second_peak_correlation": 0.226535,
+              "peak_margin": 0.117914,
+              "overlap_s": 1879.915,
+              "joint_bins": 12258,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                75,
+                525
+              ],
+              "half_offset_abs_diff_ms": 450.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 279178,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.8954,
+                "fraction_within_50ms": 0.898212
+              },
+              "sampling_density_after_offset": {
+                "queries": 279167,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.895614,
+                "fraction_within_50ms": 0.898387
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": 130,
+              "coarse_offset_ms": 150,
+              "peak_correlation": 0.263003,
+              "correlation_at_zero": -0.112039,
+              "second_peak_offset_ms": 105700,
+              "second_peak_correlation": 0.120398,
+              "peak_margin": 0.142605,
+              "overlap_s": 1914.662,
+              "joint_bins": 11233,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                107900,
+                135
+              ],
+              "half_offset_abs_diff_ms": 107765.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 268912,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.873695,
+                "fraction_within_50ms": 0.877577
+              },
+              "sampling_density_after_offset": {
+                "queries": 268892,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.875091,
+                "fraction_within_50ms": 0.879022
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 60.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3_2",
+          "shift_level": "instance",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": 195,
+              "coarse_offset_ms": 200,
+              "peak_correlation": 0.838275,
+              "correlation_at_zero": -0.456191,
+              "second_peak_offset_ms": -850,
+              "second_peak_correlation": 0.451399,
+              "peak_margin": 0.386876,
+              "overlap_s": 1880.514,
+              "joint_bins": 13836,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                190,
+                195
+              ],
+              "half_offset_abs_diff_ms": 5.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 165718,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.89744,
+                "fraction_within_50ms": 0.899794
+              },
+              "sampling_density_after_offset": {
+                "queries": 165719,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.896819,
+                "fraction_within_50ms": 0.899245
+              },
+              "usable": true
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": 200,
+              "coarse_offset_ms": 200,
+              "peak_correlation": 0.798333,
+              "correlation_at_zero": -0.319905,
+              "second_peak_offset_ms": -1450,
+              "second_peak_correlation": 0.279333,
+              "peak_margin": 0.519,
+              "overlap_s": 1914.658,
+              "joint_bins": 13324,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                185,
+                200
+              ],
+              "half_offset_abs_diff_ms": 15.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 160529,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.879424,
+                "fraction_within_50ms": 0.882588
+              },
+              "sampling_density_after_offset": {
+                "queries": 160511,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.878731,
+                "fraction_within_50ms": 0.882033
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 5.0,
+          "stable_across_calibration_users": true
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": -165,
+              "coarse_offset_ms": -150,
+              "peak_correlation": 0.30602,
+              "correlation_at_zero": -0.381946,
+              "second_peak_offset_ms": 1250,
+              "second_peak_correlation": 0.15866,
+              "peak_margin": 0.14736,
+              "overlap_s": 1879.915,
+              "joint_bins": 12847,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -155,
+                220
+              ],
+              "half_offset_abs_diff_ms": 375.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 165659,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.880272,
+                "fraction_within_50ms": 0.883405
+              },
+              "sampling_density_after_offset": {
+                "queries": 165659,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.879451,
+                "fraction_within_50ms": 0.882657
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": -110,
+              "coarse_offset_ms": -100,
+              "peak_correlation": 0.287855,
+              "correlation_at_zero": -0.244853,
+              "second_peak_offset_ms": 2450,
+              "second_peak_correlation": 0.224362,
+              "peak_margin": 0.063493,
+              "overlap_s": 1914.662,
+              "joint_bins": 11967,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                2455,
+                -105
+              ],
+              "half_offset_abs_diff_ms": 2560.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 160530,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871407,
+                "fraction_within_50ms": 0.875332
+              },
+              "sampling_density_after_offset": {
+                "queries": 160520,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871692,
+                "fraction_within_50ms": 0.875548
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 55.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "a": {
+              "status": "ok",
+              "offset_ms": -350,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.382766,
+              "correlation_at_zero": 0.192291,
+              "second_peak_offset_ms": -1400,
+              "second_peak_correlation": 0.184642,
+              "peak_margin": 0.198124,
+              "overlap_s": 1879.915,
+              "joint_bins": 12479,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -340,
+                540
+              ],
+              "half_offset_abs_diff_ms": 880.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 161192,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.883065,
+                "fraction_within_50ms": 0.885925
+              },
+              "sampling_density_after_offset": {
+                "queries": 161183,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.881172,
+                "fraction_within_50ms": 0.884076
+              },
+              "usable": false
+            },
+            "h": {
+              "status": "ok",
+              "offset_ms": -300,
+              "coarse_offset_ms": -300,
+              "peak_correlation": 0.445183,
+              "correlation_at_zero": 0.116156,
+              "second_peak_offset_ms": 2250,
+              "second_peak_correlation": 0.112205,
+              "peak_margin": 0.332978,
+              "overlap_s": 1914.658,
+              "joint_bins": 11928,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                5,
+                -305
+              ],
+              "half_offset_abs_diff_ms": 310.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 158708,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.873573,
+                "fraction_within_50ms": 0.877467
+              },
+              "sampling_density_after_offset": {
+                "queries": 158680,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.874653,
+                "fraction_within_50ms": 0.878548
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 50.0,
+          "stable_across_calibration_users": false
+        }
+      ],
+      "stable_pairs": 3
+    },
+    {
+      "name": "fold_2",
+      "calibration_users": [
+        "c",
+        "i"
+      ],
+      "pairs": [
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "nexus4_2",
+          "shift_level": "instance",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": -340,
+              "coarse_offset_ms": -350,
+              "peak_correlation": 0.731509,
+              "correlation_at_zero": -0.141348,
+              "second_peak_offset_ms": -1450,
+              "second_peak_correlation": 0.318975,
+              "peak_margin": 0.412534,
+              "overlap_s": 1926.98,
+              "joint_bins": 11970,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -390,
+                -335
+              ],
+              "half_offset_abs_diff_ms": 55.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.891785,
+                "fraction_within_50ms": 0.897095
+              },
+              "sampling_density_after_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.892755,
+                "fraction_within_50ms": 0.898263
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -320,
+              "coarse_offset_ms": -300,
+              "peak_correlation": 0.633246,
+              "correlation_at_zero": -0.487158,
+              "second_peak_offset_ms": -1500,
+              "second_peak_correlation": 0.488615,
+              "peak_margin": 0.144631,
+              "overlap_s": 2193.705,
+              "joint_bins": 14324,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -325,
+                -300
+              ],
+              "half_offset_abs_diff_ms": 25.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323648,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.906636,
+                "fraction_within_50ms": 0.911132
+              },
+              "sampling_density_after_offset": {
+                "queries": 323603,
+                "median_abs_dt_ms": 2.0,
+                "fraction_within_20ms": 0.905965,
+                "fraction_within_50ms": 0.91026
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 20.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": 25,
+              "coarse_offset_ms": 50,
+              "peak_correlation": 0.446098,
+              "correlation_at_zero": 0.402409,
+              "second_peak_offset_ms": -3050,
+              "second_peak_correlation": 0.200292,
+              "peak_margin": 0.245806,
+              "overlap_s": 1926.98,
+              "joint_bins": 12030,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -995,
+                20
+              ],
+              "half_offset_abs_diff_ms": 1015.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.892363,
+                "fraction_within_50ms": 0.89592
+              },
+              "sampling_density_after_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.892306,
+                "fraction_within_50ms": 0.895908
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -555,
+              "coarse_offset_ms": -550,
+              "peak_correlation": 0.645247,
+              "correlation_at_zero": 0.408252,
+              "second_peak_offset_ms": -1750,
+              "second_peak_correlation": 0.415885,
+              "peak_margin": 0.229361,
+              "overlap_s": 2193.797,
+              "joint_bins": 13448,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -545,
+                -570
+              ],
+              "half_offset_abs_diff_ms": 25.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323665,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.884779,
+                "fraction_within_50ms": 0.888264
+              },
+              "sampling_density_after_offset": {
+                "queries": 323559,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.887495,
+                "fraction_within_50ms": 0.890907
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 580.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": 170,
+              "coarse_offset_ms": 150,
+              "peak_correlation": 0.549229,
+              "correlation_at_zero": -0.01625,
+              "second_peak_offset_ms": -950,
+              "second_peak_correlation": 0.286403,
+              "peak_margin": 0.262826,
+              "overlap_s": 1926.98,
+              "joint_bins": 11489,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -965,
+                180
+              ],
+              "half_offset_abs_diff_ms": 1145.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.87626,
+                "fraction_within_50ms": 0.879593
+              },
+              "sampling_density_after_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.876176,
+                "fraction_within_50ms": 0.879558
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": 250,
+              "coarse_offset_ms": 250,
+              "peak_correlation": 0.73643,
+              "correlation_at_zero": -0.512947,
+              "second_peak_offset_ms": 1450,
+              "second_peak_correlation": 0.567598,
+              "peak_margin": 0.168833,
+              "overlap_s": 2192.076,
+              "joint_bins": 13519,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                265,
+                225
+              ],
+              "half_offset_abs_diff_ms": 40.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323514,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.876763,
+                "fraction_within_50ms": 0.880212
+              },
+              "sampling_density_after_offset": {
+                "queries": 323471,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.876749,
+                "fraction_within_50ms": 0.880097
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 80.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": -200,
+              "coarse_offset_ms": -200,
+              "peak_correlation": 0.389284,
+              "correlation_at_zero": -0.308804,
+              "second_peak_offset_ms": -1300,
+              "second_peak_correlation": 0.178687,
+              "peak_margin": 0.210597,
+              "overlap_s": 1926.98,
+              "joint_bins": 10960,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                160,
+                -185
+              ],
+              "half_offset_abs_diff_ms": 345.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.846364,
+                "fraction_within_50ms": 0.850103
+              },
+              "sampling_density_after_offset": {
+                "queries": 262874,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.841582,
+                "fraction_within_50ms": 0.845318
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -1050,
+              "coarse_offset_ms": -1050,
+              "peak_correlation": 0.390432,
+              "correlation_at_zero": 0.021683,
+              "second_peak_offset_ms": -2250,
+              "second_peak_correlation": 0.369667,
+              "peak_margin": 0.020765,
+              "overlap_s": 2193.799,
+              "joint_bins": 12444,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                130,
+                -195
+              ],
+              "half_offset_abs_diff_ms": 325.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 323664,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.869466,
+                "fraction_within_50ms": 0.873214
+              },
+              "sampling_density_after_offset": {
+                "queries": 323516,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.864464,
+                "fraction_within_50ms": 0.867957
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 850.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": 365,
+              "coarse_offset_ms": 350,
+              "peak_correlation": 0.465893,
+              "correlation_at_zero": -0.171326,
+              "second_peak_offset_ms": 1450,
+              "second_peak_correlation": 0.263897,
+              "peak_margin": 0.201996,
+              "overlap_s": 1931.772,
+              "joint_bins": 11956,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -585,
+                345
+              ],
+              "half_offset_abs_diff_ms": 930.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 277478,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.87284,
+                "fraction_within_50ms": 0.876909
+              },
+              "sampling_density_after_offset": {
+                "queries": 277413,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871217,
+                "fraction_within_50ms": 0.875363
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -230,
+              "coarse_offset_ms": -250,
+              "peak_correlation": 0.71708,
+              "correlation_at_zero": -0.400208,
+              "second_peak_offset_ms": 950,
+              "second_peak_correlation": 0.521361,
+              "peak_margin": 0.195719,
+              "overlap_s": 2193.701,
+              "joint_bins": 13902,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -220,
+                -245
+              ],
+              "half_offset_abs_diff_ms": 25.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 331391,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.893926,
+                "fraction_within_50ms": 0.897438
+              },
+              "sampling_density_after_offset": {
+                "queries": 331348,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.893272,
+                "fraction_within_50ms": 0.896785
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 595.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3_2",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": 515,
+              "coarse_offset_ms": 500,
+              "peak_correlation": 0.796594,
+              "correlation_at_zero": 0.353267,
+              "second_peak_offset_ms": -550,
+              "second_peak_correlation": 0.349529,
+              "peak_margin": 0.447065,
+              "overlap_s": 1931.769,
+              "joint_bins": 12020,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -560,
+                515
+              ],
+              "half_offset_abs_diff_ms": 1075.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 277476,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.860503,
+                "fraction_within_50ms": 0.864093
+              },
+              "sampling_density_after_offset": {
+                "queries": 277385,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.859412,
+                "fraction_within_50ms": 0.863277
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": 550,
+              "coarse_offset_ms": 550,
+              "peak_correlation": 0.657662,
+              "correlation_at_zero": 0.373573,
+              "second_peak_offset_ms": 1750,
+              "second_peak_correlation": 0.505077,
+              "peak_margin": 0.152586,
+              "overlap_s": 2191.986,
+              "joint_bins": 14231,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                570,
+                530
+              ],
+              "half_offset_abs_diff_ms": 40.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 331074,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.87909,
+                "fraction_within_50ms": 0.882633
+              },
+              "sampling_density_after_offset": {
+                "queries": 331097,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.879467,
+                "fraction_within_50ms": 0.882962
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 35.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "nexus4_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": 145,
+              "coarse_offset_ms": 150,
+              "peak_correlation": 0.547183,
+              "correlation_at_zero": -0.0881,
+              "second_peak_offset_ms": -950,
+              "second_peak_correlation": 0.198696,
+              "peak_margin": 0.348487,
+              "overlap_s": 1929.63,
+              "joint_bins": 11579,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -455,
+                145
+              ],
+              "half_offset_abs_diff_ms": 600.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 277201,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.825852,
+                "fraction_within_50ms": 0.829918
+              },
+              "sampling_density_after_offset": {
+                "queries": 277202,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.828262,
+                "fraction_within_50ms": 0.832296
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -705,
+              "coarse_offset_ms": -700,
+              "peak_correlation": 0.397034,
+              "correlation_at_zero": 0.093922,
+              "second_peak_offset_ms": 1650,
+              "second_peak_correlation": 0.385273,
+              "peak_margin": 0.011761,
+              "overlap_s": 2193.708,
+              "joint_bins": 12781,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                465,
+                115
+              ],
+              "half_offset_abs_diff_ms": 350.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 331392,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871195,
+                "fraction_within_50ms": 0.87484
+              },
+              "sampling_density_after_offset": {
+                "queries": 331264,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.865252,
+                "fraction_within_50ms": 0.868984
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 850.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3_2",
+          "shift_level": "instance",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": -485,
+              "coarse_offset_ms": -500,
+              "peak_correlation": 0.330526,
+              "correlation_at_zero": 0.23251,
+              "second_peak_offset_ms": 700,
+              "second_peak_correlation": 0.232023,
+              "peak_margin": 0.098503,
+              "overlap_s": 1931.769,
+              "joint_bins": 11447,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                0,
+                715
+              ],
+              "half_offset_abs_diff_ms": 715.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 159354,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.867973,
+                "fraction_within_50ms": 0.871569
+              },
+              "sampling_density_after_offset": {
+                "queries": 159307,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.867489,
+                "fraction_within_50ms": 0.871148
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": 785,
+              "coarse_offset_ms": 800,
+              "peak_correlation": 0.702564,
+              "correlation_at_zero": -0.143594,
+              "second_peak_offset_ms": 2000,
+              "second_peak_correlation": 0.454229,
+              "peak_margin": 0.248335,
+              "overlap_s": 2192.076,
+              "joint_bins": 14516,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                790,
+                775
+              ],
+              "half_offset_abs_diff_ms": 15.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 183760,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.882717,
+                "fraction_within_50ms": 0.885813
+              },
+              "sampling_density_after_offset": {
+                "queries": 183760,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.883892,
+                "fraction_within_50ms": 0.88719
+              },
+              "usable": true
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 1270.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_1",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": -210,
+              "coarse_offset_ms": -200,
+              "peak_correlation": 0.236946,
+              "correlation_at_zero": -0.120577,
+              "second_peak_offset_ms": -44250,
+              "second_peak_correlation": 0.112922,
+              "peak_margin": 0.124024,
+              "overlap_s": 1929.63,
+              "joint_bins": 11434,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -73310,
+                330
+              ],
+              "half_offset_abs_diff_ms": 73640.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 159143,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.821645,
+                "fraction_within_50ms": 0.825471
+              },
+              "sampling_density_after_offset": {
+                "queries": 159143,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.820752,
+                "fraction_within_50ms": 0.824812
+              },
+              "usable": false
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -480,
+              "coarse_offset_ms": -500,
+              "peak_correlation": 0.394861,
+              "correlation_at_zero": 0.016099,
+              "second_peak_offset_ms": 700,
+              "second_peak_correlation": 0.358778,
+              "peak_margin": 0.036083,
+              "overlap_s": 2193.795,
+              "joint_bins": 12694,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                680,
+                340
+              ],
+              "half_offset_abs_diff_ms": 340.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 183930,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.871832,
+                "fraction_within_50ms": 0.875404
+              },
+              "sampling_density_after_offset": {
+                "queries": 183884,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.865649,
+                "fraction_within_50ms": 0.869168
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 270.0,
+          "stable_across_calibration_users": false
+        },
+        {
+          "reference_device": "s3_2",
+          "other_device": "s3mini_1",
+          "shift_level": "model",
+          "users": {
+            "c": {
+              "status": "ok",
+              "offset_ms": -375,
+              "coarse_offset_ms": -400,
+              "peak_correlation": 0.500421,
+              "correlation_at_zero": 0.022709,
+              "second_peak_offset_ms": 650,
+              "second_peak_correlation": 0.211571,
+              "peak_margin": 0.28885,
+              "overlap_s": 1929.63,
+              "joint_bins": 11469,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -395,
+                -370
+              ],
+              "half_offset_abs_diff_ms": 25.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 155586,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.836084,
+                "fraction_within_50ms": 0.839941
+              },
+              "sampling_density_after_offset": {
+                "queries": 155551,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.833457,
+                "fraction_within_50ms": 0.837481
+              },
+              "usable": true
+            },
+            "i": {
+              "status": "ok",
+              "offset_ms": -2490,
+              "coarse_offset_ms": -2500,
+              "peak_correlation": 0.291116,
+              "correlation_at_zero": -0.142463,
+              "second_peak_offset_ms": -3700,
+              "second_peak_correlation": 0.243713,
+              "peak_margin": 0.047403,
+              "overlap_s": 2192.076,
+              "joint_bins": 12244,
+              "peak_at_search_boundary": false,
+              "half_offsets_ms": [
+                -115,
+                -425
+              ],
+              "half_offset_abs_diff_ms": 310.0,
+              "sampling_density_at_zero_offset": {
+                "queries": 181601,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.876421,
+                "fraction_within_50ms": 0.880182
+              },
+              "sampling_density_after_offset": {
+                "queries": 181526,
+                "median_abs_dt_ms": 3.0,
+                "fraction_within_20ms": 0.849493,
+                "fraction_within_50ms": 0.853101
+              },
+              "usable": false
+            }
+          },
+          "cross_user_offset_abs_diff_ms": 2115.0,
+          "stable_across_calibration_users": false
+        }
+      ],
+      "stable_pairs": 0
+    }
+  ],
+  "summary": {
+    "device_pairs_per_fold": 10,
+    "fold_pair_evaluations": 30,
+    "usable_user_estimates": 19,
+    "user_estimates": 60,
+    "stable_fold_pairs": 3,
+    "stable_instance_fold_pairs": 1,
+    "instance_fold_pairs": 6,
+    "stable_model_fold_pairs": 2,
+    "model_fold_pairs": 24
+  }
+}

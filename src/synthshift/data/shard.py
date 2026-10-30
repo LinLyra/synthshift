@@ -1,4 +1,8 @@
-"""Create local user-device shards from the large HHAR CSV files."""
+"""Create local user-device shards from the large HHAR CSV files.
+
+Arrival_Time is retained for cross-device clock audits. Shards already written
+under data/processed/hhar/shards predate that column and are left unchanged.
+"""
 
 from __future__ import annotations
 
@@ -7,7 +11,7 @@ from pathlib import Path
 
 import pandas as pd
 
-SHARD_COLUMNS = ["Creation_Time", "x", "y", "z", "User", "Device", "gt"]
+SHARD_COLUMNS = ["Arrival_Time", "Creation_Time", "x", "y", "z", "User", "Device", "gt"]
 _SAFE_NAME = re.compile(r"^[A-Za-z0-9_.-]+$")
 
 
