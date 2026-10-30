@@ -1,0 +1,17 @@
+{
+  "protocol_commit": "b564116",
+  "python": "3.12.14",
+  "torch": "2.15.0",
+  "platform": "macOS 15.7.7 arm64",
+  "torch_threads": 4,
+  "mps_built": true,
+  "mps_available_in_executor": false,
+  "local_smoke_backend": "cpu",
+  "raw_window_cache_manifest": "docs/audits/hhar_raw_window_cache.json",
+  "architectures": {
+    "compact_cnn_parameters": 94534,
+    "deepconvlstm_parameters": 295814,
+    "resnet1d_parameters": 961222
+  },
+  "note": "Full protocol execution may use a pinned CUDA environment after CPU smoke tests pass."
+}
