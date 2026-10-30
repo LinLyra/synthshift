@@ -12,7 +12,12 @@ SENSOR_COLUMNS = ["Creation_Time", "x", "y", "z", "gt"]
 VALID_LABELS = {"bike", "sit", "stairsdown", "stairsup", "stand", "walk"}
 
 
-def split_segments(frame: pd.DataFrame, *, max_gap_ns: int = 100_000_000) -> list[pd.DataFrame]:
+def split_segments(
+    frame: pd.DataFrame,
+    *,
+    max_gap_ns: int = 100_000_000,
+    max_reorder_ns: int = 1_000_000_000,
+) -> list[pd.DataFrame]:
     """Split in acquisition order before any sorting or interpolation."""
 
     data = frame[SENSOR_COLUMNS].copy()
@@ -28,7 +33,7 @@ def split_segments(frame: pd.DataFrame, *, max_gap_ns: int = 100_000_000) -> lis
     boundary = np.zeros(len(data), dtype=bool)
     boundary[0] = True
     boundary[1:] = (
-        (delta < 0)
+        (delta < -max_reorder_ns)
         | (delta > max_gap_ns)
         | (labels[1:] != labels[:-1])
         | (~valid_time[1:])
@@ -40,6 +45,7 @@ def split_segments(frame: pd.DataFrame, *, max_gap_ns: int = 100_000_000) -> lis
         if segment["gt"].iloc[0] not in VALID_LABELS:
             continue
         segment = segment.dropna(subset=["Creation_Time", "x", "y", "z"])
+        segment = segment.sort_values("Creation_Time", kind="stable")
         segment = segment.drop_duplicates("Creation_Time", keep="first")
         if len(segment) >= 2:
             segments.append(segment.reset_index(drop=True))
@@ -52,16 +58,29 @@ def overlap_segments(
     """Find same-label temporal intersections between two segment lists."""
 
     overlaps = []
-    for acc in accelerometer:
-        acc_start, acc_end = int(acc.Creation_Time.iloc[0]), int(acc.Creation_Time.iloc[-1])
-        label = str(acc["gt"].iloc[0])
-        for gyro in gyroscope:
-            if str(gyro["gt"].iloc[0]) != label:
-                continue
-            start = max(acc_start, int(gyro.Creation_Time.iloc[0]))
-            end = min(acc_end, int(gyro.Creation_Time.iloc[-1]))
+    for label in sorted(VALID_LABELS):
+        acc_label = sorted(
+            (segment for segment in accelerometer if segment["gt"].iloc[0] == label),
+            key=lambda segment: int(segment["Creation_Time"].iloc[0]),
+        )
+        gyro_label = sorted(
+            (segment for segment in gyroscope if segment["gt"].iloc[0] == label),
+            key=lambda segment: int(segment["Creation_Time"].iloc[0]),
+        )
+        acc_index = gyro_index = 0
+        while acc_index < len(acc_label) and gyro_index < len(gyro_label):
+            acc = acc_label[acc_index]
+            gyro = gyro_label[gyro_index]
+            start = max(int(acc["Creation_Time"].iloc[0]), int(gyro["Creation_Time"].iloc[0]))
+            acc_end = int(acc["Creation_Time"].iloc[-1])
+            gyro_end = int(gyro["Creation_Time"].iloc[-1])
+            end = min(acc_end, gyro_end)
             if start < end:
                 overlaps.append((acc, gyro, start, end, label))
+            if acc_end <= gyro_end:
+                acc_index += 1
+            if gyro_end <= acc_end:
+                gyro_index += 1
     return overlaps
 
 

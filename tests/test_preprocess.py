@@ -35,6 +35,15 @@ class PreprocessTest(unittest.TestCase):
         self.assertEqual([segment["gt"].iloc[0] for segment in segments], ["walk", "sit"])
         self.assertEqual([len(segment) for segment in segments], [2, 3])
 
+    def test_only_large_backward_jump_starts_a_new_segment(self) -> None:
+        frame = _sensor(
+            [2_000_000_000, 1_990_000_000, 500_000_000, 520_000_000],
+            ["walk"] * 4,
+        )
+        segments = split_segments(frame)
+        self.assertEqual([len(segment) for segment in segments], [2, 2])
+        self.assertTrue(segments[0]["Creation_Time"].is_monotonic_increasing)
+
     def test_resampling_produces_six_channels(self) -> None:
         acc = _sensor([0, 20_000_000, 40_000_000], ["walk"] * 3)
         gyro = _sensor([0, 10_000_000, 40_000_000], ["walk"] * 3)
