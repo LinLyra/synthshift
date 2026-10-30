@@ -66,4 +66,23 @@ stability audit, not as permission to select the threshold with the best target
 score. A stronger next estimator should add temporal-stability criteria using
 calibration data only.
 
+## Preplanned gate sensitivity
+
+The protocol-fixed 0.05, 0.10, and 0.20 rad/s checks were run only after the
+0.15 primary result was committed. They do not replace the primary threshold.
+
+| Gyroscope gate | Combined MAE | Combined Pearson r | Same-model MAE | Increment 95% CI |
+| ---: | ---: | ---: | ---: | ---: |
+| 0.05 rad/s | 0.06479 | 0.70815 | 0.03330 | [-0.00753, 0.00096] |
+| 0.10 rad/s | 0.06478 | 0.70814 | 0.03323 | [-0.00750, 0.00093] |
+| **0.15 rad/s primary** | **0.06483** | **0.70801** | **0.03323** | **[-0.00744, 0.00098]** |
+| 0.20 rad/s | 0.06482 | 0.70812 | 0.03318 | [-0.00745, 0.00097] |
+
+The substantive conclusion is invariant across this range: combined gain and
+bias is slightly better on average than gain alone, but the clustered interval
+includes zero. The near-identical results also show that the mixed finding is
+not caused by selecting 0.15 rad/s after inspecting target performance.
+
 Machine-readable result: `results/reviewed/gyro_bias_factor.json`.
+Sensitivity artifacts use the suffixes `threshold_005`, `threshold_010`, and
+`threshold_020` in the same directory.
