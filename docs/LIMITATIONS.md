@@ -21,4 +21,8 @@ Initial known limitations:
 - A scalar accelerometer gain leaves gyroscope scale, axis bias, and most of
   the same-model instance shift unaccounted for. The current positive gain
   result uses one linear model.
+- Adding a low-motion median gyroscope bias gives only a small overall
+  improvement whose 10-device-pair cluster-bootstrap interval includes zero.
+  Calibration-user disagreement reaches 0.0347 rad/s on one `s3_2` axis, and
+  the same-model improvement is concentrated in Galaxy S3 rather than Nexus 4.
 
