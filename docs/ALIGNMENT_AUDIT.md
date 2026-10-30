@@ -12,11 +12,12 @@ each accelerometer timestamp, the nearest gyroscope timestamp was located, and
 the reverse direction was measured separately. Coverage was evaluated at 2.5,
 5, 10, 20, and 40 ms without interpolating sensor values.
 
-Sorting is necessary because the released CSV order contains reversals,
-especially where recording segments were concatenated. It does not authorize
-bridging recording gaps: final window construction must split at clock
-reversals in acquisition order, activity transitions, missing labels, and long
-time gaps before resampling.
+Sorting is necessary because the released CSV order contains local delivery
+reordering, especially for Nexus 4. Negative jumps up to one second are treated
+as local reorder and stably sorted within a segment; larger backward jumps are
+treated as recording resets. This does not authorize bridging recording gaps:
+window construction splits at large resets, activity transitions, missing
+labels, and forward gaps longer than 100 ms before resampling.
 
 ## Results
 
@@ -53,8 +54,8 @@ for `s3_2` across users), which will be collapsed before resampling.
 4. A 10 ms nearest-neighbour threshold is retained as a pairing diagnostic, not
    as the final fusion algorithm. Training inputs will be created by segmenting
    first and resampling each sensor onto a common 50 Hz grid.
-5. Windows that cross a recording gap, clock reversal, activity transition, or
-   missing-label region will be rejected.
+5. Windows that cross a forward gap over 100 ms, a backward jump over one
+   second, an activity transition, or a missing-label region will be rejected.
 
 ## Remaining validation
 

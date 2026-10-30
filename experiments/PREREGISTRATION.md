@@ -66,8 +66,9 @@ matched encoder, and sensor-subset controls.
   Galaxy S+ is accelerometer-only because gyroscope data are unavailable.
 - Each sensor is segmented before interpolation, then resampled independently
   to a common 50 Hz grid.
-- No window may cross a long gap, acquisition-order clock reversal, activity
-  transition, or missing-label interval.
+- No window may cross a forward gap over 100 ms, a backward clock jump over one
+  second, an activity transition, or a missing-label interval. Smaller negative
+  deltas are treated as local delivery reorder and stably sorted within segment.
 - A 10 ms nearest-neighbour match is an alignment diagnostic only and is not
   used as the training-time fusion method.
 

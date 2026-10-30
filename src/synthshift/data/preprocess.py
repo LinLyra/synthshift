@@ -10,13 +10,15 @@ import pandas as pd
 
 SENSOR_COLUMNS = ["Creation_Time", "x", "y", "z", "gt"]
 VALID_LABELS = {"bike", "sit", "stairsdown", "stairsup", "stand", "walk"}
+DEFAULT_MAX_GAP_NS = 100_000_000
+DEFAULT_MAX_REORDER_NS = 1_000_000_000
 
 
 def split_segments(
     frame: pd.DataFrame,
     *,
-    max_gap_ns: int = 100_000_000,
-    max_reorder_ns: int = 1_000_000_000,
+    max_gap_ns: int = DEFAULT_MAX_GAP_NS,
+    max_reorder_ns: int = DEFAULT_MAX_REORDER_NS,
 ) -> list[pd.DataFrame]:
     """Split in acquisition order before any sorting or interpolation."""
 
@@ -174,6 +176,8 @@ def preprocess_directories(shard_root: Path, output_root: Path, manifest_path: P
         json.dumps(
             {
                 "rate_hz": 50,
+                "max_gap_ns": DEFAULT_MAX_GAP_NS,
+                "max_local_reorder_ns": DEFAULT_MAX_REORDER_NS,
                 "channels": ["ax", "ay", "az", "gx", "gy", "gz"],
                 "segments": records,
             },
