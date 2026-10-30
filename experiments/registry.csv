@@ -1,2 +1,6 @@
 experiment_id,status,stage,dataset,source_device,target_device,model,seed,config_path,code_commit,notes
+s1-affine-median-iqr-v0,exploratory,s1-calibration,hhar,all-primary,all-primary,logistic-handcrafted-features,0,configs/splits/hhar_subject_folds.json,5f47a63,per-channel median/IQR affine; magnitude error concentrated on s3mini_1 accelerometer x
+sync-arrival-magnitude-v0,exploratory,s1-calibration,hhar,all-primary,all-primary,none,0,configs/splits/hhar_subject_folds.json,1d823be,Arrival_Time magnitude cross-correlation; 3 of 30 fold-pairs passed the pre-set stability gate; no 3x3 fit
+s1-noise-low-motion-v0,exploratory,s1-calibration,hhar,all-primary,all-primary,logistic-handcrafted-features,0,configs/splits/hhar_subject_folds.json,9058b1c,one-sided low-motion white noise; MAE matches the no-shift null; still files not used for instance scales
+s1-acc-gain-v0,exploratory,s1-calibration,hhar,all-primary,all-primary,logistic-handcrafted-features,0,configs/splits/hhar_subject_folds.json,df6d49b,scalar low-angular-motion acceleration gain; MAE 0.067 Pearson 0.689 on 60 cells; instance shift remains under-predicted
 
