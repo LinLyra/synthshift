@@ -78,7 +78,7 @@ def audit_csv(
     path: str | Path,
     *,
     chunksize: int = 250_000,
-    max_differences_per_device: int = 100_000,
+    max_differences_per_stream: int = 20_000,
 ) -> dict[str, object]:
     """Audit one HHAR activity CSV without loading the full file into memory."""
 
@@ -92,6 +92,8 @@ def audit_csv(
     models: Counter[str] = Counter()
     devices: Counter[str] = Counter()
     labels: Counter[str] = Counter()
+    model_by_device: Counter[str] = Counter()
+    rows_by_user_device_label: Counter[str] = Counter()
     timestamp_differences: dict[str, list[float]] = defaultdict(list)
     previous_timestamp: dict[str, float] = {}
 
@@ -106,9 +108,19 @@ def audit_csv(
         devices.update(frame["Device"].dropna().astype(str))
         labels.update(frame["gt"].fillna("<missing>").astype(str))
 
-        timing = frame[["Device", "Creation_Time"]].dropna()
-        for device, group in timing.groupby("Device", sort=False):
-            key = str(device)
+        metadata = frame[["User", "Model", "Device", "gt"]].copy()
+        metadata["gt"] = metadata["gt"].fillna("<missing>")
+        model_device_counts = metadata.groupby(["Model", "Device"], dropna=False).size()
+        for (model, device), count in model_device_counts.items():
+            model_by_device[f"{model}|{device}"] += int(count)
+        for (user, device, label), count in metadata.groupby(
+            ["User", "Device", "gt"], dropna=False
+        ).size().items():
+            rows_by_user_device_label[f"{user}|{device}|{label}"] += int(count)
+
+        timing = frame[["User", "Device", "Creation_Time"]].dropna()
+        for (user, device), group in timing.groupby(["User", "Device"], sort=False):
+            key = f"{user}|{device}"
             values = pd.to_numeric(group["Creation_Time"], errors="coerce").dropna().to_numpy()
             if values.size == 0:
                 continue
@@ -117,21 +129,47 @@ def audit_csv(
                 values = np.concatenate(([previous_timestamp[key]], values))
             previous_timestamp[key] = float(values[-1])
 
-            remaining = max_differences_per_device - len(timestamp_differences[key])
+            remaining = max_differences_per_stream - len(timestamp_differences[key])
             if remaining > 0:
                 diffs = np.diff(values)
                 timestamp_differences[key].extend(diffs[:remaining].astype(float).tolist())
 
-    timing_summary: dict[str, object] = {}
-    for device, differences in sorted(timestamp_differences.items()):
+    timing_by_stream: dict[str, object] = {}
+    rates_by_device: dict[str, list[float]] = defaultdict(list)
+    intervals_by_device: Counter[str] = Counter()
+    nonpositive_by_device: Counter[str] = Counter()
+    for stream, differences in sorted(timestamp_differences.items()):
         values = np.asarray(differences, dtype=np.float64)
         positive = values[np.isfinite(values) & (values > 0)]
         estimate = infer_timestamp_scale(positive)
-        timing_summary[device] = {
+        _, device = stream.split("|", maxsplit=1)
+        intervals_by_device[device] += int(values.size)
+        nonpositive_by_device[device] += int(np.sum(~np.isfinite(values) | (values <= 0)))
+        if estimate:
+            rates_by_device[device].append(estimate[1])
+        timing_by_stream[stream] = {
             "sampled_intervals": int(values.size),
             "nonpositive_intervals": int(np.sum(~np.isfinite(values) | (values <= 0))),
             "timestamp_unit_guess": estimate[0] if estimate else None,
             "effective_rate_hz_guess": round(estimate[1], 3) if estimate else None,
+        }
+
+    timing_by_device: dict[str, object] = {}
+    for device in sorted(intervals_by_device):
+        rates = np.asarray(rates_by_device[device], dtype=np.float64)
+        timing_by_device[device] = {
+            "streams_with_rate_estimate": int(rates.size),
+            "sampled_intervals": intervals_by_device[device],
+            "nonpositive_intervals": nonpositive_by_device[device],
+            "median_effective_rate_hz_guess": round(float(np.median(rates)), 3)
+            if rates.size
+            else None,
+            "min_effective_rate_hz_guess": round(float(np.min(rates)), 3)
+            if rates.size
+            else None,
+            "max_effective_rate_hz_guess": round(float(np.max(rates)), 3)
+            if rates.size
+            else None,
         }
 
     return {
@@ -141,8 +179,11 @@ def audit_csv(
         "models": dict(sorted(models.items())),
         "devices": dict(sorted(devices.items())),
         "labels": dict(sorted(labels.items())),
+        "model_by_device": dict(sorted(model_by_device.items())),
+        "rows_by_user_device_label": dict(sorted(rows_by_user_device_label.items())),
         "null_counts": dict(sorted(null_counts.items())),
-        "timing_by_device": timing_summary,
+        "timing_by_device": timing_by_device,
+        "timing_by_stream": timing_by_stream,
     }
 
 

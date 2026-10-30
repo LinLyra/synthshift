@@ -49,6 +49,9 @@ Before training, the audit must verify:
 - missing and null labels;
 - whether nominally paired device streams can be aligned credibly.
 
+The current findings and their implications are documented in
+`docs/DATA_AUDIT.md`.
+
 ## Data directory
 
 Set the path without committing it:

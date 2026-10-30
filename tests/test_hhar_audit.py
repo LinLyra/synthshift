@@ -45,9 +45,12 @@ class HharAuditTest(unittest.TestCase):
         self.assertEqual(report["rows"], 24)
         self.assertEqual(set(report["devices"]), {"nexus4_1", "s3_1"})
         self.assertEqual(
-            report["timing_by_device"]["nexus4_1"]["effective_rate_hz_guess"], 100.0
+            report["timing_by_device"]["nexus4_1"]["median_effective_rate_hz_guess"], 100.0
         )
-        self.assertEqual(report["timing_by_device"]["s3_1"]["effective_rate_hz_guess"], 50.0)
+        self.assertEqual(
+            report["timing_by_device"]["s3_1"]["median_effective_rate_hz_guess"], 50.0
+        )
+        self.assertIn("a|nexus4_1|walk", report["rows_by_user_device_label"])
 
 
 if __name__ == "__main__":
