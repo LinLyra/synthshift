@@ -1,0 +1,961 @@
+{
+  "protocol_commit": "b564116",
+  "job_count": 135,
+  "architectures": [
+    "compact_cnn",
+    "deepconvlstm",
+    "resnet1d"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "jobs": [
+    {
+      "job_id": "fold_0__nexus4_1__compact_cnn__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_1__compact_cnn__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_1__compact_cnn__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__nexus4_1__deepconvlstm__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_1__deepconvlstm__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_1__deepconvlstm__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__nexus4_1__resnet1d__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_1__resnet1d__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_1__resnet1d__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__nexus4_2__compact_cnn__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_2__compact_cnn__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_2__compact_cnn__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__nexus4_2__deepconvlstm__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_2__deepconvlstm__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_2__deepconvlstm__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__nexus4_2__resnet1d__seed0",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__nexus4_2__resnet1d__seed1",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__nexus4_2__resnet1d__seed2",
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_1__compact_cnn__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_1__compact_cnn__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_1__compact_cnn__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_1__deepconvlstm__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_1__deepconvlstm__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_1__deepconvlstm__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_1__resnet1d__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_1__resnet1d__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_1__resnet1d__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_2__compact_cnn__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_2__compact_cnn__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_2__compact_cnn__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_2__deepconvlstm__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_2__deepconvlstm__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_2__deepconvlstm__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3_2__resnet1d__seed0",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3_2__resnet1d__seed1",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3_2__resnet1d__seed2",
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3mini_1__compact_cnn__seed0",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3mini_1__compact_cnn__seed1",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3mini_1__compact_cnn__seed2",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3mini_1__deepconvlstm__seed0",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3mini_1__deepconvlstm__seed1",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3mini_1__deepconvlstm__seed2",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_0__s3mini_1__resnet1d__seed0",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_0__s3mini_1__resnet1d__seed1",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_0__s3mini_1__resnet1d__seed2",
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_1__compact_cnn__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_1__compact_cnn__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_1__compact_cnn__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_1__deepconvlstm__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_1__deepconvlstm__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_1__deepconvlstm__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_1__resnet1d__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_1__resnet1d__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_1__resnet1d__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_2__compact_cnn__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_2__compact_cnn__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_2__compact_cnn__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_2__deepconvlstm__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_2__deepconvlstm__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_2__deepconvlstm__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__nexus4_2__resnet1d__seed0",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__nexus4_2__resnet1d__seed1",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__nexus4_2__resnet1d__seed2",
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_1__compact_cnn__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_1__compact_cnn__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_1__compact_cnn__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_1__deepconvlstm__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_1__deepconvlstm__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_1__deepconvlstm__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_1__resnet1d__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_1__resnet1d__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_1__resnet1d__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_2__compact_cnn__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_2__compact_cnn__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_2__compact_cnn__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_2__deepconvlstm__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_2__deepconvlstm__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_2__deepconvlstm__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3_2__resnet1d__seed0",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3_2__resnet1d__seed1",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3_2__resnet1d__seed2",
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3mini_1__compact_cnn__seed0",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3mini_1__compact_cnn__seed1",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3mini_1__compact_cnn__seed2",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3mini_1__deepconvlstm__seed0",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3mini_1__deepconvlstm__seed1",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3mini_1__deepconvlstm__seed2",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_1__s3mini_1__resnet1d__seed0",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_1__s3mini_1__resnet1d__seed1",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_1__s3mini_1__resnet1d__seed2",
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_1__compact_cnn__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_1__compact_cnn__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_1__compact_cnn__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_1__deepconvlstm__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_1__deepconvlstm__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_1__deepconvlstm__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_1__resnet1d__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_1__resnet1d__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_1__resnet1d__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_2__compact_cnn__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_2__compact_cnn__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_2__compact_cnn__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_2__deepconvlstm__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_2__deepconvlstm__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_2__deepconvlstm__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__nexus4_2__resnet1d__seed0",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__nexus4_2__resnet1d__seed1",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__nexus4_2__resnet1d__seed2",
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_1__compact_cnn__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_1__compact_cnn__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_1__compact_cnn__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_1__deepconvlstm__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_1__deepconvlstm__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_1__deepconvlstm__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_1__resnet1d__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_1__resnet1d__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_1__resnet1d__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_2__compact_cnn__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_2__compact_cnn__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_2__compact_cnn__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_2__deepconvlstm__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_2__deepconvlstm__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_2__deepconvlstm__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3_2__resnet1d__seed0",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3_2__resnet1d__seed1",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3_2__resnet1d__seed2",
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "architecture": "resnet1d",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3mini_1__compact_cnn__seed0",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3mini_1__compact_cnn__seed1",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3mini_1__compact_cnn__seed2",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "compact_cnn",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3mini_1__deepconvlstm__seed0",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3mini_1__deepconvlstm__seed1",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3mini_1__deepconvlstm__seed2",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "deepconvlstm",
+      "seed": 2
+    },
+    {
+      "job_id": "fold_2__s3mini_1__resnet1d__seed0",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 0
+    },
+    {
+      "job_id": "fold_2__s3mini_1__resnet1d__seed1",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 1
+    },
+    {
+      "job_id": "fold_2__s3mini_1__resnet1d__seed2",
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "architecture": "resnet1d",
+      "seed": 2
+    }
+  ]
+}
