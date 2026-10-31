@@ -10,6 +10,7 @@ from synthshift.train.jobs import (
     build_jobs,
     completed_metadata,
     resolve_device,
+    run_source_job,
 )
 
 
@@ -43,3 +44,25 @@ def test_incomplete_run_is_not_resumed(tmp_path):
     assert completed_metadata(tmp_path) is None
     (tmp_path / "metadata.json").write_text(json.dumps({"status": "complete"}))
     assert completed_metadata(tmp_path) is None
+
+
+def test_checksum_mismatch_is_rejected(tmp_path):
+    (tmp_path / "checkpoint.pt").write_bytes(b"checkpoint")
+    (tmp_path / "metadata.json").write_text(
+        json.dumps({"status": "complete", "checkpoint_sha256": "wrong"})
+    )
+    with pytest.raises(ValueError, match="checksum mismatch"):
+        completed_metadata(tmp_path)
+
+
+def test_formal_job_cannot_override_frozen_optimization(tmp_path):
+    job = NeuralJob("id", "fold_0", "phone", "compact_cnn", 0)
+    with pytest.raises(ValueError, match="Formal jobs"):
+        run_source_job(
+            job,
+            features_path=tmp_path / "missing-features",
+            raw_cache_path=tmp_path / "missing-cache",
+            split_path=tmp_path / "missing-split",
+            output_root=tmp_path,
+            max_epochs=1,
+        )
