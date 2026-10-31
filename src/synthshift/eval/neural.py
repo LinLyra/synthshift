@@ -186,6 +186,7 @@ def evaluate_formal_job(
             "architecture": job.architecture,
             "seed": job.seed,
             "gain_ratio": ratio,
+            "checkpoint_sha256": metadata["checkpoint_sha256"],
         }
         for score_name, source_score in source_scores.items():
             prefix = "pooled" if score_name == "pooled_macro_f1" else "subject"
