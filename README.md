@@ -16,7 +16,8 @@ phones. No new human-participant data is required.
 
 The data pipeline, subject-disjoint protocol, exploratory factor analysis,
 seven-configuration CPU model audit, raw-sequence neural architectures,
-resumable training system, and gated evaluation pipeline are implemented.
+resumable training system, and gated evaluation pipeline are implemented. The
+frozen 135-job raw-sequence neural grid and target evaluation are complete.
 
 The strongest exploratory factor is a rotation-invariant scalar accelerometer
 gain estimated from low-gyroscope segments. Across 60 fold/source/target cells,
@@ -24,9 +25,13 @@ it reduced degradation-prediction MAE from approximately 0.109 for a no-shift
 null to 0.067, with Pearson r approximately 0.689. White-noise injection was a
 null result and per-axis median/IQR calibration overestimated degradation.
 
-These findings remain provisional. The frozen 135-job neural confirmation grid
-has not yet been run (`0/135` formal checkpoints), and no neural target result
-has been inspected.
+In the completed ten-configuration comparison, the synthetic target predicts
+real subject-macro target-performance ranking with mean Kendall tau-b 0.677 and
+pairwise ordering accuracy 0.839. Robustness-ranking agreement is more modest
+(tau-b 0.355; pairwise accuracy 0.678) and heterogeneous across subject folds.
+The result supports partial predictive validity, not a claim that scalar gain
+fully reproduces real device shift. See
+[`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md).
 
 ## Research design
 
@@ -87,7 +92,7 @@ python -m pip install -e '.[dev,neural]'
 pytest
 ```
 
-The current suite contains 74 tests plus 3 parameterized subtests and does not
+The current suite contains 75 tests plus 3 parameterized subtests and does not
 require the private local data cache.
 
 ## Protocol and execution documents
@@ -97,6 +102,7 @@ require the private local data cache.
 - [`docs/CPU_MULTIMODEL_RESULTS.md`](docs/CPU_MULTIMODEL_RESULTS.md)
 - [`docs/NEURAL_EXECUTION.md`](docs/NEURAL_EXECUTION.md)
 - [`docs/NEURAL_EVALUATION.md`](docs/NEURAL_EVALUATION.md)
+- [`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md)
 
 ## Upstream projects
 
