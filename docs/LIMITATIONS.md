@@ -47,4 +47,9 @@ Initial known limitations:
   fold/source/target cells. The draft preregistration did not finalize its
   cluster-bootstrap interval before target evaluation, so no post-hoc
   independence-based significance claim is made.
+- A post-target diagnostic shows that synthetic subject-macro target ranking
+  exceeds the unchanged source-performance ranking baseline by mean Kendall
+  tau-b 0.152, but fold-specific increments are 0.029, 0.091, and 0.336. Most
+  of the increment is therefore driven by one participant fold and requires
+  external or nested resampling validation.
 

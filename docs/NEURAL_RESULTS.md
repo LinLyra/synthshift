@@ -88,3 +88,34 @@ The study is also limited to HHAR waist-phone HAR. It does not establish
 generalization to watches, pose estimation, odometry, another dataset, or an
 IMU foundation model. Those are external-validation extensions rather than
 retroactive additions to this frozen result.
+
+## Post-target source-ranking baseline
+
+After the frozen result was inspected, we added the most important trivial
+baseline as an explicitly post-target diagnostic: use each configuration's
+unchanged source-device performance ranking to predict its real target-device
+performance ranking. This tests whether synthetic calibration adds information
+beyond the fact that stronger source models often remain stronger targets.
+
+| Score | Predictor | Kendall tau-b | Spearman | Top-2 overlap | Pairwise accuracy |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Pooled | Source performance | 0.510 | 0.626 | 0.633 | 0.755 |
+| Pooled | Synthetic target | 0.627 | 0.749 | 0.608 | 0.814 |
+| Subject-macro | Source performance | 0.525 | 0.647 | 0.583 | 0.763 |
+| Subject-macro | Synthetic target | 0.677 | 0.794 | 0.642 | 0.839 |
+
+For subject-macro scoring, synthetic calibration improves mean tau-b by 0.152
+and pairwise accuracy by 0.076. Tau-b improves in 37 of 60 cells, ties in 7,
+and worsens in 16. The corresponding pooled improvement is 0.118, although
+pooled top-2 overlap decreases by 0.025.
+
+The incremental subject-macro tau-b is heterogeneous by participant fold:
+0.029, 0.091, and 0.336 for folds 0, 1, and 2. Thus synthetic calibration does
+beat the trivial source-ranking baseline on average, but most of the mean gain
+comes from fold 2. The defensible conclusion is incremental signal, not yet
+fold-stable incremental validity.
+
+This analysis is stored separately in
+`results/reviewed/performance_ranking_baseline_audit.json`; it does not rewrite
+the frozen Phase-B artifact or upgrade a post-target diagnostic into a
+preregistered outcome.

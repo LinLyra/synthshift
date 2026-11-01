@@ -29,8 +29,10 @@ In the completed ten-configuration comparison, the synthetic target predicts
 real subject-macro target-performance ranking with mean Kendall tau-b 0.677 and
 pairwise ordering accuracy 0.839. Robustness-ranking agreement is more modest
 (tau-b 0.355; pairwise accuracy 0.678) and heterogeneous across subject folds.
-The result supports partial predictive validity, not a claim that scalar gain
-fully reproduces real device shift. See
+The trivial source-performance ranking baseline reaches tau-b 0.525; synthetic
+calibration adds 0.152 on average, but this increment is strongly fold
+heterogeneous. The result supports partial predictive validity, not a claim
+that scalar gain fully reproduces real device shift. See
 [`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md).
 
 ## Research design

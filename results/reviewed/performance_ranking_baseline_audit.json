@@ -1,0 +1,2217 @@
+{
+  "analysis_status": "post_target_diagnostic",
+  "configuration_count": 10,
+  "configurations": [
+    "extra_trees",
+    "linear_svm",
+    "logistic_acc_only",
+    "logistic_all",
+    "logistic_gyro_only",
+    "neural_compact_cnn",
+    "neural_deepconvlstm",
+    "neural_resnet1d",
+    "random_forest",
+    "rbf_svm"
+  ],
+  "cell_count": 60,
+  "summary": {
+    "pooled": {
+      "source_baseline": {
+        "kendall_tau_b": 0.5096296296296295,
+        "spearman_r": 0.6258585858585859,
+        "top2_overlap": 0.6333333333333333,
+        "pairwise_ordering_accuracy": 0.7548148148148147
+      },
+      "synthetic_target": {
+        "kendall_tau_b": 0.6274074074074074,
+        "spearman_r": 0.7494949494949494,
+        "top2_overlap": 0.6083333333333333,
+        "pairwise_ordering_accuracy": 0.8137037037037036
+      },
+      "paired_comparison": {
+        "kendall_tau_b": {
+          "mean_delta": 0.11777777777777776,
+          "median_delta": 0.044444444444444446,
+          "wins": 37,
+          "ties": 10,
+          "losses": 13
+        },
+        "spearman_r": {
+          "mean_delta": 0.1236363636363636,
+          "median_delta": 0.06060606060606055,
+          "wins": 41,
+          "ties": 6,
+          "losses": 13
+        },
+        "top2_overlap": {
+          "mean_delta": -0.025,
+          "median_delta": 0.0,
+          "wins": 8,
+          "ties": 42,
+          "losses": 10
+        },
+        "pairwise_ordering_accuracy": {
+          "mean_delta": 0.05888888888888889,
+          "median_delta": 0.022222222222222254,
+          "wins": 37,
+          "ties": 10,
+          "losses": 13
+        }
+      },
+      "by_fold": {
+        "fold_0": {
+          "source_baseline": {
+            "kendall_tau_b": 0.5044444444444445,
+            "spearman_r": 0.6224242424242423,
+            "top2_overlap": 0.575,
+            "pairwise_ordering_accuracy": 0.7522222222222221
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.5288888888888889,
+            "spearman_r": 0.6412121212121211,
+            "top2_overlap": 0.475,
+            "pairwise_ordering_accuracy": 0.7644444444444444
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.024444444444444446,
+            "spearman_r": 0.01878787878787877,
+            "top2_overlap": -0.1,
+            "pairwise_ordering_accuracy": 0.012222222222222223
+          }
+        },
+        "fold_1": {
+          "source_baseline": {
+            "kendall_tau_b": 0.631111111111111,
+            "spearman_r": 0.7503030303030302,
+            "top2_overlap": 0.725,
+            "pairwise_ordering_accuracy": 0.8155555555555555
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.6599999999999999,
+            "spearman_r": 0.7848484848484848,
+            "top2_overlap": 0.675,
+            "pairwise_ordering_accuracy": 0.8300000000000001
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.028888888888888888,
+            "spearman_r": 0.03454545454545453,
+            "top2_overlap": -0.05,
+            "pairwise_ordering_accuracy": 0.01444444444444446
+          }
+        },
+        "fold_2": {
+          "source_baseline": {
+            "kendall_tau_b": 0.39333333333333337,
+            "spearman_r": 0.5048484848484848,
+            "top2_overlap": 0.6,
+            "pairwise_ordering_accuracy": 0.6966666666666665
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.6933333333333334,
+            "spearman_r": 0.8224242424242425,
+            "top2_overlap": 0.675,
+            "pairwise_ordering_accuracy": 0.8466666666666667
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.29999999999999993,
+            "spearman_r": 0.31757575757575757,
+            "top2_overlap": 0.075,
+            "pairwise_ordering_accuracy": 0.15
+          }
+        }
+      }
+    },
+    "subject": {
+      "source_baseline": {
+        "kendall_tau_b": 0.5251851851851852,
+        "spearman_r": 0.6468686868686869,
+        "top2_overlap": 0.5833333333333334,
+        "pairwise_ordering_accuracy": 0.7625925925925926
+      },
+      "synthetic_target": {
+        "kendall_tau_b": 0.677037037037037,
+        "spearman_r": 0.7941414141414143,
+        "top2_overlap": 0.6416666666666667,
+        "pairwise_ordering_accuracy": 0.8385185185185186
+      },
+      "paired_comparison": {
+        "kendall_tau_b": {
+          "mean_delta": 0.15185185185185185,
+          "median_delta": 0.0888888888888889,
+          "wins": 37,
+          "ties": 7,
+          "losses": 16
+        },
+        "spearman_r": {
+          "mean_delta": 0.14727272727272728,
+          "median_delta": 0.06666666666666665,
+          "wins": 38,
+          "ties": 6,
+          "losses": 16
+        },
+        "top2_overlap": {
+          "mean_delta": 0.058333333333333334,
+          "median_delta": 0.0,
+          "wins": 16,
+          "ties": 35,
+          "losses": 9
+        },
+        "pairwise_ordering_accuracy": {
+          "mean_delta": 0.07592592592592592,
+          "median_delta": 0.0444444444444444,
+          "wins": 37,
+          "ties": 7,
+          "losses": 16
+        }
+      },
+      "by_fold": {
+        "fold_0": {
+          "source_baseline": {
+            "kendall_tau_b": 0.5444444444444444,
+            "spearman_r": 0.6715151515151516,
+            "top2_overlap": 0.55,
+            "pairwise_ordering_accuracy": 0.7722222222222221
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.5733333333333334,
+            "spearman_r": 0.6806060606060605,
+            "top2_overlap": 0.525,
+            "pairwise_ordering_accuracy": 0.7866666666666667
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.028888888888888874,
+            "spearman_r": 0.009090909090909075,
+            "top2_overlap": -0.025,
+            "pairwise_ordering_accuracy": 0.01444444444444445
+          }
+        },
+        "fold_1": {
+          "source_baseline": {
+            "kendall_tau_b": 0.6377777777777776,
+            "spearman_r": 0.7587878787878787,
+            "top2_overlap": 0.675,
+            "pairwise_ordering_accuracy": 0.818888888888889
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.7288888888888888,
+            "spearman_r": 0.8509090909090908,
+            "top2_overlap": 0.725,
+            "pairwise_ordering_accuracy": 0.8644444444444446
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.09111111111111111,
+            "spearman_r": 0.09212121212121209,
+            "top2_overlap": 0.05,
+            "pairwise_ordering_accuracy": 0.04555555555555555
+          }
+        },
+        "fold_2": {
+          "source_baseline": {
+            "kendall_tau_b": 0.3933333333333333,
+            "spearman_r": 0.5103030303030304,
+            "top2_overlap": 0.525,
+            "pairwise_ordering_accuracy": 0.6966666666666665
+          },
+          "synthetic_target": {
+            "kendall_tau_b": 0.7288888888888888,
+            "spearman_r": 0.8509090909090908,
+            "top2_overlap": 0.675,
+            "pairwise_ordering_accuracy": 0.8644444444444446
+          },
+          "paired_delta": {
+            "kendall_tau_b": 0.3355555555555555,
+            "spearman_r": 0.3406060606060606,
+            "top2_overlap": 0.15,
+            "pairwise_ordering_accuracy": 0.16777777777777775
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7939393939393938,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.911111111111111,
+          "spearman_r": 0.9757575757575757,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9555555555555556
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.06666666666666667,
+          "spearman_r": 0.01818181818181818,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.5333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.1111111111111111,
+          "spearman_r": 0.10303030303030303,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5555555555555556
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.38181818181818183,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.1111111111111111,
+          "spearman_r": 0.17575757575757575,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5555555555555556
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6606060606060605,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8909090909090909,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.309090909090909,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.022222222222222223,
+          "spearman_r": 0.006060606060606061,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.33333333333333326,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": -0.022222222222222223,
+          "spearman_r": -0.07878787878787878,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.4888888888888889
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7212121212121211,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7939393939393938,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8303030303030302,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6848484848484848,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.6,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.37777777777777777,
+          "spearman_r": 0.5393939393939393,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6888888888888889
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4222222222222222,
+          "spearman_r": 0.5393939393939393,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.6484848484848483,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.6121212121212121,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.6848484848484848,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6606060606060605,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.34545454545454546,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.4424242424242424,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.1111111111111111,
+          "spearman_r": 0.18787878787878787,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5555555555555556
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.35757575757575755,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.5030303030303029,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7212121212121211,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.6484848484848483,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6727272727272726,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.37777777777777777,
+          "spearman_r": 0.5030303030303029,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6888888888888889
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.4222222222222222,
+          "spearman_r": 0.5393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6969696969696969,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6848484848484848,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.32121212121212117,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.38181818181818183,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.38181818181818183,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.3939393939393939,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      }
+    },
+    {
+      "fold": "fold_0",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.3696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.3696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.4545454545454545,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.4545454545454545,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6727272727272726,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6484848484848483,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.6969696969696969,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8303030303030302,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6606060606060605,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4222222222222222,
+          "spearman_r": 0.5393939393939393,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.5515151515151515,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.5272727272727272,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.911111111111111,
+          "spearman_r": 0.9757575757575757,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9555555555555556
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8909090909090909,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.7939393939393938,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8303030303030302,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6727272727272726,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8666666666666665,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.4424242424242424,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6848484848484848,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.5878787878787878,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.709090909090909,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4666666666666666,
+          "spearman_r": 0.6727272727272726,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4222222222222222,
+          "spearman_r": 0.5757575757575757,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.19999999999999998,
+          "spearman_r": 0.309090909090909,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.41818181818181815,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6848484848484848,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6606060606060605,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.33333333333333326,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      }
+    },
+    {
+      "fold": "fold_1",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.41818181818181815,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.406060606060606,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.34545454545454546,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.4222222222222222,
+          "spearman_r": 0.5515151515151515,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.911111111111111,
+          "spearman_r": 0.9636363636363635,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9555555555555556
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.3333333333333333,
+          "spearman_r": 0.4666666666666666,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6666666666666666
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6484848484848483,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.15555555555555553,
+          "spearman_r": 0.16363636363636364,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5777777777777777
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.33333333333333326,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.38181818181818183,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.28888888888888886,
+          "spearman_r": 0.41818181818181815,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6444444444444445
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8303030303030302,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6888888888888888,
+          "spearman_r": 0.8545454545454544,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.32121212121212117,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.32121212121212117,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.19999999999999998,
+          "spearman_r": 0.23636363636363633,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.15555555555555553,
+          "spearman_r": 0.24848484848484845,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.06666666666666667,
+          "spearman_r": 0.04242424242424241,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.5333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6969696969696969,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": -0.1111111111111111,
+          "spearman_r": -0.05454545454545454,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.4444444444444444
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "nexus4_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": -0.19999999999999998,
+          "spearman_r": -0.19999999999999998,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.4
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.37777777777777777,
+          "spearman_r": 0.5515151515151515,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.6888888888888889
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": -0.37777777777777777,
+          "spearman_r": -0.32121212121212117,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.3111111111111111
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.7454545454545454,
+          "top2_overlap": 0.0,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6969696969696969,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.911111111111111,
+          "spearman_r": 0.9636363636363635,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9555555555555556
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.6969696969696969,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.9555555555555554,
+          "spearman_r": 0.9878787878787878,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9777777777777777
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7939393939393938,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_1",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.8181818181818182,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5111111111111111,
+          "spearman_r": 0.6606060606060605,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7555555555555555
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9393939393939393,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8424242424242423,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.8060606060606059,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9030303030303028,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3_2",
+      "target_device": "s3mini_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.9272727272727272,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.7333333333333333,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.8666666666666667
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.15555555555555553,
+          "spearman_r": 0.2121212121212121,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.5777777777777777
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.19999999999999998,
+          "spearman_r": 0.22424242424242422,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "nexus4_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.06666666666666667,
+          "spearman_r": 0.11515151515151514,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.5333333333333333
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7575757575757575,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.1111111111111111,
+          "spearman_r": 0.09090909090909088,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.5555555555555556
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.5555555555555555,
+          "spearman_r": 0.7333333333333332,
+          "top2_overlap": 0.5,
+          "pairwise_ordering_accuracy": 0.7777777777777778
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_1",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.24444444444444444,
+          "spearman_r": 0.3696969696969697,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8222222222222221,
+          "spearman_r": 0.9151515151515152,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9111111111111111
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.19999999999999998,
+          "spearman_r": 0.22424242424242422,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.6
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.8666666666666666,
+          "spearman_r": 0.9515151515151514,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "fold": "fold_2",
+      "source_device": "s3mini_1",
+      "target_device": "s3_2",
+      "pooled": {
+        "source_baseline": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7696969696969697,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6,
+          "spearman_r": 0.7818181818181817,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8
+        }
+      },
+      "subject": {
+        "source_baseline": {
+          "kendall_tau_b": 0.7777777777777777,
+          "spearman_r": 0.8787878787878788,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8888888888888888
+        },
+        "synthetic_target": {
+          "kendall_tau_b": 0.6444444444444444,
+          "spearman_r": 0.7939393939393938,
+          "top2_overlap": 1.0,
+          "pairwise_ordering_accuracy": 0.8222222222222222
+        }
+      }
+    }
+  ],
+  "neural_artifact": "results/reviewed/neural_combined_ranking_audit.json",
+  "neural_artifact_sha256": "59ac4adcbbe28f0e41cab3920222d2c9b80db3159c1b167d36785bba9681229d",
+  "cpu_artifact": "results/reviewed/cpu_multimodel_gain_audit.json",
+  "cpu_artifact_sha256": "f7b891564e360adccfc4056fea66e1b35c3586a24307584f91f72d6b78132afe"
+}
