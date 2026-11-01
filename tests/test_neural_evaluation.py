@@ -5,7 +5,12 @@ import numpy as np
 import pytest
 import torch
 
-from synthshift.eval.neural import _predict_indices, audit_formal_checkpoints, score_predictions
+from synthshift.eval.neural import (
+    _load_verified_checkpoint,
+    _predict_indices,
+    audit_formal_checkpoints,
+    score_predictions,
+)
 from synthshift.train.jobs import PROTOCOL_COMMIT, NeuralJob
 from synthshift.train.neural import ChannelNormalization
 
@@ -70,3 +75,25 @@ def test_integrity_gate_requires_every_expected_checkpoint(tmp_path):
     assert audit["complete"] == 1
     assert audit["missing"] == ["second"]
     assert not audit["ready_for_target_evaluation"]
+
+
+def test_verified_loader_supports_numpy_checkpoint_metadata(tmp_path):
+    directory = tmp_path / "formal" / "job"
+    directory.mkdir(parents=True)
+    checkpoint_path = directory / "checkpoint.pt"
+    payload = {"classes": np.asarray(["walk", "sit"]), "state_dict": {}}
+    torch.save(payload, checkpoint_path)
+    (directory / "metadata.json").write_text(
+        json.dumps(
+            {
+                "status": "complete",
+                "checkpoint_sha256": hashlib.sha256(
+                    checkpoint_path.read_bytes()
+                ).hexdigest(),
+            }
+        )
+    )
+
+    _, loaded = _load_verified_checkpoint(directory)
+
+    np.testing.assert_array_equal(loaded["classes"], payload["classes"])

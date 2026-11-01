@@ -14,6 +14,24 @@ from synthshift.train.jobs import PROTOCOL_COMMIT, NeuralJob, completed_metadata
 from synthshift.train.neural import ChannelNormalization
 
 
+def _load_verified_checkpoint(
+    run_directory: Path,
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Load a self-generated checkpoint only after its recorded digest is verified."""
+    metadata = completed_metadata(run_directory)
+    if metadata is None:
+        raise ValueError(f"Checkpoint is incomplete: {run_directory}")
+    # Formal checkpoints contain NumPy metadata as well as tensors. PyTorch 2.6+
+    # defaults to the restricted weights-only loader, so explicitly opt out only
+    # after completed_metadata has matched the file to its recorded SHA-256.
+    checkpoint = torch.load(
+        run_directory / "checkpoint.pt",
+        map_location="cpu",
+        weights_only=False,
+    )
+    return metadata, checkpoint
+
+
 def audit_formal_checkpoints(
     jobs: list[NeuralJob], output_root: Path
 ) -> dict[str, object]:
@@ -114,15 +132,14 @@ def evaluate_formal_job(
     device_name: str = "cpu",
 ) -> list[dict[str, object]]:
     run_directory = output_root / "formal" / job.job_id
-    metadata = completed_metadata(run_directory)
-    if metadata is None or metadata.get("smoke"):
+    metadata, checkpoint = _load_verified_checkpoint(run_directory)
+    if metadata.get("smoke"):
         raise ValueError(f"Formal checkpoint is incomplete: {job.job_id}")
     if metadata.get("job") != job.__dict__:
         raise ValueError("Checkpoint metadata does not match requested job")
     if metadata.get("protocol_commit") != PROTOCOL_COMMIT:
         raise ValueError("Checkpoint metadata protocol commit mismatch")
     device = resolve_device(device_name)
-    checkpoint = torch.load(run_directory / "checkpoint.pt", map_location="cpu")
     if checkpoint["job"] != job.__dict__:
         raise ValueError("Checkpoint payload does not match requested job")
     if checkpoint.get("protocol_commit") != PROTOCOL_COMMIT:
