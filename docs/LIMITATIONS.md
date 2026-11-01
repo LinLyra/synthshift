@@ -52,4 +52,8 @@ Initial known limitations:
   tau-b 0.152, but fold-specific increments are 0.029, 0.091, and 0.336. Most
   of the increment is therefore driven by one participant fold and requires
   external or nested resampling validation.
+- Leaving out the high-increment fold reduces subject-macro delta tau-b to
+  0.060. Equal device coverage, source-score level and spread, and gain range do
+  not explain that fold. Existing reviewed outputs average its test users d, g,
+  and h, so participant-specific attribution requires a new inference pass.
 

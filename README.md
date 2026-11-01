@@ -32,7 +32,8 @@ pairwise ordering accuracy 0.839. Robustness-ranking agreement is more modest
 The trivial source-performance ranking baseline reaches tau-b 0.525; synthetic
 calibration adds 0.152 on average, but this increment is strongly fold
 heterogeneous. The result supports partial predictive validity, not a claim
-that scalar gain fully reproduces real device shift. See
+that scalar gain fully reproduces real device shift. Leaving out the
+high-increment fold reduces the gain to tau-b 0.060. See
 [`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md).
 
 ## Research design
@@ -105,6 +106,7 @@ require the private local data cache.
 - [`docs/NEURAL_EXECUTION.md`](docs/NEURAL_EXECUTION.md)
 - [`docs/NEURAL_EVALUATION.md`](docs/NEURAL_EVALUATION.md)
 - [`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md)
+- [`docs/FOLD_DIAGNOSTIC.md`](docs/FOLD_DIAGNOSTIC.md)
 
 ## Upstream projects
 

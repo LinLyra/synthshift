@@ -119,6 +119,84 @@
             "pairwise_ordering_accuracy": 0.15
           }
         }
+      },
+      "fold_uncertainty": {
+        "fold_deltas": {
+          "fold_0": {
+            "kendall_tau_b": 0.024444444444444446,
+            "spearman_r": 0.01878787878787877,
+            "top2_overlap": -0.1,
+            "pairwise_ordering_accuracy": 0.012222222222222223
+          },
+          "fold_1": {
+            "kendall_tau_b": 0.028888888888888888,
+            "spearman_r": 0.03454545454545453,
+            "top2_overlap": -0.05,
+            "pairwise_ordering_accuracy": 0.01444444444444446
+          },
+          "fold_2": {
+            "kendall_tau_b": 0.29999999999999993,
+            "spearman_r": 0.31757575757575757,
+            "top2_overlap": 0.075,
+            "pairwise_ordering_accuracy": 0.15
+          }
+        },
+        "leave_one_fold_out": {
+          "fold_0": {
+            "kendall_tau_b": 0.16444444444444442,
+            "spearman_r": 0.17606060606060606,
+            "top2_overlap": 0.012499999999999997,
+            "pairwise_ordering_accuracy": 0.08222222222222222
+          },
+          "fold_1": {
+            "kendall_tau_b": 0.16222222222222218,
+            "spearman_r": 0.16818181818181815,
+            "top2_overlap": -0.012500000000000004,
+            "pairwise_ordering_accuracy": 0.0811111111111111
+          },
+          "fold_2": {
+            "kendall_tau_b": 0.026666666666666665,
+            "spearman_r": 0.02666666666666665,
+            "top2_overlap": -0.07500000000000001,
+            "pairwise_ordering_accuracy": 0.013333333333333341
+          }
+        },
+        "fold_cluster_bootstrap": {
+          "seed": 20261101,
+          "replicates": 10000,
+          "cluster_count": 3,
+          "warning": "Only three fold clusters; intervals are descriptive and discrete.",
+          "metrics": {
+            "kendall_tau_b": {
+              "estimate": 0.11777777777777776,
+              "percentile_95_interval": [
+                0.024444444444444446,
+                0.29999999999999993
+              ]
+            },
+            "spearman_r": {
+              "estimate": 0.12363636363636361,
+              "percentile_95_interval": [
+                0.01878787878787877,
+                0.31757575757575757
+              ]
+            },
+            "top2_overlap": {
+              "estimate": -0.02500000000000001,
+              "percentile_95_interval": [
+                -0.10000000000000002,
+                0.075
+              ]
+            },
+            "pairwise_ordering_accuracy": {
+              "estimate": 0.058888888888888886,
+              "percentile_95_interval": [
+                0.012222222222222223,
+                0.15
+              ]
+            }
+          }
+        }
       }
     },
     "subject": {
@@ -223,6 +301,84 @@
             "spearman_r": 0.3406060606060606,
             "top2_overlap": 0.15,
             "pairwise_ordering_accuracy": 0.16777777777777775
+          }
+        }
+      },
+      "fold_uncertainty": {
+        "fold_deltas": {
+          "fold_0": {
+            "kendall_tau_b": 0.028888888888888874,
+            "spearman_r": 0.009090909090909075,
+            "top2_overlap": -0.025,
+            "pairwise_ordering_accuracy": 0.01444444444444445
+          },
+          "fold_1": {
+            "kendall_tau_b": 0.09111111111111111,
+            "spearman_r": 0.09212121212121209,
+            "top2_overlap": 0.05,
+            "pairwise_ordering_accuracy": 0.04555555555555555
+          },
+          "fold_2": {
+            "kendall_tau_b": 0.3355555555555555,
+            "spearman_r": 0.3406060606060606,
+            "top2_overlap": 0.15,
+            "pairwise_ordering_accuracy": 0.16777777777777775
+          }
+        },
+        "leave_one_fold_out": {
+          "fold_0": {
+            "kendall_tau_b": 0.21333333333333332,
+            "spearman_r": 0.21636363636363634,
+            "top2_overlap": 0.1,
+            "pairwise_ordering_accuracy": 0.10666666666666665
+          },
+          "fold_1": {
+            "kendall_tau_b": 0.18222222222222217,
+            "spearman_r": 0.17484848484848484,
+            "top2_overlap": 0.0625,
+            "pairwise_ordering_accuracy": 0.0911111111111111
+          },
+          "fold_2": {
+            "kendall_tau_b": 0.06,
+            "spearman_r": 0.050606060606060585,
+            "top2_overlap": 0.0125,
+            "pairwise_ordering_accuracy": 0.03
+          }
+        },
+        "fold_cluster_bootstrap": {
+          "seed": 20261101,
+          "replicates": 10000,
+          "cluster_count": 3,
+          "warning": "Only three fold clusters; intervals are descriptive and discrete.",
+          "metrics": {
+            "kendall_tau_b": {
+              "estimate": 0.15185185185185182,
+              "percentile_95_interval": [
+                0.02888888888888887,
+                0.33555555555555544
+              ]
+            },
+            "spearman_r": {
+              "estimate": 0.14727272727272725,
+              "percentile_95_interval": [
+                0.009090909090909075,
+                0.3406060606060606
+              ]
+            },
+            "top2_overlap": {
+              "estimate": 0.05833333333333333,
+              "percentile_95_interval": [
+                -0.025000000000000005,
+                0.15
+              ]
+            },
+            "pairwise_ordering_accuracy": {
+              "estimate": 0.07592592592592591,
+              "percentile_95_interval": [
+                0.014444444444444449,
+                0.16777777777777772
+              ]
+            }
           }
         }
       }

@@ -14,6 +14,8 @@ RANKING_METRICS = (
     "top2_overlap",
     "pairwise_ordering_accuracy",
 )
+BOOTSTRAP_SEED = 20261101
+BOOTSTRAP_REPLICATES = 10_000
 
 
 def _mean_metrics(rows: list[dict[str, float]]) -> dict[str, float]:
@@ -43,6 +45,61 @@ def _paired_summary(
             "losses": int(np.sum(differences < -tolerance)),
         }
     return result
+
+
+def _fold_uncertainty(
+    cells: list[dict[str, object]], score: str
+) -> dict[str, object]:
+    folds = sorted({str(cell["fold"]) for cell in cells})
+    if len(folds) != 3:
+        raise ValueError(f"Expected three participant folds; found {len(folds)}")
+    fold_deltas = {}
+    for fold in folds:
+        selected = [cell for cell in cells if cell["fold"] == fold]
+        fold_deltas[fold] = {
+            metric: float(
+                np.nanmean(
+                    [
+                        cell[score]["synthetic_target"][metric]
+                        - cell[score]["source_baseline"][metric]
+                        for cell in selected
+                    ]
+                )
+            )
+            for metric in RANKING_METRICS
+        }
+
+    leave_one_fold_out = {}
+    for excluded in folds:
+        retained = [fold for fold in folds if fold != excluded]
+        leave_one_fold_out[excluded] = {
+            metric: float(np.mean([fold_deltas[fold][metric] for fold in retained]))
+            for metric in RANKING_METRICS
+        }
+
+    generator = np.random.default_rng(BOOTSTRAP_SEED)
+    draws = generator.integers(0, len(folds), size=(BOOTSTRAP_REPLICATES, len(folds)))
+    bootstrap = {}
+    for metric in RANKING_METRICS:
+        values = np.asarray([fold_deltas[fold][metric] for fold in folds])
+        estimates = values[draws].mean(axis=1)
+        bootstrap[metric] = {
+            "estimate": float(values.mean()),
+            "percentile_95_interval": [
+                float(value) for value in np.percentile(estimates, [2.5, 97.5])
+            ],
+        }
+    return {
+        "fold_deltas": fold_deltas,
+        "leave_one_fold_out": leave_one_fold_out,
+        "fold_cluster_bootstrap": {
+            "seed": BOOTSTRAP_SEED,
+            "replicates": BOOTSTRAP_REPLICATES,
+            "cluster_count": len(folds),
+            "warning": "Only three fold clusters; intervals are descriptive and discrete.",
+            "metrics": bootstrap,
+        },
+    }
 
 
 def build_performance_baseline_audit(
@@ -140,6 +197,7 @@ def build_performance_baseline_audit(
             "synthetic_target": _mean_metrics(synthetic),
             "paired_comparison": _paired_summary(source, synthetic),
             "by_fold": by_fold,
+            "fold_uncertainty": _fold_uncertainty(cells, score),
         }
     return {
         "analysis_status": "post_target_diagnostic",

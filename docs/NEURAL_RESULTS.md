@@ -115,6 +115,16 @@ beat the trivial source-ranking baseline on average, but most of the mean gain
 comes from fold 2. The defensible conclusion is incremental signal, not yet
 fold-stable incremental validity.
 
+Leaving out Fold 2 reduces the subject-macro increment to 0.060 (pairwise
+accuracy increment 0.030). A three-cluster bootstrap gives a descriptive
+percentile interval [0.029, 0.336], but three folds are too few for that interval
+to support a strong inferential claim. The detailed audit in
+[`docs/FOLD_DIAGNOSTIC.md`](FOLD_DIAGNOSTIC.md) shows that Fold 2 has equal
+device-pair coverage, the highest mean source performance, comparable
+configuration-score dispersion, and a similar gain range. Its large increment
+is driven by unusually poor transfer of the source ranking for test users d,
+g, and h, not by a trivial coverage or low-score artifact.
+
 This analysis is stored separately in
 `results/reviewed/performance_ranking_baseline_audit.json`; it does not rewrite
 the frozen Phase-B artifact or upgrade a post-target diagnostic into a
