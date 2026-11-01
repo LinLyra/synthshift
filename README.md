@@ -12,6 +12,12 @@ The primary study uses phone-to-phone comparisons only. HHAR watches are not
 used for device-only conclusions because their body placement differs from the
 phones. No new human-participant data is required.
 
+![Fold-specific Kendall tau increment](docs/figures/fold_delta_tau.svg)
+
+The three-fold heterogeneity is the central result: calibrated synthesis adds
+ranking information on average, but the increment is concentrated in one
+participant fold.
+
 ## Current status
 
 The data pipeline, subject-disjoint protocol, exploratory factor analysis,
@@ -95,8 +101,16 @@ python -m pip install -e '.[dev,neural]'
 pytest
 ```
 
-The current suite contains 75 tests plus 3 parameterized subtests and does not
+The current suite contains 77 tests plus 3 parameterized subtests and does not
 require the private local data cache.
+
+## Reproduce the reviewed ranking audit
+
+```bash
+python scripts/audit_performance_ranking_baseline.py results/reviewed/neural_combined_ranking_audit.json results/reviewed/performance_ranking_baseline_audit.json
+python scripts/plot_fold_delta_tau.py results/reviewed/performance_ranking_baseline_audit.json docs/figures/fold_delta_tau.svg
+pytest
+```
 
 ## Protocol and execution documents
 
@@ -107,6 +121,7 @@ require the private local data cache.
 - [`docs/NEURAL_EVALUATION.md`](docs/NEURAL_EVALUATION.md)
 - [`docs/NEURAL_RESULTS.md`](docs/NEURAL_RESULTS.md)
 - [`docs/FOLD_DIAGNOSTIC.md`](docs/FOLD_DIAGNOSTIC.md)
+- [`docs/ONE_PAGE_SUMMARY.md`](docs/ONE_PAGE_SUMMARY.md)
 
 ## Upstream projects
 
